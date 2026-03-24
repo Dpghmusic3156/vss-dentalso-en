@@ -1,0 +1,67 @@
+/* =========================================
+   APPLE DESIGN SYSTEM — CSS TOKENS
+   ========================================= */
+
+:root {
+  /* Apple Colors */
+  --apple-blue: #0071e3;
+  --apple-blue-hover: #0077ed;
+  --btn-green: #5bef76;
+  --btn-green-hover: #40d65b;
+  --apple-dark: #1d1d1f;
+  --apple-gray-1: #86868b;
+  --apple-gray-2: #d2d2d7;
+  --apple-gray-3: #f5f5f7;
+  --apple-gray-light: #f9f9fb;
+  --apple-green: #30d158;
+  --apple-orange: #ff9f0a;
+  --apple-white: #fbfbfd;
+
+  /* Unified Primary Colors */
+  --primary-1: #338B4A; /* Green */
+  --primary-2: #00ADEF; /* Blue */
+  --primary-3: #ed7b05; /* Orange */
+  --primary-4: #ffd146; /* Yellow */
+
+  /* Typography */
+  --apple-font: "Be Vietnam Pro", -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --apple-font-mono: ui-monospace, SFMono-Regular, SF Mono, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+  --apple-h1-size: clamp(2.5rem, 6vw, 3.75rem);
+  --apple-h2-size: clamp(2rem, 4.5vw, 2.75rem);
+  --apple-h3-size: clamp(1.5rem, 3vw, 2rem);
+  --apple-body-size: 16px;
+  --apple-small-size: 0.875rem;
+
+  --apple-weight-light: 300;
+  --apple-weight-normal: 400;
+  --apple-weight-medium: 500;
+  --apple-weight-semibold: 600;
+  --apple-weight-bold: 700;
+
+  --apple-lh-heading: 1.35;
+  --apple-lh-body: 1.5;
+  /* Spacing */
+  --apple-section-py: clamp(5rem, 12vw, 10rem);
+  --apple-section-py-sm: clamp(3rem, 6vw, 5rem);
+  --apple-container-max: 1120px;
+
+  /* Nav */
+  --apple-nav-height: 56px;
+  --apple-subnav-height: 52px;
+
+  /* Animation Durations */
+  --duration-fast: 150ms;
+  --duration-normal: 300ms;
+  --duration-slow: 500ms;
+  --duration-slower: 800ms;
+
+  /* Animation Easings */
+  --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
+  --ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Gradients */
+  --apple-blue-gradient: linear-gradient(135deg, #0071e3 0%, #005bb5 50%, #004494 100%);
+}

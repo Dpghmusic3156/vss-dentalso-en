@@ -1,0 +1,30 @@
+# Dependencies
+/node_modules
+/vendor
+/New Folder
+
+# Configuration
+.env
+.env.*
+!.env.example
+
+# Build Artifacts
+.budfiles
+
+#agent
+.agent/
+
+# Logs
+npm-debug.log
+yarn-error.log
+build_output*.txt
+composer_output*.txt
+
+# Lock Files (Optional - kept based on previous config)
+composer.lock
+package-lock.json
+yarn.lock
+
+# Specific Files
+build-with-node20.sh
+theme.json

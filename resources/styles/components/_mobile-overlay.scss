@@ -1,0 +1,46 @@
+/* =========================================
+   MOBILE DROPDOWN MENU
+   ========================================= */
+
+.apple-mobile-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.apple-mobile-menu li {
+  border-bottom: 1px solid var(--apple-gray-2);
+}
+
+.apple-mobile-menu li:last-child {
+  border-bottom: none;
+}
+
+.apple-mobile-menu > li > a {
+  display: block;
+  padding: 1rem 0;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: var(--apple-dark);
+  transition: color 0.2s;
+}
+
+.apple-mobile-menu .sub-menu {
+  list-style: none;
+  padding: 0 0 1rem 1rem;
+  margin: 0;
+}
+
+.apple-mobile-menu .sub-menu li a {
+  display: block;
+  padding: 0.5rem 0;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  color: var(--apple-gray-1);
+}
+
+.apple-mobile-menu .current-menu-item > a {
+  color: var(--apple-blue);
+}

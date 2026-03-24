@@ -1,0 +1,116 @@
+/* =========================================
+   APPLE TYPOGRAPHY
+   ========================================= */
+
+.apple-hero-headline {
+  font-size: var(--apple-h1-size);
+  font-weight: var(--apple-weight-medium);
+  letter-spacing: -0.02em;
+  line-height: var(--apple-lh-heading);
+  color: var(--apple-dark);
+  margin-bottom: 0.5rem;
+}
+
+.apple-hero-headline-sub {
+  display: block;
+  font-size: clamp(1.125rem, 2.5vw, 1.75rem);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  line-height: 1.3;
+  color: var(--apple-gray-1);
+  margin-top: 0.5rem;
+}
+
+.apple-hero-subheadline {
+  font-size: var(--apple-h2-size);
+  font-weight: var(--apple-weight-semibold);
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  color: var(--apple-dark);
+  margin-bottom: 1.5rem;
+}
+
+.apple-hero-copy {
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--apple-gray-1);
+  max-width: 640px;
+  margin: 0 auto 1rem;
+}
+
+.apple-hero-proof {
+  font-size: clamp(0.875rem, 1.2vw, 1rem);
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--apple-gray-2);
+  max-width: 580px;
+  margin: 0 auto 2rem;
+}
+
+.apple-headline {
+  font-size: var(--apple-h2-size);
+  font-weight: var(--apple-weight-medium);
+  letter-spacing: -0.01em;
+  line-height: 1.35;
+  color: var(--apple-dark);
+}
+
+.apple-section--dark .apple-headline,
+.apple-section--cta .apple-headline,
+.apple-section--dark .apple-body,
+.apple-section--cta .apple-body {
+  color: white;
+}
+
+.apple-headline-sm {
+  font-size: var(--apple-h3-size);
+  font-weight: var(--apple-weight-medium);
+  letter-spacing: -0.01em;
+  line-height: 1.35;
+  color: var(--apple-dark);
+  margin-bottom: 1rem;
+}
+
+.apple-eyebrow {
+  display: inline-block;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--apple-blue);
+  margin-bottom: 0.75rem;
+}
+
+.apple-eyebrow--light {
+  color: var(--apple-gray-1);
+}
+
+.apple-body {
+  font-size: var(--apple-body-size);
+  line-height: var(--apple-lh-body);
+  color: var(--apple-dark);
+  font-weight: var(--apple-weight-normal);
+}
+
+.apple-body-secondary {
+  font-size: clamp(0.9375rem, 1.3vw, 1.125rem);
+  line-height: 1.65;
+  color: var(--apple-gray-1);
+}
+
+
+.apple-proof-label {
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--apple-gray-1);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 2rem;
+}
+
+.apple-proof-label strong {
+  color: var(--apple-dark);
+  font-weight: 700;
+}

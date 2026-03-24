@@ -1,0 +1,7 @@
+.wp-block-latest-posts {
+  @apply divide-y divide-secondary;
+  
+  li {
+    @apply py-4 hover:text-primary-1;
+  }  
+}

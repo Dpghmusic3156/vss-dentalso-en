@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,100..700,0,0");
+@import "swiper/scss";
+
+// Layouts (legacy)
+@import "layouts/header";
+@import "layouts/footer";
+@import "layouts/sidebar";
+@import "layouts/contact-form";
+
+// Design System
+@import "variables";
+@import "base";
+
+// Components
+@import "components/navigation";
+@import "components/subnav";
+@import "components/mobile-overlay";
+@import "components/typography";
+@import "components/buttons";
+@import "components/hero";
+@import "components/cards";
+@import "components/sections";
+@import "components/animations";
+@import "components/forms";
+@import "components/solution-cards";
+@import "components/single-post";

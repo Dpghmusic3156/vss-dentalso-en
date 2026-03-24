@@ -1,0 +1,88 @@
+/* =========================================
+   DROPDOWN / LEGACY OVERRIDES
+   ========================================= */
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Invisible bridge to prevent hover loss between nav item and dropdown gap */
+.dropdown-menu::before {
+  content: "";
+  position: absolute;
+  top: -24px;
+  left: 0;
+  width: 100%;
+  height: 24px;
+  background: transparent;
+}
+
+#swiper1 {
+  img {
+    transform: scale(0.85);
+    transition: 0.3s;
+  }
+  .swiper-slide-active {
+    img {
+      transform: scale(1);
+    }
+  }
+}
+
+article {
+  h2 {
+    padding: 20px 0 !important;
+  }
+  li {
+    padding: 10px 0 !important;
+  }
+  p {
+    padding: 5px 0 !important;
+  }
+}
+
+.prose {
+  max-width: inherit !important;
+}
+
+/* Apple-style form inputs */
+.apple-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+  border: 1px solid var(--apple-gray-2);
+  background: white;
+  font-size: 0.9375rem;
+  color: var(--apple-dark);
+  transition: all 0.3s;
+  outline: none;
+  font-family: var(--apple-font);
+}
+
+.apple-input:focus {
+  border-color: var(--apple-blue);
+  box-shadow: 0 0 0 3px rgba(0, 113, 227, 0.15);
+}
+
+.apple-input::placeholder {
+  color: var(--apple-gray-1);
+}
+
+textarea.apple-input {
+  resize: vertical;
+  min-height: 100px;
+}
+
+select.apple-input {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%2386868b' d='M6 8.825a.5.5 0 0 1-.354-.146L2.146 5.18a.5.5 0 1 1 .708-.707L6 7.618l3.146-3.147a.5.5 0 1 1 .708.707L6.354 8.68a.5.5 0 0 1-.354.146z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  padding-right: 2.5rem;
+}
+
+@layer components {
+  .px0-380 {
+    @apply max-[380px]:!px-0;
+  }
+}

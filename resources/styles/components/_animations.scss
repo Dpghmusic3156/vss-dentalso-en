@@ -1,0 +1,94 @@
+/* =========================================
+   SCROLL REVEAL ANIMATION
+   ========================================= */
+
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition:
+    opacity var(--duration-slower) var(--ease-out-expo),
+    transform var(--duration-slower) var(--ease-out-expo);
+  will-change: opacity, transform;
+}
+
+.fade-in-up.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Stagger Delays */
+.fade-delay-1 { transition-delay: 100ms; }
+.fade-delay-2 { transition-delay: 200ms; }
+.fade-delay-3 { transition-delay: 300ms; }
+.fade-delay-4 { transition-delay: 400ms; }
+
+/* Micro-interactions */
+.apple-lift {
+  transition: transform var(--duration-normal) var(--ease-out-quart), box-shadow var(--duration-normal) var(--ease-out-quart);
+  &:hover {
+    transform: translateY(-8px) scale(1.01);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+  }
+  &:active {
+    transform: translateY(-2px) scale(0.98);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.apple-scale-up {
+  transition: transform var(--duration-normal) var(--ease-out-quart);
+  &:hover {
+    transform: scale(1.02);
+  }
+}
+
+.apple-press {
+  transition: transform var(--duration-fast) var(--ease-out-quart);
+  &:active {
+    transform: scale(0.96);
+  }
+}
+
+/* Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .fade-in-up {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .apple-card,
+  .apple-card-img,
+  .apple-glass-card,
+  .apple-glass-icon,
+  .apple-glass-text,
+  .apple-cta-primary,
+  .apple-cta-secondary,
+  .apple-chevron {
+    transition: none !important;
+  }
+}
+
+/* Focus-visible states for keyboard navigation */
+a:focus-visible,
+button:focus-visible,
+.apple-cta-primary:focus-visible,
+.apple-cta-secondary:focus-visible,
+.apple-card:focus-visible {
+  outline: 2px solid var(--apple-blue);
+  outline-offset: 2px;
+  border-radius: 8px;
+}
+
+.apple-card:focus-visible {
+  border-radius: 28px;
+}

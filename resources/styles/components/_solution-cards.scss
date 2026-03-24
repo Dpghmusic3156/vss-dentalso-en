@@ -1,0 +1,110 @@
+/* =========================================
+   SOLUTION CARDS — Bold per-product identity
+   Three branded split-layout cards
+   ========================================= */
+
+/* ---- Pill eyebrow badge ---- */
+.solution-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.3125rem 0.875rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.solution-pill--blue {
+  background: rgba(var(--primary-2-rgb, 0, 173, 239), 0.09);
+  color: var(--primary-2);
+}
+
+.solution-pill--green {
+  background: rgba(var(--primary-1-rgb, 51, 139, 74), 0.1);
+  color: var(--primary-1);
+}
+
+.solution-pill--orange {
+  background: rgba(var(--primary-3-rgb, 237, 123, 5), 0.1);
+  color: var(--primary-3);
+}
+
+.solution-pill--purple {
+  background: rgba(175, 82, 222, 0.1);
+  color: #8944ab;
+}
+
+/* ---- Animated arrow CTA ---- */
+.solution-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.0625rem;
+  font-weight: 600;
+  color: var(--primary-2);
+  text-decoration: none;
+  transition: gap 0.25s var(--ease-out-quart, cubic-bezier(0.25, 1, 0.5, 1));
+
+  &:hover {
+    gap: 0.875rem;
+  }
+}
+
+.solution-cta--green {
+  color: var(--primary-1);
+}
+
+.solution-cta--orange {
+  color: var(--primary-3);
+}
+
+.solution-cta--purple {
+  color: #8944ab;
+}
+
+.solution-cta__arrow {
+  display: inline-block;
+  font-style: normal;
+  transition: transform 0.25s var(--ease-out-quart, cubic-bezier(0.25, 1, 0.5, 1));
+}
+
+.solution-cta:hover .solution-cta__arrow {
+  transform: translateX(5px);
+}
+
+/* ---- Image column accent glow ---- */
+.solution-card__media {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: -10% -8%;
+    border-radius: 2.5rem;
+    opacity: 0.35;
+    z-index: 0;
+    transition: opacity 0.4s ease;
+    filter: blur(40px);
+  }
+}
+
+.solution-card--blue .solution-card__media::before {
+  background: radial-gradient(ellipse at center, var(--primary-2) 0%, transparent 70%);
+}
+
+.solution-card--green .solution-card__media::before {
+  background: radial-gradient(ellipse at center, var(--primary-1) 0%, transparent 70%);
+}
+
+.solution-card--orange .solution-card__media::before {
+  background: radial-gradient(ellipse at center, var(--primary-3) 0%, transparent 70%);
+}
+
+.solution-card--purple .solution-card__media::before {
+  background: radial-gradient(ellipse at center, #af52de 0%, transparent 70%);
+}
+
+.solution-card:hover .solution-card__media::before {
+  opacity: 0.5;
+}

@@ -1,0 +1,12 @@
+{
+  "app": {
+    "js": [
+      "js/runtime.db4070.js",
+      "js/app.a28e45.js"
+    ],
+    "css": [
+      "css/app.b464c0.css"
+    ],
+    "dependencies": []
+  }
+}

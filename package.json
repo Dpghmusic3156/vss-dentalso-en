@@ -1,0 +1,24 @@
+{
+  "name": "vss-dentalso",
+  "private": true,
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "type": "module",
+  "dependencies": {
+    "alpinejs": "^3.12.0",
+    "aos": "^2.3.4",
+    "swiper": "^9.0.0"
+  },
+  "devDependencies": {
+    "@roots/bud": "latest",
+    "@roots/bud-sass": "latest",
+    "@roots/bud-tailwindcss": "latest",
+    "@roots/sage": "latest"
+  },
+  "scripts": {
+    "build": "bud build",
+    "dev": "bud dev",
+    "lint": "bud lint"
+  }
+}

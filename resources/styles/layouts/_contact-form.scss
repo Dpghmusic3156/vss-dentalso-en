@@ -1,0 +1,61 @@
+.contact-form {
+    @apply grid sm:gap-8 gap-4 grid-cols-1 md:grid-cols-2;
+
+    input:not([type='checkbox']), textarea, select {
+      @apply block w-full px-4 py-3 mb-0 leading-tight border border-primary-200 appearance-none text-primary-1 rounded;
+
+      &:focus {
+        @apply outline-none border-primary-1;
+      }
+    }
+
+    .colspan2 {
+        @apply col-span-1 md:col-span-2;
+    }
+  
+    .submit {
+      @apply py-2 mr-auto w-40 mt-0 text-lg font-bold text-white border-2 border-transparent bg-primary-1 rounded shadow-md;
+      
+      &:hover {
+        @apply bg-white text-primary-1 border-primary-1  shadow-lg;
+      }
+      
+      &:focus {
+        @apply outline-none;
+      }
+    }
+  
+    .wpcf7-form-control-wrap {
+      @apply w-full px-0 mb-0;
+    }
+  
+    .wpcf7-form {
+      @apply flex flex-wrap justify-center w-full max-w-lg mx-auto;
+      
+      &.sent {
+        .wpcf7-form-control-wrap {
+          @apply hidden;
+        }
+      }
+    }
+    
+    .wpcf7-not-valid {
+      @apply border-red-600;
+    }
+  
+    .wpcf7-not-valid-tip {
+      @apply font-semibold text-xs text-red-600 block mb-1 -mt-1;
+    }
+  
+    .wpcf7-response-output {
+      @apply rounded border text-sm font-bold mt-0 my-auto relative;
+  
+      &.wpcf7-validation-errors {
+        @apply border-red-600 text-red-600;
+      }
+  
+      &.wpcf7-mail-sent-ok {
+        @apply text-primary-1 border-primary-1 ;
+      }
+    }
+  }

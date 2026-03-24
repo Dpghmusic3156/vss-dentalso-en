@@ -1,0 +1,80 @@
+/* =========================================
+   APPLE SUB-NAV (SECONDARY NAVIGATION)
+   ========================================= */
+
+.apple-subnav {
+  position: sticky;
+  top: 0; // Will be adjusted via JS if main nav is sticky, or pinned below main nav
+  z-index: 9998;
+  height: var(--apple-subnav-height);
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  transition: background 0.3s;
+}
+
+/* Adjust position if placed below main nav */
+.apple-nav + .apple-subnav {
+  top: 0;
+}
+
+.apple-subnav-inner {
+  max-width: var(--apple-container-max);
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+}
+
+.apple-subnav-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1d1d1f;
+  letter-spacing: -0.01em;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  @media (max-width: 640px) {
+    font-size: 1.125rem;
+  }
+}
+
+.apple-subnav-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.apple-subnav-link {
+  font-size: 0.75rem;
+  color: #1d1d1f;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+
+  &:hover {
+    opacity: 1;
+    color: var(--apple-blue);
+  }
+}
+
+.apple-subnav-btn {
+  font-size: 0.75rem;
+  font-weight: 400;
+  background: var(--apple-blue);
+  color: white !important;
+  padding: 0.25rem 0.75rem;
+  border-radius: 980px;
+  transition: background 0.2s;
+  white-space: nowrap;
+
+  &:hover {
+    background: var(--apple-blue-hover);
+  }
+}

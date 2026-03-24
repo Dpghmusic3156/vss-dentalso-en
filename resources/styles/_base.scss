@@ -1,0 +1,41 @@
+/* =========================================
+   BASE RESETS
+   ========================================= */
+
+html {
+  font-family: var(--apple-font);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--apple-dark);
+  font-size: var(--apple-body-size);
+  font-weight: var(--apple-weight-normal);
+  line-height: var(--apple-lh-body);
+}
+
+h1, .h1 { 
+  font-size: var(--apple-h1-size); 
+}
+h2, .h2 { 
+  font-size: var(--apple-h2-size); 
+}
+h3, .h3 { 
+  font-size: var(--apple-h3-size); 
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: var(--apple-weight-medium);
+  line-height: var(--apple-lh-heading);
+  letter-spacing: -0.01em;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.overflow-hidden {
+  overflow: hidden !important;
+}

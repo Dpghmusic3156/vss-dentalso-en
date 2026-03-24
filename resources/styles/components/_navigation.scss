@@ -1,0 +1,187 @@
+/* =========================================
+   APPLE NAVIGATION
+   ========================================= */
+
+.apple-nav {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  height: var(--apple-nav-height);
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+
+  &.has-subnav {
+    position: relative;
+    border-bottom: none;
+  }
+}
+
+.apple-nav-inner {
+  max-width: var(--apple-container-max);
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 0 1.5rem;
+}
+
+.apple-nav-logo {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.apple-nav-logo img {
+  height: 100%;
+  padding: 14px 0;
+  object-fit: contain;
+}
+
+.apple-nav-menu {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  list-style: none;
+  gap: clamp(0.75rem, 1.5vw, 1.75rem);
+  margin: 0;
+  padding: 0;
+}
+
+.apple-nav-menu li {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.apple-nav-menu li a {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--apple-dark);
+  opacity: 0.8;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  transition: opacity var(--duration-normal), transform var(--duration-fast) var(--ease-out-expo);
+  white-space: nowrap;
+  letter-spacing: -0.01em;
+}
+
+.apple-nav-menu li a:hover {
+  opacity: 1;
+}
+
+.apple-nav-menu li a:active {
+  transform: scale(0.96);
+}
+
+/* ---- Submenu dropdown ---- */
+.apple-nav-menu > li {
+  position: relative;
+}
+
+.apple-nav-menu > li > .sub-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  /* Invisible bridge: padding-top fills the gap so hover doesn't break */
+  padding-top: 10px;
+  padding-bottom: 8px;
+  min-width: 240px;
+  list-style: none;
+  margin: 0;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(-12px) scale(0.98);
+  transition: opacity var(--duration-normal) var(--ease-out-expo),
+              transform var(--duration-normal) var(--ease-out-expo),
+              visibility var(--duration-normal);
+  z-index: 9999;
+}
+
+.apple-nav-menu > li > .sub-menu::before {
+  content: '';
+  display: block;
+}
+
+/* The actual visible panel */
+.apple-nav-menu > li > .sub-menu > li:first-child {
+  border-radius: 12px 12px 0 0;
+}
+.apple-nav-menu > li > .sub-menu > li:last-child {
+  border-radius: 0 0 12px 12px;
+}
+
+.apple-nav-menu > li > .sub-menu > li {
+  display: block;
+  height: auto;
+  background: white;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+
+.apple-nav-menu > li > .sub-menu > li:last-child {
+  border-bottom: none;
+}
+
+.apple-nav-menu > li > .sub-menu > li > a {
+  display: block;
+  padding: 0.75rem 1.25rem;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  color: #1d1d1f;
+  opacity: 0.85;
+  white-space: nowrap;
+  transition: background 0.2s, opacity 0.2s;
+}
+
+.apple-nav-menu > li > .sub-menu > li > a:hover {
+  background: #f5f5f7;
+  opacity: 1;
+}
+
+/* Show on hover */
+.apple-nav-menu > li:hover > .sub-menu {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+/* Add shadow to the group of items */
+.apple-nav-menu > li > .sub-menu {
+  filter: drop-shadow(0 4px 24px rgba(0,0,0,0.12));
+}
+
+.apple-nav-btn {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 0.375rem 1rem;
+  border-radius: 980px;
+  background: var(--btn-green);
+  color: var(--apple-dark) !important;
+  font-size: 0.8125rem;
+  font-weight: 400;
+  transition: all 0.3s;
+  white-space: nowrap;
+
+  @media (min-width: 1024px) {
+    display: inline-flex;
+  }
+}
+
+.apple-nav-btn:hover {
+  background: var(--apple-blue-hover);
+}
+
+/* Active menu item */
+.current-menu-item > a {
+  color: var(--apple-blue) !important;
+  opacity: 1 !important;
+  border-bottom: none;
+}
