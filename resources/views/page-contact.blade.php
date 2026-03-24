@@ -189,7 +189,7 @@ document.addEventListener('DOMContentLoaded', () => {
         jQuery.ajax({
             type: "POST",
             cache: false,
-            url: 'https://lapi.dentalso.com/api/v1/public/callme',
+            url: 'https://sapi.dentalso.com/api/v1/public/callme',
             contentType: "application/json",
             data: JSON.stringify(data),
             dataType: 'json',
