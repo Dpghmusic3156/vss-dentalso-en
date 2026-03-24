@@ -28,3 +28,10 @@ yarn.lock
 # Specific Files
 build-with-node20.sh
 theme.json
+
+#ai skills
+skills-lock.json
+skills.json
+skills.md
+/.agent
+/.agents
