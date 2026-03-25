@@ -36,7 +36,7 @@
         </div>
         {{-- Hero image --}}
         <div class="apple-hero-img-wrapper fade-in-up" style="transition-delay: 200ms;">
-            <img src="{{ get_theme_mod('trang_chu.banner.hinh_2') }}" alt="DentalSO – Dental Lab Management Software Platform" class="apple-hero-img animate-float" loading="lazy">
+            <img src="{{ get_theme_mod('trang_chu.banner.hinh_2') }}" alt="DentalSO: The Complete Dental Lab Software Ecosystem for Streamlined Operations" class="apple-hero-img animate-float" loading="lazy">
         </div>
     </div>
 </section>

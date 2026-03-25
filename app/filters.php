@@ -46,8 +46,8 @@ function submenu_get_children_ids($id, $items)
  * Filter the document title for the front page to be exact and clean.
  */
 add_filter('pre_get_document_title', function ($title) {
-    if (is_front_page()) {
+    if (is_front_page() || is_home() || get_the_ID() === 8) {
         return 'DentalSO: The Complete Dental Lab Software Ecosystem for Streamlined Operations';
     }
     return $title;
-});
+}, 999);
