@@ -41,3 +41,13 @@ function submenu_get_children_ids($id, $items)
     }
     return $ids;
 }
+
+/**
+ * Filter the document title for the front page to be exact and clean.
+ */
+add_filter('pre_get_document_title', function ($title) {
+    if (is_front_page()) {
+        return 'DentalSO: The Complete Dental Lab Software Ecosystem for Streamlined Operations';
+    }
+    return $title;
+});
