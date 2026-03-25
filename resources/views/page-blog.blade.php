@@ -31,10 +31,10 @@
         @if($featured)
             {{-- Featured Post --}}
             <a href="{{ get_permalink($featured) }}" class="block mb-16 fade-in-up group">
-                <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 grid lg:grid-cols-2">
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-[transform,box-shadow,opacity] duration-500 grid lg:grid-cols-2">
                     <div class="aspect-[16/10] lg:aspect-auto overflow-hidden">
                         @if(has_post_thumbnail($featured))
-                            <img src="{{ get_the_post_thumbnail_url($featured, 'large') }}" 
+                            <img loading="lazy" src="{{ get_the_post_thumbnail_url($featured, 'large') }}" 
                                  alt="{{ $featured->post_title }}" 
                                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
                         @else
@@ -66,12 +66,12 @@
                 <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
                     @foreach($rest as $post)
                         <a href="{{ get_permalink($post) }}" 
-                           class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 fade-in-up flex flex-col"
+                           class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-[transform,box-shadow,opacity,colors] duration-300 fade-in-up flex flex-col"
                            style="animation-delay: {{ $loop->index * 0.06 }}s;">
                             {{-- Image --}}
                             <div class="aspect-[16/10] overflow-hidden">
                                 @if(has_post_thumbnail($post))
-                                    <img src="{{ get_the_post_thumbnail_url($post, 'medium_large') }}" 
+                                    <img loading="lazy" src="{{ get_the_post_thumbnail_url($post, 'medium_large') }}" 
                                          alt="{{ $post->post_title }}" 
                                          class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                                 @else

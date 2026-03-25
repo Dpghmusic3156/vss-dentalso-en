@@ -126,12 +126,12 @@
                     </div>
                     <div class="flex items-center gap-3">
                         <span class="material-symbols-outlined text-base">phone</span>
-                        <img src="<?php echo get_template_directory_uri(); ?>/resources/images/us.png" class="w-4 h-auto" alt="US">
+                        <img src="<?php echo get_template_directory_uri(); ?>/resources/images/us.png" class="w-4 h-auto" loading="lazy" alt="US">
                         <a href="https://api.whatsapp.com/send/?phone=12062019069&text&type=phone_number&app_absent=0" target="_blank" class="hover:text-[#1d1d1f] transition-colors">{{ get_theme_mod('phoneus') }}</a>
                     </div>
                     <div class="flex items-center gap-3">
                         <span class="material-symbols-outlined text-base">phone</span>
-                        <img src="<?php echo get_template_directory_uri(); ?>/resources/images/vn.png" class="w-4 h-auto" alt="VN">
+                        <img src="<?php echo get_template_directory_uri(); ?>/resources/images/vn.png" class="w-4 h-auto" loading="lazy" alt="VN">
                         <a href="http://zalo.me/0947476000" target="_blank" class="hover:text-[#1d1d1f] transition-colors">{{ get_theme_mod('phone') }}</a>
                     </div>
                     <div class="flex items-center gap-3">

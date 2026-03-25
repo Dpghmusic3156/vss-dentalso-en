@@ -44,20 +44,20 @@
                         </a>
                     </li>
                     <li class="flex items-center gap-1.5">
-                        <img src="<?php echo get_template_directory_uri(); ?>/resources/images/us.png" class="w-4 h-auto" alt="US">
+                        <img src="<?php echo get_template_directory_uri(); ?>/resources/images/us.png" class="w-4 h-auto" loading="lazy" alt="US">
                         <a href="https://api.whatsapp.com/send/?phone=12062019069&text&type=phone_number&app_absent=0" target="_blank"><?php echo get_theme_mod('phoneus'); ?></a>
                     </li>
                     <li class="flex items-center gap-1.5">
-                        <img src="<?php echo get_template_directory_uri(); ?>/resources/images/vn.png" class="w-4 h-auto" alt="VN">
+                        <img src="<?php echo get_template_directory_uri(); ?>/resources/images/vn.png" class="w-4 h-auto" loading="lazy" alt="VN">
                         <a href="http://zalo.me/0947476000" target="_blank"><?php echo get_theme_mod('phone'); ?></a>
                     </li>
                 </ul>
                 <div class="flex gap-3 mt-4">
                     <a href="https://apps.apple.com/vn/app/dentalso/id6447111443" target="_blank" class="opacity-60 hover:opacity-100 transition-opacity">
-                        <img alt="App Store" class="h-8" src="<?php echo get_site_url(); ?>/wp-content/uploads/2025/02/app-store.png">
+                        <img alt="App Store" class="h-8" loading="lazy" src="<?php echo get_site_url(); ?>/wp-content/uploads/2025/02/app-store.png">
                     </a>
                     <a href="https://play.google.com/store/apps/details?id=com.dentalso" target="_blank" class="opacity-60 hover:opacity-100 transition-opacity">
-                        <img alt="Google Play" class="h-8" src="<?php echo get_site_url(); ?>/wp-content/uploads/2025/02/google-play.png">
+                        <img alt="Google Play" class="h-8" loading="lazy" src="<?php echo get_site_url(); ?>/wp-content/uploads/2025/02/google-play.png">
                     </a>
                 </div>
             </div>

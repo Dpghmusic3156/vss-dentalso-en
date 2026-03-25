@@ -57,7 +57,7 @@
 
         {{-- Meta row --}}
         <div class="post-meta-row">
-            <img src="{{ $author_avatar }}" alt="{{ $author_name }}" class="post-meta-avatar">
+            <img src="{{ $author_avatar }}" alt="{{ $author_name }}" class="post-meta-avatar" loading="lazy">
             <div>
                 <span class="post-meta-author">{{ $author_name }}</span>
                 <span class="post-meta-dot">·</span>
@@ -92,7 +92,7 @@
 
         {{-- Author box --}}
         <div class="post-author-box">
-            <img src="{{ $author_avatar }}" alt="{{ $author_name }}" class="post-author-box__avatar">
+            <img src="{{ $author_avatar }}" alt="{{ $author_name }}" class="post-author-box__avatar" loading="lazy">
             <div>
                 <p class="post-author-box__label">Written by</p>
                 <p class="post-author-box__name">{{ $author_name }}</p>
@@ -128,7 +128,7 @@
                     @php $rp_thumb = has_post_thumbnail($rp->ID) ? get_the_post_thumbnail_url($rp->ID, 'thumbnail') : null; @endphp
                     <a href="{{ get_permalink($rp) }}" class="post-sidebar-related__item group">
                         @if($rp_thumb)
-                            <img src="{{ $rp_thumb }}" alt="{{ $rp->post_title }}" class="post-sidebar-related__thumb">
+                            <img src="{{ $rp_thumb }}" alt="{{ $rp->post_title }}" class="post-sidebar-related__thumb" loading="lazy">
                         @else
                             <div class="post-sidebar-related__thumb post-sidebar-related__thumb--placeholder">
                                 <span class="material-symbols-outlined">article</span>

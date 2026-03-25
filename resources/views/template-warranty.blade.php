@@ -49,7 +49,7 @@
             {{-- Labo --}}
             <div class="apple-card apple-card--white fade-in-up p-0 overflow-hidden" style="animation-delay: 0.05s;">
                 <div class="h-48 overflow-hidden bg-gray-100">
-                    <img src="@asset('images/warranty-labo-printer.png')" alt="Labo Printer" class="w-full h-full object-cover">
+                    <img src="@asset('images/warranty-labo-printer.png')" alt="Labo Printer" class="w-full h-full object-cover" loading="lazy">
                 </div>
                 <div class="apple-card-inner text-center p-8 text-[#1d1d1f]">
                     <h3 class="apple-card-title text-xl mb-3">Dental Lab</h3>
@@ -60,7 +60,7 @@
             {{-- Clinic --}}
             <div class="apple-card apple-card--white fade-in-up p-0 overflow-hidden" style="animation-delay: 0.1s;">
                 <div class="h-48 overflow-hidden bg-gray-100">
-                    <img src="@asset('images/warranty-clinic-card.png')" alt="Clinic Warranty Card" class="w-full h-full object-cover">
+                    <img src="@asset('images/warranty-clinic-card.png')" alt="Clinic Warranty Card" class="w-full h-full object-cover" loading="lazy">
                 </div>
                 <div class="apple-card-inner text-center p-8 text-[#1d1d1f]">
                     <h3 class="apple-card-title text-xl mb-3">Dental Clinic</h3>
@@ -70,7 +70,7 @@
             {{-- Patient --}}
             <div class="apple-card apple-card--white fade-in-up p-0 overflow-hidden" style="animation-delay: 0.15s;">
                 <div class="h-48 overflow-hidden bg-gray-100">
-                    <img src="@asset('images/warranty-patient-qr.png')" alt="Patient QR Lookup" class="w-full h-full object-cover">
+                    <img src="@asset('images/warranty-patient-qr.png')" alt="Patient QR Lookup" class="w-full h-full object-cover" loading="lazy">
                 </div>
                 <div class="apple-card-inner text-center p-8 text-[#1d1d1f]">
                     <h3 class="apple-card-title text-xl mb-3">Patient</h3>
@@ -141,7 +141,7 @@
             </div>
             <div class="w-full lg:w-[55%] fade-in-up" style="animation-delay: 0.15s;">
                 <div>
-                    <img src="@asset('images/warranty-qr-mockup.png')" alt="QR Lookup Mockup" class="w-full">
+                    <img src="@asset('images/warranty-qr-mockup.png')" alt="QR Lookup Mockup" class="w-full" loading="lazy">
                 </div>
             </div>
         </div>
@@ -156,7 +156,7 @@
         <div class="flex flex-col-reverse lg:flex-row items-center gap-12 lg:gap-20">
             <div class="w-full lg:w-[55%] fade-in-up" style="animation-delay: 0.15s;">
                 <div>
-                    <img src="@asset('images/warranty-print-mockup.png')" alt="Card Printing Mockup" class="w-full">
+                    <img src="@asset('images/warranty-print-mockup.png')" alt="Card Printing Mockup" class="w-full" loading="lazy">
                 </div>
             </div>
             <div class="w-full lg:w-[45%] fade-in-up" style="animation-delay: 0.15s;">

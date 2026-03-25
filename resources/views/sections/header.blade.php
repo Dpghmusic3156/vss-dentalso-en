@@ -194,6 +194,6 @@
     fbq('init', '442552758072688');
     fbq('track', 'PageView');
 </script>
-<noscript><img height="1" width="1" style="display:none"
+<noscript><img height="1" width="1" style="display:none" loading="lazy"
     src="https://www.facebook.com/tr?id=442552758072688&ev=PageView&noscript=1" /></noscript>
 <!-- End Meta Pixel Code -->
