@@ -5,7 +5,7 @@
             <div class="apple-footer-col">
                 <h5 class="apple-footer-heading">Products</h5>
                 <ul class="apple-footer-links">
-                    <li><a href="{{ home_url('products/dental-lab-software/') }}">DentalSO Platform</a></li>
+                    <li><a href="{{ home_url('products/dental-lab-software/') }}">DentalSO</a></li>
                     <li><a href="{{ home_url('products/dental-lab-mes/') }}">DentalSO MES</a></li>
                     <li><a href="{{ home_url('products/dentalso-connect/') }}">DentalSO Connect</a></li>
                 </ul>
@@ -13,9 +13,9 @@
             <div class="apple-footer-col">
                 <h5 class="apple-footer-heading">Solutions</h5>
                 <ul class="apple-footer-links">
-                    <li><a href="{{ home_url('solutions/dental-labs/') }}">Dental Labs</a></li>
-                    <li><a href="{{ home_url('solutions/dental-clinics/') }}">Dental Clinics</a></li>
-                    <li><a href="{{ home_url('solutions/sales-agents/') }}">Sales Agents</a></li>
+                    <li><a href="{{ home_url('solutions/small-medium-dental-labs/') }}">Small & Medium Dental Labs</a></li>
+                    <li><a href="{{ home_url('solutions/outsource-dental-labs/') }}">Outsource Dental Labs</a></li>
+                    <li><a href="{{ home_url('solutions/large-dental-labs-mes/') }}">Large Dental Labs</a></li>
                 </ul>
             </div>
             <div class="apple-footer-col">
@@ -30,7 +30,7 @@
                 <h5 class="apple-footer-heading">Resources</h5>
                 <ul class="apple-footer-links">
                     <li><a href="{{ home_url('blog/') }}">Blog</a></li>
-                    <li><a href="http://ghuy.me/en/customer/">Featured Customers</a></li>
+                    <li><a href="{{ home_url('customer/') }}">Featured Customers</a></li>
                     <li><a href="{{ home_url('guides/') }}">Guides</a></li>
                 </ul>
             </div>
@@ -79,9 +79,9 @@
                     </div>
                 </div>
                 <div class="flex items-center gap-3">
-                    <a href="http://ghuy.me/vi/" class="hover:text-[#1d1d1f] transition-colors">Tiếng Việt</a>
+                    <a href="http://dentalso.com/vi/" class="hover:text-[#1d1d1f] transition-colors">Tiếng Việt</a>
                     <span class="text-[#d2d2d7]">|</span>
-                    <a href="http://ghuy.me/en/" class="hover:text-[#1d1d1f] transition-colors font-medium text-[#6e6e73]">English</a>
+                    <a href="http://dentalso.com/en/" class="hover:text-[#1d1d1f] transition-colors font-medium text-[#6e6e73]">English</a>
                 </div>
             </div>
             {{-- Row 2: Copyright + legal links, right-aligned --}}
