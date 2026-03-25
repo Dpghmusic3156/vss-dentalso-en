@@ -95,14 +95,14 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div class="text-center p-4">
                 <div class="w-16 h-16 inline-block p-4 bg-white rounded-full shadow-sm mb-4 text-blue-600">
-                    <i class="fas fa-lightbulb text-2xl"></i> </div>
+                    <span class="material-symbols-outlined text-2xl align-middle">lightbulb</span> </div>
                 <h4 class="text-xl font-bold mb-2">Industry-Specific Innovation</h4>
                 <p class="text-primary-2 text-sm">Every feature is designed for dental workflows, not generic needs.</p>
             </div>
             
             <div class="text-center p-4">
                 <div class="w-16 h-16 inline-block p-4 bg-white rounded-full shadow-sm mb-4 text-blue-600">
-                    <i class="fas fa-shield-alt text-2xl"></i>
+                    <span class="material-symbols-outlined text-2xl align-middle">shield</span>
                 </div>
                 <h4 class="text-xl font-bold mb-2">Enterprise-Grade Security</h4>
                 <p class="text-primary-2 text-sm">SSL encryption, digital certificates, and RSA technology to protect patient privacy.</p>
@@ -110,7 +110,7 @@
 
             <div class="text-center p-4">
                 <div class="w-16 h-16 inline-block p-4 bg-white rounded-full shadow-sm mb-4 text-blue-600">
-                    <i class="fas fa-chart-line text-2xl"></i>
+                    <span class="material-symbols-outlined text-2xl align-middle">trending_up</span>
                 </div>
                 <h4 class="text-xl font-bold mb-2">Proven Impact</h4>
                 <p class="text-primary-2 text-sm">Hundreds of customers have increased efficiency and scaled operations.</p>
