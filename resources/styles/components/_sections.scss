@@ -136,7 +136,7 @@
 }
 
 /* =========================================
-   APPLE BENTO GRID
+   APPLE BENTO GRID — Bright & Spacious
    ========================================= */
 
 .apple-bento-grid {
@@ -148,34 +148,39 @@
 @media (min-width: 1024px) {
   .apple-bento-grid {
     grid-template-columns: repeat(6, 1fr);
-    grid-auto-rows: minmax(300px, auto);
+    grid-auto-rows: minmax(280px, auto);
     gap: 1.5rem;
   }
 }
 
 .apple-bento-card {
   position: relative;
-  background: rgba(255, 255, 255, 0.04);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 2rem;
-  padding: 2.25rem;
+  background: #fff;
+  border: none;
+  border-radius: 1.75rem;
+  padding: 2.5rem;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), background 0.4s;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04), 0 6px 16px rgba(0, 0, 0, 0.04);
+  transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1),
+              box-shadow 0.5s cubic-bezier(0.25, 1, 0.5, 1);
   text-decoration: none;
 
   &:hover {
-    transform: scale(1.01);
-    background: rgba(255, 255, 255, 0.06);
-    border-color: rgba(255, 255, 255, 0.12);
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06), 0 20px 40px rgba(0, 0, 0, 0.08);
   }
 }
 
+.apple-bento-card--featured {
+  background: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 50%, #f0f9ff 100%);
+}
+
 .apple-bento-card--dark {
-  background: rgba(0, 0, 0, 0.2);
+  background: #1d1d1f;
+  .apple-bento-title { color: #fff; }
+  .apple-bento-text { color: rgba(255, 255, 255, 0.72); }
 }
 
 @media (min-width: 1024px) {
@@ -192,14 +197,15 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.25;
+  opacity: 0.12;
   z-index: 0;
-  transition: opacity 0.4s, transform 0.4s;
+  transition: opacity 0.5s cubic-bezier(0.25, 1, 0.5, 1),
+              transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 .apple-bento-card:hover .apple-bento-visual {
-  opacity: 0.4;
-  transform: scale(1.05);
+  opacity: 0.18;
+  transform: scale(1.04);
 }
 
 .apple-bento-content {
@@ -213,24 +219,41 @@
   margin-bottom: auto;
 }
 
-.apple-bento-icon {
-  font-size: 2.5rem;
-  color: var(--apple-gray-2);
+/* Colored accent dot replacing generic Material icons */
+.apple-bento-dot {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
   margin-bottom: 1.5rem;
+  display: block;
+  flex-shrink: 0;
+}
+
+.apple-bento-dot--green { background: var(--primary-1, #338B4A); }
+.apple-bento-dot--blue  { background: var(--primary-2, #00ADEF); }
+.apple-bento-dot--orange { background: var(--primary-3, #ED7B05); }
+.apple-bento-dot--dark  { background: #1d1d1f; }
+
+/* Legacy icon support — fallback if still used */
+.apple-bento-icon {
+  font-size: 2rem;
+  color: var(--primary-2, #00ADEF);
+  margin-bottom: 1.25rem;
   display: block;
 }
 
 .apple-bento-title {
-  font-size: 1.5rem;
+  font-size: clamp(1.25rem, 1.5vw + 0.5rem, 1.625rem);
   font-weight: 600;
-  color: white;
-  margin-bottom: 0.75rem;
-  letter-spacing: -0.01em;
+  color: #1d1d1f;
+  margin-bottom: 0.625rem;
+  letter-spacing: -0.02em;
   line-height: 1.2;
 }
 
 .apple-bento-text {
   font-size: 1rem;
-  color: rgba(255, 255, 255, 0.6);
-  line-height: 1.5;
+  color: #6e6e73;
+  line-height: 1.6;
 }
+

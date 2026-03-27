@@ -107,25 +107,20 @@
 
 {{-- ============================================= --}}
 {{-- SECTION 3: WHY DENTALSO? --}}
-{{-- Apple-style dark section with glass cards --}}
+{{-- Apple-style bright section with clean white cards --}}
 {{-- ============================================= --}}
-<section class="apple-section apple-section--dark relative overflow-hidden">
-    {{-- Background glow effects --}}
-    <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-[#0071e3]/5 rounded-full blur-[120px]"></div>
-    <div class="absolute bottom-1/4 right-1/4 w-80 h-80 bg-[#30d158]/5 rounded-full blur-[100px]"></div>
-
+<section class="apple-section relative overflow-hidden" style="background: #f5f5f7;">
     <div class="apple-container relative z-10">
         <div class="text-center max-w-3xl mx-auto mb-16 lg:mb-20 fade-in-up">
-            <h2 class="apple-headline text-white">Why DentalSO?</h2>
-            <p class="apple-body text-[#86868b] mt-4 max-w-2xl mx-auto">Built from the ground up for the dental industry. Every feature is designed around how labs actually work.</p>
+            <h2 class="apple-headline">Why DentalSO?</h2>
+            <p class="apple-body text-[#6e6e73] mt-4 max-w-2xl mx-auto">Built from the ground up for the dental industry. Every feature is designed around how labs actually work.</p>
         </div>
 
         <div class="apple-bento-grid">
             {{-- Feature 1: Labs (Large) --}}
             <div class="apple-bento-card apple-bento-card--span-4 apple-lift fade-in-up" style="transition-delay: 100ms;">
-                <img src="@asset('images/image.png')" alt="Dental Lab Tech" class="apple-bento-visual" loading="lazy">
                 <div class="apple-bento-content">
-                    <span class="material-symbols-outlined apple-bento-icon" aria-hidden="true">dentistry</span>
+                    <span class="apple-bento-dot apple-bento-dot--green" aria-hidden="true"></span>
                     <h3 class="apple-bento-title">Built exclusively for dental laboratories</h3>
                     <p class="apple-bento-text">Every feature is designed around how labs actually work, from order management to final QC.</p>
                 </div>
@@ -134,7 +129,7 @@
             {{-- Feature 2: Scheduling (Small) --}}
             <div class="apple-bento-card apple-bento-card--span-2 apple-bento-card--top-content apple-lift fade-in-up" style="transition-delay: 150ms;">
                 <div class="apple-bento-content">
-                    <span class="material-symbols-outlined apple-bento-icon" aria-hidden="true">event_available</span>
+                    <span class="apple-bento-dot apple-bento-dot--blue" aria-hidden="true"></span>
                     <h3 class="apple-bento-title">Smart Scheduling</h3>
                     <p class="apple-bento-text">Priority-based scheduling that adapts to your capacity.</p>
                 </div>
@@ -143,7 +138,7 @@
             {{-- Feature 3: Tracking (Small) --}}
             <div class="apple-bento-card apple-bento-card--span-2 apple-lift fade-in-up" style="transition-delay: 200ms;">
                 <div class="apple-bento-content">
-                    <span class="material-symbols-outlined apple-bento-icon" aria-hidden="true">assignment</span>
+                    <span class="apple-bento-dot apple-bento-dot--orange" aria-hidden="true"></span>
                     <h3 class="apple-bento-title">Case Tracking</h3>
                     <p class="apple-bento-text">Real-time status updates for every case in production.</p>
                 </div>
@@ -151,9 +146,8 @@
 
             {{-- Feature 4: Cloud (Large) --}}
             <div class="apple-bento-card apple-bento-card--span-4 apple-bento-card--dark apple-lift fade-in-up" style="transition-delay: 250ms;">
-                <img src="@asset('images/bento-abstract-2.png')" alt="Cloud Network" class="apple-bento-visual" loading="lazy">
                 <div class="apple-bento-content">
-                    <span class="material-symbols-outlined apple-bento-icon" aria-hidden="true">cloud_done</span>
+                    <span class="apple-bento-dot apple-bento-dot--dark" aria-hidden="true" style="background: #fff;"></span>
                     <h3 class="apple-bento-title">Secure Cloud Platform</h3>
                     <p class="apple-bento-text">Built on scalable architecture to grow with your laboratory, ensuring your data is always safe.</p>
                 </div>
