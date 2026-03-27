@@ -102,6 +102,11 @@
             </div>
         </div>
 
+        {{-- Mobile Share --}}
+        <div class="post-mobile-share lg:hidden">
+            @include('partials.share-buttons')
+        </div>
+
         {{-- Pagination --}}
         @if ($pagination)
         <nav class="post-pagination" aria-label="Page Navigation">
@@ -151,6 +156,9 @@
                 <p class="post-sidebar-cta__body">Book a free demo and see DentalSO in action.</p>
                 <a href="{{ home_url('request-demo/') }}" class="apple-cta-primary !text-sm !py-2.5 !px-5">Book a Demo</a>
             </div>
+
+            {{-- Share buttons --}}
+            @include('partials.share-buttons')
         </div>
     </aside>
 </div>
