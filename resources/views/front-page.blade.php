@@ -102,61 +102,261 @@
 
 {{-- ============================================= --}}
 {{-- SECTION 3: WHY DENTALSO? --}}
-{{-- Apple-style dark section with glass cards --}}
+{{-- Alternating zigzag with interactive illustrations --}}
 {{-- ============================================= --}}
-<section class="apple-section apple-section--dark relative overflow-hidden">
-    {{-- Background glow effects --}}
-    <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-[#0071e3]/5 rounded-full blur-[120px]"></div>
-    <div class="absolute bottom-1/4 right-1/4 w-80 h-80 bg-[#30d158]/5 rounded-full blur-[100px]"></div>
+<div class="pt-16 pb-32 overflow-hidden">
 
-    <div class="apple-container relative z-10">
-        <div class="text-center max-w-3xl mx-auto mb-16 lg:mb-20 fade-in-up">
-            <h2 class="apple-headline text-white">Why DentalSO?</h2>
-            <p class="apple-body text-[#86868b] mt-4 max-w-2xl mx-auto">Built from the ground up for the dental industry. Every feature is designed around how labs actually work.</p>
+    {{-- Section Header --}}
+    <header class="max-w-4xl mx-auto px-8 text-center mb-24 fade-in-up">
+        <h2 class="apple-headline mb-6">
+            Why DentalSO?
+        </h2>
+        <p class="text-lg md:text-xl text-[#86868b] leading-relaxed max-w-2xl mx-auto">
+            Built from the ground up for the dental industry. Every feature is designed around how labs actually work.
+        </p>
+    </header>
+
+    {{-- Feature 1: Built for Dental Labs --}}
+    <section class="max-w-7xl mx-auto px-8 mb-32 fade-in-up">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            <div class="order-2 md:order-1">
+                <div class="inline-flex items-center justify-center w-12 h-12 rounded-xl mb-6" style="background-color: rgba(66, 133, 244, 0.1); color: #4285F4;">
+                    <span class="material-symbols-outlined" aria-hidden="true">precision_manufacturing</span>
+                </div>
+                <h3 class="apple-headline-sm">Built Exclusively for Dental Labs</h3>
+                <p class="text-lg text-[#86868b] leading-relaxed">
+                    Every feature is optimized around real lab workflows, from order management to final quality control. We eliminate redundant steps so technicians can focus on their expertise.
+                </p>
+                <div class="mt-8 flex gap-4">
+                    <div class="p-4 rounded-xl bg-[#f5f5f7]">
+                        <span class="block text-2xl font-semibold" style="color: #4285F4;">100%</span>
+                        <span class="text-sm text-[#86868b]">Lab-compatible workflow</span>
+                    </div>
+                    <div class="p-4 rounded-xl bg-[#f5f5f7]">
+                        <span class="block text-2xl font-semibold" style="color: #4285F4;">30%</span>
+                        <span class="text-sm text-[#86868b]">Operational efficiency boost</span>
+                    </div>
+                </div>
+            </div>
+            <div class="order-1 md:order-2 relative group">
+                <div class="absolute -inset-4 rounded-3xl blur-2xl transition-colors" style="background-color: rgba(66,133,244,0.05);"></div>
+                <div class="relative bg-white rounded-2xl shadow-2xl border border-gray-100 p-8 h-[400px] flex flex-col justify-center overflow-hidden">
+                    <div class="flex items-center justify-between mb-12 relative">
+                        <div class="absolute top-1/2 left-0 right-0 h-1 bg-gray-100 -z-10 -translate-y-1/2"></div>
+                        <div class="absolute top-1/2 left-0 h-1 -z-10 -translate-y-1/2 w-3/4 opacity-30" style="background-color:#4285F4;"></div>
+                        @foreach(['order_approve' => 'Receive', 'design_services' => 'Design', 'manufacturing' => 'Produce', 'verified' => 'QC'] as $icon => $label)
+                        <div class="flex flex-col items-center gap-3">
+                            <div class="w-14 h-14 rounded-full flex items-center justify-center border-2" style="background-color: rgba(66,133,244,0.1); color: #4285F4; border-color: rgba(66,133,244,0.2);">
+                                <span class="material-symbols-outlined" aria-hidden="true">{{ $icon }}</span>
+                            </div>
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-[#86868b]">{{ $label }}</span>
+                        </div>
+                        @endforeach
+                    </div>
+                    <div class="p-6 rounded-xl bg-[#f5f5f7] border border-gray-100">
+                        <div class="flex justify-between items-center mb-4">
+                            <div class="h-2 w-24 bg-gray-200 rounded-full"></div>
+                            <div class="h-2 w-12 rounded-full" style="background-color: rgba(66,133,244,0.3);"></div>
+                        </div>
+                        <div class="space-y-3">
+                            <div class="h-1.5 w-full bg-gray-100 rounded-full overflow-hidden"><div class="h-full w-4/5" style="background-color:#4285F4;"></div></div>
+                            <div class="h-1.5 w-full bg-gray-100 rounded-full overflow-hidden"><div class="h-full w-2/3" style="background-color:#4285F4;"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="apple-bento-grid">
-            {{-- Feature 1: Labs (Large) --}}
-            <div class="apple-bento-card apple-bento-card--span-4 apple-lift fade-in-up" style="transition-delay: 100ms;">
-                <img src="@asset('images/image.png')" alt="Dental Lab Tech" class="apple-bento-visual" loading="lazy">
-                <div class="apple-bento-content">
-                    <span class="material-symbols-outlined apple-bento-icon" aria-hidden="true">dentistry</span>
-                    <h3 class="apple-bento-title">Built exclusively for dental laboratories</h3>
-                    <p class="apple-bento-text">Every feature is designed around how labs actually work, from order management to final QC.</p>
+    {{-- Feature 2: Smart Scheduling --}}
+    <section class="bg-[#f5f5f7] py-24 fade-in-up">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                <div class="relative group">
+                    <div class="absolute -inset-4 rounded-3xl blur-2xl transition-colors" style="background-color: rgba(251,188,5,0.15);"></div>
+                    <div class="relative bg-white p-8 rounded-2xl shadow-xl border border-gray-100 h-[400px] flex items-center justify-center overflow-hidden">
+                        <div class="relative w-full h-full flex items-center justify-center">
+                            <div class="absolute w-20 h-20 rounded-2xl bg-white border-2 shadow-lg flex items-center justify-center z-10" style="border-color: #FBBC05;">
+                                <span class="material-symbols-outlined text-3xl" style="color: #FBBC05;" aria-hidden="true">hub</span>
+                            </div>
+                            <svg class="absolute inset-0 w-full h-full" viewBox="0 0 400 300">
+                                <path d="M 200 150 L 100 80" stroke="#FBBC05" stroke-width="2" stroke-dasharray="4 4" class="opacity-40"/>
+                                <path d="M 200 150 L 300 80" stroke="#FBBC05" stroke-width="2" stroke-dasharray="4 4" class="opacity-40"/>
+                                <path d="M 200 150 L 100 220" stroke="#FBBC05" stroke-width="2" stroke-dasharray="4 4" class="opacity-40"/>
+                                <path d="M 200 150 L 300 220" stroke="#FBBC05" stroke-width="2" stroke-dasharray="4 4" class="opacity-40"/>
+                                <circle cx="100" cy="80" r="12" fill-opacity="0.1" fill="#FBBC05" stroke="#FBBC05" stroke-width="1.5"/>
+                                <circle cx="300" cy="80" r="12" fill-opacity="0.1" fill="#FBBC05" stroke="#FBBC05" stroke-width="1.5"/>
+                                <circle cx="100" cy="220" r="12" fill-opacity="0.1" fill="#FBBC05" stroke="#FBBC05" stroke-width="1.5"/>
+                                <circle cx="300" cy="220" r="12" fill-opacity="0.1" fill="#FBBC05" stroke="#FBBC05" stroke-width="1.5"/>
+                            </svg>
+                            <div class="absolute top-20 left-24 flex flex-col items-center">
+                                <div class="w-16 h-8 rounded flex gap-1 items-center justify-center px-2" style="background-color: rgba(251,188,5,0.1); border: 1px solid rgba(251,188,5,0.3);">
+                                    <div class="w-2 h-4 rounded-sm" style="background-color:#FBBC05;"></div>
+                                    <div class="w-2 h-2 rounded-sm" style="background-color:rgba(251,188,5,0.3);"></div>
+                                    <div class="w-2 h-1 rounded-sm" style="background-color:rgba(251,188,5,0.3);"></div>
+                                </div>
+                                <span class="text-[8px] mt-1 font-bold opacity-50 uppercase tracking-tighter">DEPT A</span>
+                            </div>
+                            <div class="absolute bottom-20 right-24 flex flex-col items-center">
+                                <div class="w-16 h-8 rounded flex gap-1 items-center justify-center px-2" style="background-color: rgba(251,188,5,0.1); border: 1px solid rgba(251,188,5,0.3);">
+                                    <div class="w-2 h-4 rounded-sm" style="background-color:#FBBC05;"></div>
+                                    <div class="w-2 h-5 rounded-sm" style="background-color:#FBBC05;"></div>
+                                    <div class="w-2 h-2 rounded-sm" style="background-color:rgba(251,188,5,0.3);"></div>
+                                </div>
+                                <span class="text-[8px] mt-1 font-bold opacity-50 uppercase tracking-tighter">DEPT B</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-
-            {{-- Feature 2: Scheduling (Small) --}}
-            <div class="apple-bento-card apple-bento-card--span-2 apple-bento-card--top-content apple-lift fade-in-up" style="transition-delay: 150ms;">
-                <div class="apple-bento-content">
-                    <span class="material-symbols-outlined apple-bento-icon" aria-hidden="true">event_available</span>
-                    <h3 class="apple-bento-title">Smart Scheduling</h3>
-                    <p class="apple-bento-text">Priority-based scheduling that adapts to your capacity.</p>
-                </div>
-            </div>
-
-            {{-- Feature 3: Tracking (Small) --}}
-            <div class="apple-bento-card apple-bento-card--span-2 apple-lift fade-in-up" style="transition-delay: 200ms;">
-                <div class="apple-bento-content">
-                    <span class="material-symbols-outlined apple-bento-icon" aria-hidden="true">assignment</span>
-                    <h3 class="apple-bento-title">Case Tracking</h3>
-                    <p class="apple-bento-text">Real-time status updates for every case in production.</p>
-                </div>
-            </div>
-
-            {{-- Feature 4: Cloud (Large) --}}
-            <div class="apple-bento-card apple-bento-card--span-4 apple-bento-card--dark apple-lift fade-in-up" style="transition-delay: 250ms;">
-                <img src="@asset('images/bento-abstract-2.png')" alt="Cloud Network" class="apple-bento-visual" loading="lazy">
-                <div class="apple-bento-content">
-                    <span class="material-symbols-outlined apple-bento-icon" aria-hidden="true">cloud_done</span>
-                    <h3 class="apple-bento-title">Secure Cloud Platform</h3>
-                    <p class="apple-bento-text">Built on scalable architecture to grow with your laboratory, ensuring your data is always safe.</p>
+                <div>
+                    <div class="inline-flex items-center justify-center w-12 h-12 rounded-xl mb-6" style="background-color: rgba(251, 188, 5, 0.2); color: #FBBC05;">
+                        <span class="material-symbols-outlined" aria-hidden="true">auto_graph</span>
+                    </div>
+                    <h3 class="apple-headline-sm">Smart Scheduling</h3>
+                    <p class="text-lg text-[#86868b] leading-relaxed">
+                        Automatically schedule production based on priority and real-time capacity. The intelligent system auto-balances workload across departments, minimizing bottlenecks and idle time.
+                    </p>
+                    <ul class="mt-8 space-y-4">
+                        <li class="flex items-center gap-3 text-[#1d1d1f]">
+                            <span class="material-symbols-outlined" style="color: #FBBC05;" aria-hidden="true">done_all</span>
+                            <span>Auto-allocate based on technician capacity</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-[#1d1d1f]">
+                            <span class="material-symbols-outlined" style="color: #FBBC05;" aria-hidden="true">done_all</span>
+                            <span>Early warnings for overdue cases</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
+    </section>
 
-    </div>
-</section>
+    {{-- Feature 3: Real-time Tracking --}}
+    <section class="max-w-7xl mx-auto px-8 my-32 fade-in-up">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            <div>
+                <div class="inline-flex items-center justify-center w-12 h-12 rounded-xl mb-6" style="background-color: rgba(52, 168, 83, 0.1); color: #34A853;">
+                    <span class="material-symbols-outlined" aria-hidden="true">visibility</span>
+                </div>
+                <h3 class="apple-headline-sm">Real-time Case Tracking</h3>
+                <p class="text-lg text-[#86868b] leading-relaxed">
+                    Get real-time status updates for every case in production across all devices. Lab owners and dentists can see exactly where each order stands, building confidence and transparency.
+                </p>
+                <div class="mt-8 p-6 rounded-2xl bg-white border border-gray-100 shadow-sm">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-10 h-10 rounded-full flex items-center justify-center" style="background-color: rgba(52, 168, 83, 0.1);">
+                            <span class="material-symbols-outlined text-xl" style="color: #34A853;" aria-hidden="true">notifications_active</span>
+                        </div>
+                        <div>
+                            <div class="text-sm font-semibold text-[#1d1d1f]">New notification</div>
+                            <div class="text-xs text-[#86868b]">Case #8829 has completed metal casting</div>
+                        </div>
+                    </div>
+                    <div class="w-full bg-gray-100 h-2 rounded-full overflow-hidden">
+                        <div class="h-full w-[75%]" style="background-color: #34A853;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="relative group">
+                <div class="absolute -inset-4 rounded-3xl blur-2xl transition-colors" style="background-color: rgba(52,168,83,0.05);"></div>
+                <div class="relative bg-white p-8 rounded-2xl shadow-xl overflow-hidden aspect-video flex flex-col justify-center border border-gray-100">
+                    <div class="relative">
+                        <div class="absolute left-4 top-0 bottom-0 w-0.5 bg-gray-100"></div>
+                        <div class="space-y-8">
+                            <div class="relative flex items-center gap-4 ml-4">
+                                <div class="absolute -left-[22px] w-3 h-3 rounded-full shadow-[0_0_0_4px_rgba(52,168,83,0.1)]" style="background-color:#34A853;"></div>
+                                <div class="flex-1 p-3 bg-[#f5f5f7] rounded-lg border border-gray-50">
+                                    <div class="flex justify-between items-center">
+                                        <span class="text-xs font-semibold text-[#1d1d1f]">3D Scan</span>
+                                        <span class="text-[10px] text-[#86868b]">08:30 AM</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="relative flex items-center gap-4 ml-4">
+                                <div class="absolute -left-[22px] w-3 h-3 rounded-full shadow-[0_0_0_4px_rgba(52,168,83,0.1)]" style="background-color:#34A853;"></div>
+                                <div class="flex-1 p-3 bg-[#f5f5f7] rounded-lg border border-gray-50">
+                                    <div class="flex justify-between items-center">
+                                        <span class="text-xs font-semibold text-[#1d1d1f]">CAD Design</span>
+                                        <span class="text-[10px] text-[#86868b]">10:15 AM</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="relative flex items-center gap-4 ml-4">
+                                <div class="absolute -left-[22px] w-3 h-3 rounded-full bg-gray-200"></div>
+                                <div class="flex-1 p-3 bg-white rounded-lg" style="border: 2px solid rgba(52,168,83,0.2);">
+                                    <div class="flex justify-between items-center">
+                                        <span class="text-xs font-semibold" style="color:#34A853;">Metal Casting</span>
+                                        <span class="text-[10px] text-[#86868b]">Process...</span>
+                                    </div>
+                                    <div class="mt-2 h-1 w-full bg-gray-100 rounded-full overflow-hidden">
+                                        <div class="h-full w-2/3" style="background-color:#34A853;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {{-- Feature 4: Secure Cloud Platform --}}
+    <section class="py-24 fade-in-up" style="background-color: rgba(66,133,244,0.05);">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                <div class="relative group">
+                    <div class="absolute -inset-4 rounded-3xl blur-2xl transition-colors" style="background-color: rgba(66,133,244,0.1);"></div>
+                    <div class="relative rounded-2xl shadow-2xl w-full h-[400px] border border-gray-100 overflow-hidden flex items-center justify-center" style="background-color: #001848;">
+                        <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(#4285F4 1px, transparent 1px); background-size: 30px 30px;"></div>
+                        <div class="relative z-10 w-full h-full flex items-center justify-center">
+                            <div class="relative">
+                                <div class="absolute -inset-8 rounded-full blur-2xl" style="background-color: rgba(66,133,244,0.2);"></div>
+                                <div class="relative w-32 h-32 rounded-3xl border flex items-center justify-center shadow-2xl" style="background-color: #003d9b; border-color: rgba(66,133,244,0.5);">
+                                    <span class="material-symbols-outlined text-6xl text-white" aria-hidden="true">cloud_queue</span>
+                                    <div class="absolute -bottom-2 -right-2 w-10 h-10 rounded-full flex items-center justify-center shadow-lg" style="background-color:#4285F4;">
+                                        <span class="material-symbols-outlined text-white text-xl" aria-hidden="true">shield</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="absolute top-16 left-20 w-12 h-12 rounded-lg backdrop-blur-md flex items-center justify-center" style="background-color: rgba(255,255,255,0.1);">
+                                <span class="material-symbols-outlined" style="color: rgba(255,255,255,0.7);" aria-hidden="true">smartphone</span>
+                            </div>
+                            <div class="absolute bottom-16 right-20 w-16 h-12 rounded-lg backdrop-blur-md flex items-center justify-center" style="background-color: rgba(255,255,255,0.1);">
+                                <span class="material-symbols-outlined" style="color: rgba(255,255,255,0.7);" aria-hidden="true">laptop_mac</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="inline-flex items-center justify-center w-12 h-12 rounded-xl shadow-lg mb-6" style="background-color: #4285F4; box-shadow: 0 4px 14px rgba(66,133,244,0.3);">
+                        <span class="material-symbols-outlined text-white" aria-hidden="true">cloud_done</span>
+                    </div>
+                    <h3 class="apple-headline-sm">Secure Cloud Platform</h3>
+                    <p class="text-lg text-[#86868b] leading-relaxed">
+                        Built on modern, scalable architecture to grow with your laboratory. Access your system from anywhere, on any device, with industry-leading encryption standards.
+                    </p>
+                    <div class="mt-10 flex flex-col gap-4">
+                        <div class="flex items-start gap-4 p-4 rounded-xl bg-white/50 backdrop-blur-sm border border-gray-100">
+                            <span class="material-symbols-outlined" style="color: #4285F4;" aria-hidden="true">security</span>
+                            <div>
+                                <div class="font-semibold text-[#1d1d1f]">AES-256 Encryption</div>
+                                <p class="text-sm text-[#86868b]">Global healthcare data security standard.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4 p-4 rounded-xl bg-white/50 backdrop-blur-sm border border-gray-100">
+                            <span class="material-symbols-outlined" style="color: #4285F4;" aria-hidden="true">backup</span>
+                            <div>
+                                <div class="font-semibold text-[#1d1d1f]">Auto Backup</div>
+                                <p class="text-sm text-[#86868b]">Hourly backups ensure your data is never lost.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
 
 {{-- ============================================= --}}
 {{-- SECTION 4: FINAL CTA --}}
