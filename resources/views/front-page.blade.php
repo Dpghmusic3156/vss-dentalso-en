@@ -119,7 +119,7 @@
     {{-- Feature 1: Built for Dental Labs --}}
     <section class="max-w-7xl mx-auto px-8 mb-32 fade-in-up">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-            <div class="order-2 md:order-1">
+            <div>
                 <div class="inline-flex items-center justify-center w-12 h-12 rounded-xl mb-6" style="background-color: rgba(66, 133, 244, 0.1); color: #4285F4;">
                     <span class="material-symbols-outlined" aria-hidden="true">precision_manufacturing</span>
                 </div>
@@ -138,7 +138,7 @@
                     </div>
                 </div>
             </div>
-            <div class="order-1 md:order-2 relative group">
+            <div class="relative group">
                 <div class="absolute -inset-4 rounded-3xl blur-2xl transition-colors" style="background-color: rgba(66,133,244,0.05);"></div>
                 <div class="relative rounded-2xl shadow-2xl border border-gray-100 overflow-hidden">
                     <img src="@asset('images/dental-lab-workspace.png')" alt="Dental lab technician designing CAD on dual monitors" class="w-full h-auto object-cover" loading="lazy">
@@ -151,13 +151,13 @@
     <section class="bg-[#f5f5f7] py-24 fade-in-up">
         <div class="max-w-7xl mx-auto px-8">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-                <div class="relative group">
+                <div class="order-2 md:order-1 relative group">
                     <div class="absolute -inset-4 rounded-3xl blur-2xl transition-colors" style="background-color: rgba(251,188,5,0.15);"></div>
                     <div class="relative rounded-2xl shadow-xl border border-gray-100 overflow-hidden">
                         <img src="@asset('images/workflow.png')" alt="Smart production scheduling workflow" class="w-full h-auto object-cover" loading="lazy">
                     </div>
                 </div>
-                <div>
+                <div class="order-1 md:order-2">
                     <div class="inline-flex items-center justify-center w-12 h-12 rounded-xl mb-6" style="background-color: rgba(251, 188, 5, 0.2); color: #FBBC05;">
                         <span class="material-symbols-outlined" aria-hidden="true">auto_graph</span>
                     </div>
@@ -253,13 +253,13 @@
     <section class="py-24 fade-in-up" style="background-color: rgba(66,133,244,0.05);">
         <div class="max-w-7xl mx-auto px-8">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-                <div class="relative group">
+                <div class="order-2 md:order-1 relative group">
                     <div class="absolute -inset-4 rounded-3xl blur-2xl transition-colors" style="background-color: rgba(66,133,244,0.1);"></div>
                     <div class="relative rounded-2xl shadow-2xl border border-gray-100 overflow-hidden">
                         <img src="@asset('images/cloud.png')" alt="DentalSO secure cloud platform" class="w-full h-auto object-cover" loading="lazy">
                     </div>
                 </div>
-                <div>
+                <div class="order-1 md:order-2">
                     <div class="inline-flex items-center justify-center w-12 h-12 rounded-xl shadow-lg mb-6" style="background-color: #4285F4; box-shadow: 0 4px 14px rgba(66,133,244,0.3);">
                         <span class="material-symbols-outlined text-white" aria-hidden="true">cloud_done</span>
                     </div>
