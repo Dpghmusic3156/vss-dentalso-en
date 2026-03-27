@@ -3,7 +3,7 @@
         {{-- Top: Links grid --}}
         <div class="apple-footer-grid">
             <div class="apple-footer-col">
-                <h5 class="apple-footer-heading">Products</h5>
+                <h4 class="apple-footer-heading">Products</h4>
                 <ul class="apple-footer-links">
                     <li><a href="{{ home_url('products/dental-lab-software/') }}">DentalSO</a></li>
                     <li><a href="{{ home_url('products/dental-lab-mes/') }}">DentalSO MES</a></li>
@@ -11,7 +11,7 @@
                 </ul>
             </div>
             <div class="apple-footer-col">
-                <h5 class="apple-footer-heading">Solutions</h5>
+                <h4 class="apple-footer-heading">Solutions</h4>
                 <ul class="apple-footer-links">
                     <li><a href="{{ home_url('solutions/small-medium-dental-labs/') }}">Small & Medium Dental Labs</a></li>
                     <li><a href="{{ home_url('solutions/outsource-dental-labs/') }}">Outsource Dental Labs</a></li>
@@ -19,7 +19,7 @@
                 </ul>
             </div>
             <div class="apple-footer-col">
-                <h5 class="apple-footer-heading">Company</h5>
+                <h4 class="apple-footer-heading">Company</h4>
                 <ul class="apple-footer-links">
                     <li><a href="{{ home_url('about/') }}">About</a></li>
                     
@@ -27,7 +27,7 @@
                 </ul>
             </div>
             <div class="apple-footer-col">
-                <h5 class="apple-footer-heading">Resources</h5>
+                <h4 class="apple-footer-heading">Resources</h4>
                 <ul class="apple-footer-links">
                     <li><a href="{{ home_url('blog/') }}">Blog</a></li>
                     <li><a href="{{ home_url('customer/') }}">Featured Customers</a></li>
@@ -35,7 +35,7 @@
                 </ul>
             </div>
             <div class="apple-footer-col">
-                <h5 class="apple-footer-heading">Contact</h5>
+                <h4 class="apple-footer-heading">Contact</h4>
                 <ul class="apple-footer-links">
                     <li>
                         

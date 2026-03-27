@@ -18,6 +18,18 @@ add_action('wp_enqueue_scripts', function () {
 }, 100);
 
 /**
+ * Remove X-Powered-By header for security.
+ */
+add_action('wp_headers', function ($headers) {
+    unset($headers['X-Powered-By']);
+    return $headers;
+});
+
+add_action('init', function () {
+    header_remove('X-Powered-By');
+});
+
+/**
  * Register the theme assets with the block editor.
  *
  * @return void
