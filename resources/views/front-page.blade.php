@@ -140,29 +140,8 @@
             </div>
             <div class="order-1 md:order-2 relative group">
                 <div class="absolute -inset-4 rounded-3xl blur-2xl transition-colors" style="background-color: rgba(66,133,244,0.05);"></div>
-                <div class="relative bg-white rounded-2xl shadow-2xl border border-gray-100 p-8 h-[400px] flex flex-col justify-center overflow-hidden">
-                    <div class="flex items-center justify-between mb-12 relative">
-                        <div class="absolute top-1/2 left-0 right-0 h-1 bg-gray-100 -z-10 -translate-y-1/2"></div>
-                        <div class="absolute top-1/2 left-0 h-1 -z-10 -translate-y-1/2 w-3/4 opacity-30" style="background-color:#4285F4;"></div>
-                        @foreach(['order_approve' => 'Receive', 'design_services' => 'Design', 'manufacturing' => 'Produce', 'verified' => 'QC'] as $icon => $label)
-                        <div class="flex flex-col items-center gap-3">
-                            <div class="w-14 h-14 rounded-full flex items-center justify-center border-2" style="background-color: rgba(66,133,244,0.1); color: #4285F4; border-color: rgba(66,133,244,0.2);">
-                                <span class="material-symbols-outlined" aria-hidden="true">{{ $icon }}</span>
-                            </div>
-                            <span class="text-[10px] font-bold uppercase tracking-wider text-[#86868b]">{{ $label }}</span>
-                        </div>
-                        @endforeach
-                    </div>
-                    <div class="p-6 rounded-xl bg-[#f5f5f7] border border-gray-100">
-                        <div class="flex justify-between items-center mb-4">
-                            <div class="h-2 w-24 bg-gray-200 rounded-full"></div>
-                            <div class="h-2 w-12 rounded-full" style="background-color: rgba(66,133,244,0.3);"></div>
-                        </div>
-                        <div class="space-y-3">
-                            <div class="h-1.5 w-full bg-gray-100 rounded-full overflow-hidden"><div class="h-full w-4/5" style="background-color:#4285F4;"></div></div>
-                            <div class="h-1.5 w-full bg-gray-100 rounded-full overflow-hidden"><div class="h-full w-2/3" style="background-color:#4285F4;"></div></div>
-                        </div>
-                    </div>
+                <div class="relative rounded-2xl shadow-2xl border border-gray-100 overflow-hidden">
+                    <img src="@asset('images/dental-lab-workspace.png')" alt="Dental lab technician designing CAD on dual monitors" class="w-full h-auto object-cover" loading="lazy">
                 </div>
             </div>
         </div>
@@ -174,38 +153,8 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
                 <div class="relative group">
                     <div class="absolute -inset-4 rounded-3xl blur-2xl transition-colors" style="background-color: rgba(251,188,5,0.15);"></div>
-                    <div class="relative bg-white p-8 rounded-2xl shadow-xl border border-gray-100 h-[400px] flex items-center justify-center overflow-hidden">
-                        <div class="relative w-full h-full flex items-center justify-center">
-                            <div class="absolute w-20 h-20 rounded-2xl bg-white border-2 shadow-lg flex items-center justify-center z-10" style="border-color: #FBBC05;">
-                                <span class="material-symbols-outlined text-3xl" style="color: #FBBC05;" aria-hidden="true">hub</span>
-                            </div>
-                            <svg class="absolute inset-0 w-full h-full" viewBox="0 0 400 300">
-                                <path d="M 200 150 L 100 80" stroke="#FBBC05" stroke-width="2" stroke-dasharray="4 4" class="opacity-40"/>
-                                <path d="M 200 150 L 300 80" stroke="#FBBC05" stroke-width="2" stroke-dasharray="4 4" class="opacity-40"/>
-                                <path d="M 200 150 L 100 220" stroke="#FBBC05" stroke-width="2" stroke-dasharray="4 4" class="opacity-40"/>
-                                <path d="M 200 150 L 300 220" stroke="#FBBC05" stroke-width="2" stroke-dasharray="4 4" class="opacity-40"/>
-                                <circle cx="100" cy="80" r="12" fill-opacity="0.1" fill="#FBBC05" stroke="#FBBC05" stroke-width="1.5"/>
-                                <circle cx="300" cy="80" r="12" fill-opacity="0.1" fill="#FBBC05" stroke="#FBBC05" stroke-width="1.5"/>
-                                <circle cx="100" cy="220" r="12" fill-opacity="0.1" fill="#FBBC05" stroke="#FBBC05" stroke-width="1.5"/>
-                                <circle cx="300" cy="220" r="12" fill-opacity="0.1" fill="#FBBC05" stroke="#FBBC05" stroke-width="1.5"/>
-                            </svg>
-                            <div class="absolute top-20 left-24 flex flex-col items-center">
-                                <div class="w-16 h-8 rounded flex gap-1 items-center justify-center px-2" style="background-color: rgba(251,188,5,0.1); border: 1px solid rgba(251,188,5,0.3);">
-                                    <div class="w-2 h-4 rounded-sm" style="background-color:#FBBC05;"></div>
-                                    <div class="w-2 h-2 rounded-sm" style="background-color:rgba(251,188,5,0.3);"></div>
-                                    <div class="w-2 h-1 rounded-sm" style="background-color:rgba(251,188,5,0.3);"></div>
-                                </div>
-                                <span class="text-[8px] mt-1 font-bold opacity-50 uppercase tracking-tighter">DEPT A</span>
-                            </div>
-                            <div class="absolute bottom-20 right-24 flex flex-col items-center">
-                                <div class="w-16 h-8 rounded flex gap-1 items-center justify-center px-2" style="background-color: rgba(251,188,5,0.1); border: 1px solid rgba(251,188,5,0.3);">
-                                    <div class="w-2 h-4 rounded-sm" style="background-color:#FBBC05;"></div>
-                                    <div class="w-2 h-5 rounded-sm" style="background-color:#FBBC05;"></div>
-                                    <div class="w-2 h-2 rounded-sm" style="background-color:rgba(251,188,5,0.3);"></div>
-                                </div>
-                                <span class="text-[8px] mt-1 font-bold opacity-50 uppercase tracking-tighter">DEPT B</span>
-                            </div>
-                        </div>
+                    <div class="relative rounded-2xl shadow-xl border border-gray-100 overflow-hidden">
+                        <img src="@asset('images/workflow.png')" alt="Smart production scheduling workflow" class="w-full h-auto object-cover" loading="lazy">
                     </div>
                 </div>
                 <div>
@@ -306,25 +255,8 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
                 <div class="relative group">
                     <div class="absolute -inset-4 rounded-3xl blur-2xl transition-colors" style="background-color: rgba(66,133,244,0.1);"></div>
-                    <div class="relative rounded-2xl shadow-2xl w-full h-[400px] border border-gray-100 overflow-hidden flex items-center justify-center" style="background-color: #001848;">
-                        <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(#4285F4 1px, transparent 1px); background-size: 30px 30px;"></div>
-                        <div class="relative z-10 w-full h-full flex items-center justify-center">
-                            <div class="relative">
-                                <div class="absolute -inset-8 rounded-full blur-2xl" style="background-color: rgba(66,133,244,0.2);"></div>
-                                <div class="relative w-32 h-32 rounded-3xl border flex items-center justify-center shadow-2xl" style="background-color: #003d9b; border-color: rgba(66,133,244,0.5);">
-                                    <span class="material-symbols-outlined text-6xl text-white" aria-hidden="true">cloud_queue</span>
-                                    <div class="absolute -bottom-2 -right-2 w-10 h-10 rounded-full flex items-center justify-center shadow-lg" style="background-color:#4285F4;">
-                                        <span class="material-symbols-outlined text-white text-xl" aria-hidden="true">shield</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="absolute top-16 left-20 w-12 h-12 rounded-lg backdrop-blur-md flex items-center justify-center" style="background-color: rgba(255,255,255,0.1);">
-                                <span class="material-symbols-outlined" style="color: rgba(255,255,255,0.7);" aria-hidden="true">smartphone</span>
-                            </div>
-                            <div class="absolute bottom-16 right-20 w-16 h-12 rounded-lg backdrop-blur-md flex items-center justify-center" style="background-color: rgba(255,255,255,0.1);">
-                                <span class="material-symbols-outlined" style="color: rgba(255,255,255,0.7);" aria-hidden="true">laptop_mac</span>
-                            </div>
-                        </div>
+                    <div class="relative rounded-2xl shadow-2xl border border-gray-100 overflow-hidden">
+                        <img src="@asset('images/cloud.png')" alt="DentalSO secure cloud platform" class="w-full h-auto object-cover" loading="lazy">
                     </div>
                 </div>
                 <div>
