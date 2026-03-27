@@ -15,16 +15,11 @@
                 <span style="background: linear-gradient(90deg, #f9ab00, #34a853, #4285f4); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">DentalSO</span>
             </h1>
             <h2 class="apple-hero-subheadline fade-in-up fade-delay-2">
-                The Complete Dental Lab Software Ecosystem
+                Comprehensive Dental Laboratory Management Platform
             </h2>
-            <div class="apple-hero-pillars fade-in-up fade-delay-3">
-                <span class="apple-hero-pillar">Streamline production</span>
-                <span class="apple-hero-pillar">Connect with clinics</span>
-                <span class="apple-hero-pillar">Deliver total operational control</span>
-            </div>
-            <p class="apple-hero-tagline">
+            <h3 class="fade-in-up fade-delay-3 text-2xl md:text-3xl font-semibold text-[#1d1d1f] tracking-tight mt-6 mb-8">
                 All in one unified platform
-            </p>
+            </h3>
             <div class="apple-cta-group fade-in-up fade-delay-4">
                 <a href="{{ home_url('request-demo/') }}" class="apple-cta-primary apple-press">
                     Book a Demo
@@ -42,13 +37,13 @@
 </section>
 
 {{-- ============================================= --}}
-{{-- SECTION 2: ONE PLATFORM. THREE POWERFUL SOLUTIONS --}}
+{{-- SECTION 2: ONE PLATFORM. THREE POWERFUL PRODUCTS --}}
 {{-- Bold product split cards with per-solution color identity --}}
 {{-- ============================================= --}}
 <section id="solutions" class="apple-section bg-[var(--apple-gray-light)]">
     <div class="apple-container">
         <div class="text-center max-w-3xl mx-auto mb-16 lg:mb-20 fade-in-up">
-            <h2 class="apple-headline">One Platform<br>Three Powerful Solutions</h2>
+            <h2 class="apple-headline">One Platform<br>Three Powerful Products</h2>
         </div>
         <div class="space-y-12 lg:space-y-24">
             {{-- Solution 1: DentalSO Platform --}}
