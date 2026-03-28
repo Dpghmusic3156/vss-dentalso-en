@@ -120,9 +120,7 @@
     <section class="max-w-7xl mx-auto px-8 mb-32 fade-in-up">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
             <div>
-                <div class="inline-flex items-center justify-center w-12 h-12 rounded-xl mb-6" style="background-color: rgba(66, 133, 244, 0.1); color: #4285F4;">
-                    <span class="material-symbols-outlined" aria-hidden="true">precision_manufacturing</span>
-                </div>
+
                 <h3 class="apple-headline-sm">Built Exclusively for Dental Labs</h3>
                 <p class="text-lg text-[#86868b] leading-relaxed">
                     Every feature is optimized around real lab workflows, from order management to final quality control. We eliminate redundant steps so technicians can focus on their expertise.
@@ -158,9 +156,7 @@
                     </div>
                 </div>
                 <div class="order-1 md:order-2">
-                    <div class="inline-flex items-center justify-center w-12 h-12 rounded-xl mb-6" style="background-color: rgba(251, 188, 5, 0.2); color: #FBBC05;">
-                        <span class="material-symbols-outlined" aria-hidden="true">auto_graph</span>
-                    </div>
+
                     <h3 class="apple-headline-sm">Smart Scheduling</h3>
                     <p class="text-lg text-[#86868b] leading-relaxed">
                         Automatically schedule production based on priority and real-time capacity. The intelligent system auto-balances workload across departments, minimizing bottlenecks and idle time.
@@ -184,9 +180,7 @@
     <section class="max-w-7xl mx-auto px-8 my-32 fade-in-up">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
             <div>
-                <div class="inline-flex items-center justify-center w-12 h-12 rounded-xl mb-6" style="background-color: rgba(52, 168, 83, 0.1); color: #34A853;">
-                    <span class="material-symbols-outlined" aria-hidden="true">visibility</span>
-                </div>
+
                 <h3 class="apple-headline-sm">Real-time Case Tracking</h3>
                 <p class="text-lg text-[#86868b] leading-relaxed">
                     Get real-time status updates for every case in production across all devices. Lab owners and dentists can see exactly where each order stands, building confidence and transparency.
@@ -260,9 +254,7 @@
                     </div>
                 </div>
                 <div class="order-1 md:order-2">
-                    <div class="inline-flex items-center justify-center w-12 h-12 rounded-xl shadow-lg mb-6" style="background-color: #4285F4; box-shadow: 0 4px 14px rgba(66,133,244,0.3);">
-                        <span class="material-symbols-outlined text-white" aria-hidden="true">cloud_done</span>
-                    </div>
+
                     <h3 class="apple-headline-sm">Secure Cloud Platform</h3>
                     <p class="text-lg text-[#86868b] leading-relaxed">
                         Built on modern, scalable architecture to grow with your laboratory. Access your system from anywhere, on any device, with industry-leading encryption standards.

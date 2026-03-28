@@ -27,16 +27,11 @@
         </nav>
 
         {{-- Right Actions (Hidden) --}}
-        {{-- 
         <div class="flex items-center justify-end gap-3 xl:gap-6 shrink-0">
-            <a href="https://api.whatsapp.com/send/?phone=12062019069&text&type=phone_number&app_absent=0" target="_blank" class="hidden lg:flex items-center text-xs text-[#1d1d1f]/60 hover:text-[#1d1d1f] transition-colors whitespace-nowrap">
-                <span class="material-symbols-outlined text-sm mr-1">call</span>
-                {{ get_theme_mod('phoneus') }}
-            </a>
             <a href="https://lab.dentalso.com/" target="_blank" class="apple-nav-btn hidden lg:inline-flex whitespace-nowrap">
-                Đăng nhập
+                Sign In
             </a>
-            --}}
+        </div>
         <div class="flex items-center justify-end gap-3 xl:gap-6 shrink-0 lg:hidden">
             {{-- Mobile hamburger --}}
             <button class="flex items-center justify-center w-10 h-10 -mr-2 apple-press" 
