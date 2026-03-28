@@ -47,53 +47,59 @@
         </div>
         <div class="space-y-12 lg:space-y-24">
             {{-- Solution 1: DentalSO Platform --}}
-            <div class="apple-split solution-card solution-card--blue bg-white rounded-[2.5rem] p-8 md:p-12 lg:p-16 shadow-sm hover:shadow-[0_20px_40px_rgb(0,0,0,0.1)] hover:-translate-y-3 transition-[transform,box-shadow] duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] fade-in-up group" style="transition-delay: 0ms;">
-                <div class="apple-split-media solution-card__media">
-                    <img src="@asset('images/dental-platform-mockup.png')" alt="DentalSO Platform" class="apple-split-img rounded-2xl relative z-10 group-hover:scale-[1.03] transition-transform duration-500 ease-[cubic-bezier(0.25,1,0.5,1)]" loading="lazy">
-                </div>
-                <div class="apple-split-text">
-                    <span class="solution-pill solution-pill--blue">Lab Management</span>
-                    <h3 class="apple-headline-sm font-bold mt-4">DentalSO Platform</h3>
-                    <p class="apple-body mb-10 text-[#86868b]">
-                        Comprehensive dental laboratory management software for case control, workflow standardization, quality assurance, and analytics.
-                    </p>
-                    <a href="{{ home_url('products/dental-lab-software/') }}" class="solution-cta">
-                        Learn more <span class="solution-cta__arrow transition-transform duration-300 group-hover:translate-x-2 inline-block">→</span>
-                    </a>
+            <div class="fade-in-up" style="transition-delay: 0ms;">
+                <div class="apple-split solution-card solution-card--blue bg-white rounded-[2.5rem] p-8 md:p-12 lg:p-16 shadow-sm hover:shadow-[0_20px_40px_rgb(0,0,0,0.1)] hover:-translate-y-3 transition-all duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] group">
+                    <div class="apple-split-media solution-card__media">
+                        <img src="@asset('images/dental-platform-mockup.png')" alt="DentalSO Platform" class="apple-split-img rounded-2xl relative z-10 group-hover:scale-[1.03] transition-transform duration-500 ease-[cubic-bezier(0.25,1,0.5,1)]" loading="lazy">
+                    </div>
+                    <div class="apple-split-text">
+                        <span class="solution-pill solution-pill--blue">Lab Management</span>
+                        <h3 class="apple-headline-sm font-bold mt-4">DentalSO Platform</h3>
+                        <p class="apple-body mb-10 text-[#86868b]">
+                            Comprehensive dental laboratory management software for case control, workflow standardization, quality assurance, and analytics.
+                        </p>
+                        <a href="{{ home_url('products/dental-lab-software/') }}" class="solution-cta">
+                            Learn more <span class="solution-cta__arrow transition-transform duration-300 group-hover:translate-x-2 inline-block">→</span>
+                        </a>
+                    </div>
                 </div>
             </div>
 
             {{-- Solution 2: DentalSO MES --}}
-            <div class="apple-split apple-split--reverse solution-card solution-card--green bg-white rounded-[2.5rem] p-8 md:p-12 lg:p-16 shadow-sm hover:shadow-[0_20px_40px_rgb(0,0,0,0.1)] hover:-translate-y-3 transition-[transform,box-shadow] duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] fade-in-up group" style="transition-delay: 100ms;">
-                <div class="apple-split-media solution-card__media">
-                    <img src="@asset('images/mes-dashboard-hero.png')" alt="DentalSO MES" class="apple-split-img rounded-2xl relative z-10 group-hover:scale-[1.03] transition-transform duration-500 ease-[cubic-bezier(0.25,1,0.5,1)]" loading="lazy">
-                </div>
-                <div class="apple-split-text">
-                    <span class="solution-pill solution-pill--green">Production Floor</span>
-                    <h3 class="apple-headline-sm font-bold mt-4">DentalSO MES</h3>
-                    <p class="apple-body mb-10 text-[#86868b]">
-                        Real-time Manufacturing Execution System for monitoring production floor activity, technician workload, and deadline-based prioritization.
-                    </p>
-                    <a href="{{ home_url('products/dental-lab-mes/') }}" class="solution-cta solution-cta--green">
-                        Learn more <span class="solution-cta__arrow transition-transform duration-300 group-hover:translate-x-2 inline-block">→</span>
-                    </a>
+            <div class="fade-in-up" style="transition-delay: 100ms;">
+                <div class="apple-split apple-split--reverse solution-card solution-card--green bg-white rounded-[2.5rem] p-8 md:p-12 lg:p-16 shadow-sm hover:shadow-[0_20px_40px_rgb(0,0,0,0.1)] hover:-translate-y-3 transition-all duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] group">
+                    <div class="apple-split-media solution-card__media">
+                        <img src="@asset('images/mes-dashboard-hero.png')" alt="DentalSO MES" class="apple-split-img rounded-2xl relative z-10 group-hover:scale-[1.03] transition-transform duration-500 ease-[cubic-bezier(0.25,1,0.5,1)]" loading="lazy">
+                    </div>
+                    <div class="apple-split-text">
+                        <span class="solution-pill solution-pill--green">Production Floor</span>
+                        <h3 class="apple-headline-sm font-bold mt-4">DentalSO MES</h3>
+                        <p class="apple-body mb-10 text-[#86868b]">
+                            Real-time Manufacturing Execution System for monitoring production floor activity, technician workload, and deadline-based prioritization.
+                        </p>
+                        <a href="{{ home_url('products/dental-lab-mes/') }}" class="solution-cta solution-cta--green">
+                            Learn more <span class="solution-cta__arrow transition-transform duration-300 group-hover:translate-x-2 inline-block">→</span>
+                        </a>
+                    </div>
                 </div>
             </div>
 
             {{-- Solution 3: DentalSO Connect --}}
-            <div class="apple-split solution-card solution-card--orange bg-white rounded-[2.5rem] p-8 md:p-12 lg:p-16 shadow-sm hover:shadow-[0_20px_40px_rgb(0,0,0,0.1)] hover:-translate-y-3 transition-[transform,box-shadow] duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] fade-in-up group" style="transition-delay: 200ms;">
-                <div class="apple-split-media solution-card__media">
-                    <img src="@asset('images/dentalso-connect-illustration.png')" alt="DentalSO Connect" class="apple-split-img rounded-2xl relative z-10 group-hover:scale-[1.03] transition-transform duration-500 ease-[cubic-bezier(0.25,1,0.5,1)]" loading="lazy">
-                </div>
-                <div class="apple-split-text">
-                    <span class="solution-pill solution-pill--orange">Digital Collaboration</span>
-                    <h3 class="apple-headline-sm font-bold mt-4">DentalSO Connect</h3>
-                    <p class="apple-body mb-10 text-[#86868b]">
-                        Digital case submission and partner collaboration app for clinics, sales agents, and outsource labs.
-                    </p>
-                    <a href="{{ home_url('products/dentalso-connect/') }}" class="solution-cta solution-cta--orange">
-                        Learn more <span class="solution-cta__arrow transition-transform duration-300 group-hover:translate-x-2 inline-block">→</span>
-                    </a>
+            <div class="fade-in-up" style="transition-delay: 200ms;">
+                <div class="apple-split solution-card solution-card--orange bg-white rounded-[2.5rem] p-8 md:p-12 lg:p-16 shadow-sm hover:shadow-[0_20px_40px_rgb(0,0,0,0.1)] hover:-translate-y-3 transition-all duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] group">
+                    <div class="apple-split-media solution-card__media">
+                        <img src="@asset('images/dentalso-connect-illustration.png')" alt="DentalSO Connect" class="apple-split-img rounded-2xl relative z-10 group-hover:scale-[1.03] transition-transform duration-500 ease-[cubic-bezier(0.25,1,0.5,1)]" loading="lazy">
+                    </div>
+                    <div class="apple-split-text">
+                        <span class="solution-pill solution-pill--orange">Digital Collaboration</span>
+                        <h3 class="apple-headline-sm font-bold mt-4">DentalSO Connect</h3>
+                        <p class="apple-body mb-10 text-[#86868b]">
+                            Digital case submission and partner collaboration app for clinics, sales agents, and outsource labs.
+                        </p>
+                        <a href="{{ home_url('products/dentalso-connect/') }}" class="solution-cta solution-cta--orange">
+                            Learn more <span class="solution-cta__arrow transition-transform duration-300 group-hover:translate-x-2 inline-block">→</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
