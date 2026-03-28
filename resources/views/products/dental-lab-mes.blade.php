@@ -13,7 +13,7 @@
                 Real-time production floor visibility. Case-by-case control. On-time delivery — every time.
             </p>
             <div class="apple-cta-group my-10">
-                <a href="{{ home_url('request-demo/') }}" class="apple-cta-primary">Schedule a MES Demo</a>
+                <a href="{{ home_url('request-demo/?product=DentalSO+MES') }}" class="apple-cta-primary">Schedule a MES Demo</a>
                 <a href="{{ home_url('products/dental-lab-software/') }}" class="apple-cta-secondary">Explore Platform<span class="apple-chevron material-symbols-outlined">chevron_right</span></a>
             </div>
         </div>
@@ -329,7 +329,7 @@
             <h2 class="apple-headline text-white mb-4">Take control of your<br>production floor.</h2>
             <p class="text-white/70 text-lg mb-8 max-w-lg mx-auto">See how DentalSO MES transforms reactive scheduling into proactive, data-driven production management.</p>
             <div class="apple-cta-group">
-                <a href="{{ home_url('request-demo/') }}" class="apple-cta-primary apple-cta-primary--light">Schedule a MES Demo</a>
+                <a href="{{ home_url('request-demo/?product=DentalSO+MES') }}" class="apple-cta-primary apple-cta-primary--light">Schedule a MES Demo</a>
                 <a href="{{ home_url('products/dentalso-connect/') }}" class="apple-cta-secondary apple-cta-secondary--light">Explore DentalSO Connect<span class="apple-chevron material-symbols-outlined">chevron_right</span></a>
             </div>
         </div>

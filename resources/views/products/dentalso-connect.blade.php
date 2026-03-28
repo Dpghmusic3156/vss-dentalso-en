@@ -325,7 +325,7 @@
                 Eliminate emails. Replace paper prescriptions. Streamline collaboration.
             </p>
             <div class="apple-cta-group">
-                <a href="{{ home_url('request-demo/') }}" class="apple-cta-primary apple-cta-primary--light">
+                <a href="{{ home_url('request-demo/?product=DentalSO+Connect') }}" class="apple-cta-primary apple-cta-primary--light">
                     Request a Demo of DentalSO Connect
                 </a>
                 <a href="{{ home_url('products/dental-lab-mes/') }}" class="apple-cta-secondary apple-cta-secondary--light">

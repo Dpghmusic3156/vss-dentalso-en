@@ -120,6 +120,21 @@ document.addEventListener('DOMContentLoaded', () => {
         entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('is-visible'); observer.unobserve(entry.target); }});
     }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
     document.querySelectorAll('.fade-in-up').forEach(el => observer.observe(el));
+
+    // Auto-select product from URL parameter
+    const params = new URLSearchParams(window.location.search);
+    const productParam = params.get('product');
+    if (productParam) {
+        const productSelect = document.getElementById('product');
+        if (productSelect) {
+            for (let i = 0; i < productSelect.options.length; i++) {
+                if (productSelect.options[i].value === productParam) {
+                    productSelect.selectedIndex = i;
+                    break;
+                }
+            }
+        }
+    }
 });
 </script>
 

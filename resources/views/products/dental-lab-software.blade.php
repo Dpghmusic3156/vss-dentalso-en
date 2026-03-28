@@ -18,7 +18,7 @@
                 Powering Modern Dental Labs and Clinics with Intelligent, Connected, and Efficient Workflows.
             </p>
             <div class="apple-cta-group">
-                <a href="{{ home_url('request-demo/') }}" class="apple-cta-primary">
+                <a href="{{ home_url('request-demo/?product=DentalSO+Platform') }}" class="apple-cta-primary">
                     Book a Demo
                 </a>
             </div>
@@ -210,7 +210,7 @@
             <h3 class="apple-headline text-white mb-8">Ready to Streamline Your Operations?</h3>
             <p class="apple-body text-white/90 mb-8">See how DentalSO transforms lab and clinic performance.</p>
             <div class="apple-cta-group">
-                <a href="{{ home_url('request-demo/') }}" class="apple-cta-primary apple-cta-primary--light apple-press">
+                <a href="{{ home_url('request-demo/?product=DentalSO+Platform') }}" class="apple-cta-primary apple-cta-primary--light apple-press">
                     Schedule a Live Demo
                 </a>
                 <a href="{{ home_url('contact') }}" class="apple-cta-secondary apple-cta-secondary--light apple-press">
