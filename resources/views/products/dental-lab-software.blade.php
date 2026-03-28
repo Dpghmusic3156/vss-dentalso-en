@@ -111,34 +111,40 @@
         </div>
         <div class="grid lg:grid-cols-2 gap-10">
             {{-- MES --}}
-            <div class="apple-card apple-card--tint-green fade-in-up md:fade-delay-1">
+            <a href="{{ home_url('products/dental-lab-mes/') }}" class="apple-card apple-card--tint-green fade-in-up md:fade-delay-1 block group transition-transform hover:-translate-y-1">
                 <div class="apple-card-inner">
                     <div class="apple-card-eyebrow">Manufacturing Execution, Reimagined</div>
-                    <h3 class="apple-card-title">1. DentalSO MES for Labs</h3>
+                    <h3 class="apple-card-title group-hover:text-[var(--apple-green)] transition-colors">1. DentalSO MES for Labs</h3>
                     <ul class="space-y-4 mb-8 mt-4">
-                        <li class="flex items-start"><span class="material-symbols-outlined text-[var(--apple-green)] mr-3 mt-1 text-xl" aria-hidden="true">check_circle</span><span class="apple-body">Real-time production tracking</span></li>
-                        <li class="flex items-start"><span class="material-symbols-outlined text-[var(--apple-green)] mr-3 mt-1 text-xl" aria-hidden="true">check_circle</span><span class="apple-body">Automated scheduling and workload balancing</span></li>
-                        <li class="flex items-start"><span class="material-symbols-outlined text-[var(--apple-green)] mr-3 mt-1 text-xl" aria-hidden="true">check_circle</span><span class="apple-body">Quality control checkpoints and defect tracking</span></li>
-                        <li class="flex items-start"><span class="material-symbols-outlined text-[var(--apple-green)] mr-3 mt-1 text-xl" aria-hidden="true">check_circle</span><span class="apple-body">Inventory forecasting and material control</span></li>
+                        <li class="flex items-start"><span class="material-symbols-outlined text-[var(--apple-green)] mr-3 mt-1 text-xl" aria-hidden="true">check_circle</span><span class="apple-body text-[#1d1d1f]">Real-time production tracking</span></li>
+                        <li class="flex items-start"><span class="material-symbols-outlined text-[var(--apple-green)] mr-3 mt-1 text-xl" aria-hidden="true">check_circle</span><span class="apple-body text-[#1d1d1f]">Automated scheduling and workload balancing</span></li>
+                        <li class="flex items-start"><span class="material-symbols-outlined text-[var(--apple-green)] mr-3 mt-1 text-xl" aria-hidden="true">check_circle</span><span class="apple-body text-[#1d1d1f]">Quality control checkpoints and defect tracking</span></li>
+                        <li class="flex items-start"><span class="material-symbols-outlined text-[var(--apple-green)] mr-3 mt-1 text-xl" aria-hidden="true">check_circle</span><span class="apple-body text-[#1d1d1f]">Inventory forecasting and material control</span></li>
                     </ul>
-                    <p class="font-medium text-[var(--apple-dark)] mt-auto apple-body">Result: Faster turnaround, fewer remakes, higher margins.</p>
+                    <p class="font-medium text-[var(--apple-dark)] mt-auto apple-body flex items-center justify-between">
+                        <span>Result: Faster turnaround, fewer remakes, higher margins.</span>
+                        <span class="material-symbols-outlined text-[var(--apple-green)] opacity-0 group-hover:opacity-100 transition-opacity translate-x-[-10px] group-hover:translate-x-0 duration-300">arrow_forward</span>
+                    </p>
                 </div>
-            </div>
+            </a>
             {{-- Connect --}}
-            <div class="apple-card apple-card--tint-purple fade-in-up md:fade-delay-2">
+            <a href="{{ home_url('products/dentalso-connect/') }}" class="apple-card apple-card--tint-purple fade-in-up md:fade-delay-2 block group transition-transform hover:-translate-y-1">
                 <div class="apple-card-inner">
                     <div class="apple-card-eyebrow">Connected Communication. Zero Friction.</div>
-                    <h3 class="apple-card-title">2. Secure Clinic–Lab Collaboration Hub (DentalSO Connect)</h3>
+                    <h3 class="apple-card-title group-hover:text-[#bf5af2] transition-colors">2. Secure Clinic–Lab Collaboration Hub (DentalSO Connect)</h3>
                     <ul class="space-y-4 mb-8 mt-4">
-                        <li class="flex items-start"><span class="material-symbols-outlined text-[#bf5af2] mr-3 mt-1 text-xl" aria-hidden="true">check_circle</span><span class="apple-body">Digital case submission</span></li>
-                        <li class="flex items-start"><span class="material-symbols-outlined text-[#bf5af2] mr-3 mt-1 text-xl" aria-hidden="true">check_circle</span><span class="apple-body">Image and file sharing</span></li>
-                        <li class="flex items-start"><span class="material-symbols-outlined text-[#bf5af2] mr-3 mt-1 text-xl" aria-hidden="true">check_circle</span><span class="apple-body">Order-level patient data storage</span></li>
-                        <li class="flex items-start"><span class="material-symbols-outlined text-[#bf5af2] mr-3 mt-1 text-xl" aria-hidden="true">check_circle</span><span class="apple-body">Warranty and case history tracking</span></li>
-                        <li class="flex items-start"><span class="material-symbols-outlined text-[#bf5af2] mr-3 mt-1 text-xl" aria-hidden="true">check_circle</span><span class="apple-body">Enterprise-grade security</span></li>
+                        <li class="flex items-start"><span class="material-symbols-outlined text-[#bf5af2] mr-3 mt-1 text-xl" aria-hidden="true">check_circle</span><span class="apple-body text-[#1d1d1f]">Digital case submission</span></li>
+                        <li class="flex items-start"><span class="material-symbols-outlined text-[#bf5af2] mr-3 mt-1 text-xl" aria-hidden="true">check_circle</span><span class="apple-body text-[#1d1d1f]">Image and file sharing</span></li>
+                        <li class="flex items-start"><span class="material-symbols-outlined text-[#bf5af2] mr-3 mt-1 text-xl" aria-hidden="true">check_circle</span><span class="apple-body text-[#1d1d1f]">Order-level patient data storage</span></li>
+                        <li class="flex items-start"><span class="material-symbols-outlined text-[#bf5af2] mr-3 mt-1 text-xl" aria-hidden="true">check_circle</span><span class="apple-body text-[#1d1d1f]">Warranty and case history tracking</span></li>
+                        <li class="flex items-start"><span class="material-symbols-outlined text-[#bf5af2] mr-3 mt-1 text-xl" aria-hidden="true">check_circle</span><span class="apple-body text-[#1d1d1f]">Enterprise-grade security</span></li>
                     </ul>
-                    <p class="font-medium text-[var(--apple-dark)] mt-auto apple-body">Result: Reduced errors, improved clarity, stronger partnerships.</p>
+                    <p class="font-medium text-[var(--apple-dark)] mt-auto apple-body flex items-center justify-between">
+                        <span>Result: Reduced errors, improved clarity, stronger partnerships.</span>
+                        <span class="material-symbols-outlined text-[#bf5af2] opacity-0 group-hover:opacity-100 transition-opacity translate-x-[-10px] group-hover:translate-x-0 duration-300">arrow_forward</span>
+                    </p>
                 </div>
-            </div>
+            </a>
         </div>
     </div>
 </section>
