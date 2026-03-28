@@ -64,7 +64,7 @@
                     <li class="flex items-start"><span class="mr-2">✔</span> Track and trace every production step</li>
                     <li class="flex items-start"><span class="mr-2">✔</span> Optimize processes using data analytics</li>
                     <li class="flex items-start"><span class="mr-2">✔</span> Enforce quality control checkpoints</li>
-                    <li class="flex items-start"><span class="mr-2">✔</span> Real-time inventory management</li>
+                    <li class="flex items-start"><span class="mr-2">✔</span> Real-time production floor visibility</li>
                 </ul>
             </div>
 
