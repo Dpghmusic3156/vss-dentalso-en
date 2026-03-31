@@ -45,18 +45,18 @@
                     </li>
                     <li class="flex items-center gap-1.5">
                         <img src="<?php echo get_template_directory_uri(); ?>/resources/images/us.webp" class="w-4 h-auto" loading="lazy" alt="US">
-                        <a href="https://api.whatsapp.com/send/?phone=12062019069&text&type=phone_number&app_absent=0" target="_blank"><?php echo get_theme_mod('phoneus'); ?></a>
+                        <a href="https://api.whatsapp.com/send/?phone=12062019069&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer"><?php echo get_theme_mod('phoneus'); ?></a>
                     </li>
                     <li class="flex items-center gap-1.5">
                         <img src="<?php echo get_template_directory_uri(); ?>/resources/images/vn.webp" class="w-4 h-auto" loading="lazy" alt="VN">
-                        <a href="http://zalo.me/0947476000" target="_blank"><?php echo get_theme_mod('phone'); ?></a>
+                        <a href="http://zalo.me/0947476000" target="_blank" rel="noopener noreferrer"><?php echo get_theme_mod('phone'); ?></a>
                     </li>
                 </ul>
                 <div class="flex gap-3 mt-4">
-                    <a href="https://apps.apple.com/vn/app/dentalso/id6447111443" target="_blank" class="opacity-60 hover:opacity-100 transition-opacity">
+                    <a href="https://apps.apple.com/vn/app/dentalso/id6447111443" target="_blank" rel="noopener noreferrer" class="opacity-60 hover:opacity-100 transition-opacity">
                         <img alt="App Store" class="h-8" loading="lazy" src="<?php echo get_site_url(); ?>/wp-content/uploads/2025/02/app-store.png">
                     </a>
-                    <a href="https://play.google.com/store/apps/details?id=com.dentalso" target="_blank" class="opacity-60 hover:opacity-100 transition-opacity">
+                    <a href="https://play.google.com/store/apps/details?id=com.dentalso" target="_blank" rel="noopener noreferrer" class="opacity-60 hover:opacity-100 transition-opacity">
                         <img alt="Google Play" class="h-8" loading="lazy" src="<?php echo get_site_url(); ?>/wp-content/uploads/2025/02/google-play.png">
                     </a>
                 </div>
@@ -107,6 +107,7 @@
     {{-- Button --}}
     <a href="https://api.whatsapp.com/send/?phone=12062019069&text&type=phone_number&app_absent=0"
        target="_blank"
+       rel="noopener noreferrer"
        id="floating-whatsapp"
        aria-label="Chat on WhatsApp"
        style="position:relative;width:56px;height:56px;min-width:56px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,.2);transition:transform .3s cubic-bezier(.16,1,.3,1),box-shadow .3s ease;cursor:pointer;text-decoration:none;">

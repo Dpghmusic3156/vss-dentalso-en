@@ -28,7 +28,7 @@
 
         {{-- Right Actions (Hidden) --}}
         <div class="flex items-center justify-end gap-3 xl:gap-6 shrink-0">
-            <a href="https://lab.dentalso.com/" target="_blank" class="apple-nav-btn hidden lg:inline-flex whitespace-nowrap">
+            <a href="https://lab.dentalso.com/" target="_blank" rel="noopener noreferrer" class="apple-nav-btn hidden lg:inline-flex whitespace-nowrap">
                 Sign In
             </a>
         </div>

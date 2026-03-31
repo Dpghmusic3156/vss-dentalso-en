@@ -133,7 +133,7 @@
         <div class="border-t border-gray-200 pt-10">
             <h3 class="text-2xl font-bold mb-4">Ready to learn more about DentalSO?</h3>
             <p class="text-primary-2 mb-8">Contact our team or schedule a demo to explore how we can elevate your operations.</p>
-            <a href="<?php echo get_site_url(); ?>/request-demo" target="_blank" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition-colors duration-300 shadow-lg">
+            <a href="<?php echo get_site_url(); ?>/request-demo" target="_blank" rel="noopener noreferrer" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition-colors duration-300 shadow-lg">
                 Get in Touch
             </a>
         </div>

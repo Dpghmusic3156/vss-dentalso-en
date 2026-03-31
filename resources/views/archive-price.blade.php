@@ -13,7 +13,7 @@
             <span class="material-symbols-outlined align-sub text-lg text-secondary">
                 language
             </span>
-            <a href="<?php echo get_post_custom_values($key = 'link')[0]; ?>" target="_blank">
+            <a href="<?php echo get_post_custom_values($key = 'link')[0]; ?>" target="_blank" rel="noopener noreferrer">
                 <?php echo get_post_custom_values($key = 'link')[0]; ?>
             </a>
         </p>
