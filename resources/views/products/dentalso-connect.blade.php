@@ -67,7 +67,7 @@
             {{-- Image Left --}}
             <div class="w-full lg:w-[62%] fade-in-up">
                 <div class="bg-white rounded-3xl p-1 shadow-sm overflow-hidden border border-[#f5f5f7]">
-                    <img src="@asset('images/connect-clinic-partner.png')" alt="Clinic Interface" class="rounded-2xl w-full h-full object-cover" loading="lazy">
+                    <img src="@asset('images/connect-clinic-partner.webp')" alt="Clinic Interface" class="rounded-2xl w-full h-full object-cover" loading="lazy">
                 </div>
             </div>
             {{-- Text Right --}}
@@ -126,7 +126,7 @@
             {{-- Image Left --}}
             <div class="w-full lg:w-[62%] fade-in-up">
                 <div class="bg-white rounded-3xl p-1 shadow-sm overflow-hidden border border-[#f5f5f7]">
-                    <img src="@asset('images/connect-lab-partner.png')" alt="Collaboration Between Labs" class="rounded-2xl w-full h-full object-cover" loading="lazy">
+                    <img src="@asset('images/connect-lab-partner.webp')" alt="Collaboration Between Labs" class="rounded-2xl w-full h-full object-cover" loading="lazy">
                 </div>
             </div>
             {{-- Text Right --}}

@@ -44,11 +44,11 @@
                         </a>
                     </li>
                     <li class="flex items-center gap-1.5">
-                        <img src="<?php echo get_template_directory_uri(); ?>/resources/images/us.png" class="w-4 h-auto" loading="lazy" alt="US">
+                        <img src="<?php echo get_template_directory_uri(); ?>/resources/images/us.webp" class="w-4 h-auto" loading="lazy" alt="US">
                         <a href="https://api.whatsapp.com/send/?phone=12062019069&text&type=phone_number&app_absent=0" target="_blank"><?php echo get_theme_mod('phoneus'); ?></a>
                     </li>
                     <li class="flex items-center gap-1.5">
-                        <img src="<?php echo get_template_directory_uri(); ?>/resources/images/vn.png" class="w-4 h-auto" loading="lazy" alt="VN">
+                        <img src="<?php echo get_template_directory_uri(); ?>/resources/images/vn.webp" class="w-4 h-auto" loading="lazy" alt="VN">
                         <a href="http://zalo.me/0947476000" target="_blank"><?php echo get_theme_mod('phone'); ?></a>
                     </li>
                 </ul>
