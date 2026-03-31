@@ -52,7 +52,7 @@
                             {{ $featured->post_title }}
                         </h2>
                         <p class="text-[#86868b] leading-relaxed mb-6">
-                            {{ wp_trim_words($featured->post_excerpt ?: $featured->post_content, 40) }}
+                            {!! wp_trim_words($featured->post_excerpt ?: $featured->post_content, 40) !!}
                         </p>
                         <span class="text-[#0071e3] font-semibold text-sm inline-flex items-center gap-1">
                             Read article <span class="material-symbols-outlined text-lg">arrow_forward</span>
@@ -96,7 +96,7 @@
                                     {{ $post->post_title }}
                                 </h3>
                                 <p class="text-sm text-[#86868b] leading-relaxed line-clamp-3 flex-1">
-                                    {{ wp_trim_words($post->post_excerpt ?: $post->post_content, 20) }}
+                                    {!! wp_trim_words($post->post_excerpt ?: $post->post_content, 20) !!}
                                 </p>
                                 <span class="mt-4 text-[#0071e3] font-medium text-sm inline-flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                     Read more <span class="material-symbols-outlined text-base">chevron_right</span>
