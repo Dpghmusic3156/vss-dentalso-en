@@ -28,8 +28,14 @@
 
     @php(do_action('get_header'))
     @php(wp_head())
-
-    {{-- Schema.org Structured Data --}}
+  {{-- Fallback Meta Description --}}
+  @php
+    $yoast_desc = is_singular() ? get_post_meta(get_the_ID(), '_yoast_wpseo_metadesc', true) : '';
+  @endphp
+  @if(empty($yoast_desc) && defined('WPSEO_VERSION') && is_singular())
+    <meta name="description" content="{{ wp_trim_words(strip_shortcodes(strip_tags(get_post()->post_content)), 30, '...') }}">
+  @endif
+  {{-- Schema.org Structured Data --}}
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
