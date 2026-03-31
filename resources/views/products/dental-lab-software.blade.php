@@ -48,7 +48,7 @@
                 </p>
             </div>
             <div class="apple-split-media fade-in-up md:fade-delay-1">
-                <img src="{{ home_url('wp-content/uploads/2022/08/clinic-dashboard') }}.png" class="apple-split-img rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.08)]" loading="lazy">
+                <img src="{{ home_url('wp-content/uploads/2022/08/clinic-dashboard') }}.png" alt="Dental Lab Software dashboard" class="apple-split-img rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.08)]" loading="lazy">
             </div>
         </div>
     </div>
