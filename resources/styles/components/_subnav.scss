@@ -67,33 +67,16 @@
 .apple-subnav-btn {
   font-size: 0.75rem;
   font-weight: 600;
-  background: var(--primary-1);
-  color: white !important;
+  background: transparent;
+  border: 1.5px solid #1d1d1f;
+  color: #1d1d1f !important;
   padding: 0.375rem 1rem;
   border-radius: 980px;
   transition: all 0.25s ease-out;
   white-space: nowrap;
-  position: relative;
-  isolation: isolate;
-  overflow: hidden;
-
-  &::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: 0;
-    background: white;
-    transition: width 250ms ease-out;
-    z-index: -1;
-  }
 
   &:hover {
-    color: var(--primary-1) !important;
-  }
-
-  &:hover::before {
-    width: 100%;
+    background: #1d1d1f;
+    color: white !important;
   }
 }
