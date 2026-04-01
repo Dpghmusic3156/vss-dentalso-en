@@ -11,15 +11,15 @@
     <div class="absolute inset-0 bg-gradient-to-b from-[#fbfbfd] via-white to-[#f5f5f7]"></div>
     <div class="apple-container text-center relative z-10">
         <div class="fade-in-up">
-            <h1 class="apple-hero-headline fade-in-up fade-delay-1">
+            <p class="apple-hero-headline fade-in-up fade-delay-1">
                 <span style="background: linear-gradient(90deg, #f9ab00, #34a853, #4285f4); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">DentalSO</span>
-            </h1>
-            <h2 class="apple-hero-subheadline fade-in-up fade-delay-2">
+            </p>
+            <h1 class="apple-hero-subheadline fade-in-up fade-delay-2">
                 Comprehensive Dental Laboratory Management Platform
-            </h2>
-            <h3 class="fade-in-up fade-delay-3 text-2xl md:text-3xl font-semibold text-[#1d1d1f] tracking-tight mt-6 mb-8">
+            </h1>
+            <h2 class="fade-in-up fade-delay-3 text-2xl md:text-3xl font-semibold text-[#1d1d1f] tracking-tight mt-6 mb-8">
                 All in one unified platform
-            </h3>
+            </h2>
             <div class="apple-cta-group fade-in-up fade-delay-4">
                 <a href="{{ home_url('request-demo/') }}" class="apple-cta-primary apple-press">
                     Book a Demo
