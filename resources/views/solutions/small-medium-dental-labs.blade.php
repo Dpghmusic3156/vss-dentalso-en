@@ -13,7 +13,7 @@
                 Simplify Operations. Stay Organized. Deliver On Time.
             </p>
             <p class="apple-hero-copy">
-                Small and medium dental labs often rely on spreadsheets, manual tracking, and fragmented communication. As case volume grows, these systems quickly become inefficient and error-prone. DentalSO provides a simple, structured platform to help labs gain control of operations without complexity.
+                Replace error-prone spreadsheets and manual tracking with a simple, structured platform. Gain full control of your lab's growing case volume without the complexity.
             </p>
             <div class="apple-cta-group mt-10">
                 <a href="{{ home_url('request-demo/') }}" class="apple-cta-primary">Book a Demo</a>
