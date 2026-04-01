@@ -12,13 +12,17 @@
             <p class="text-[1.125rem] md:text-[1.375rem] font-medium text-[#1d1d1f] leading-snug max-w-3xl mx-auto mb-4">
                 Simplify Operations. Stay Organized. Deliver On Time.
             </p>
-            <p class="apple-hero-copy">
+            <p class="apple-hero-copy hidden">
                 Replace error-prone spreadsheets and manual tracking with a simple, structured platform. Gain full control of your lab's growing case volume without the complexity.
             </p>
             <div class="apple-cta-group mt-10">
                 <a href="{{ home_url('request-demo/') }}" class="apple-cta-primary">Book a Demo</a>
-                <a href="{{ home_url('contact/') }}" class="apple-cta-secondary">Contact Sales<span class="apple-chevron material-symbols-outlined">chevron_right</span></a>
+                <a href="{{ home_url('contact/') }}" class="apple-cta-secondary">Contact Sales <span class="apple-chevron material-symbols-outlined">chevron_right</span></a>
             </div>
+        </div>
+        {{-- Hero image --}}
+        <div class="apple-hero-img-wrapper fade-in-up" style="transition-delay: 200ms;">
+            <img src="@asset('images/mes-dashboard-hero.webp')" alt="DentalSO MES Dashboard" class="apple-hero-img animate-float">
         </div>
     </div>
 </section>
@@ -116,37 +120,142 @@
     </div>
 </section>
 
-{{-- When Is This Right — Dark Section --}}
-<section class="apple-section apple-section--dark">
-    <div class="apple-container">
-        <div class="text-center max-w-3xl mx-auto mb-16 fade-in-up">
-            <span class="apple-eyebrow apple-eyebrow--light">Is this right for you?</span>
-            <h2 class="apple-headline text-white">When Is This Solution<br>Right for You?</h2>
+{{-- When Is This Right — Zigzag Section --}}
+<div class="pt-16 pb-32 overflow-hidden">
+
+    {{-- Section Header --}}
+    <header class="max-w-4xl mx-auto px-8 text-center mb-24 fade-in-up">
+        <span class="apple-eyebrow">Is this right for you?</span>
+        <h2 class="apple-headline mb-6">When Is This Solution<br>Right for You?</h2>
+    </header>
+
+    {{-- Item 1: Manual Tracking --}}
+    <section class="max-w-7xl mx-auto px-8 mb-32 fade-in-up">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            <div>
+                <h3 class="apple-headline-sm">Manual Tracking</h3>
+                <p class="text-lg text-[#1d1d1f] leading-relaxed mt-4">
+                    You manage cases using Excel or paper. As your lab grows, spreadsheets become error-prone and time-consuming.
+                </p>
+                <div class="mt-8 flex gap-4">
+                    <div class="p-4 rounded-xl bg-[#f5f5f7]">
+                        <span class="block text-2xl font-semibold text-[#34a853]">80%</span>
+                        <span class="text-sm text-[#86868b]">Time spent on manual entry</span>
+                    </div>
+                    <div class="p-4 rounded-xl bg-[#f5f5f7]">
+                        <span class="block text-2xl font-semibold text-[#34a853]">3x</span>
+                        <span class="text-sm text-[#86868b]">More errors vs digital</span>
+                    </div>
+                </div>
+            </div>
+            <div class="relative group">
+                <div class="absolute -inset-4 rounded-3xl blur-2xl transition-colors" style="background-color: rgba(52,168,83,0.05);"></div>
+                <div class="relative rounded-2xl shadow-xl border border-gray-100 overflow-hidden">
+                    <img src="@asset('images/zigzag_manual_tracking.webp')" alt="Managing cases with Excel spreadsheets and paper" class="w-full h-auto object-cover" loading="lazy">
+                </div>
+            </div>
         </div>
-        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 max-w-4xl mx-auto">
-            <div class="apple-glass-card fade-in-up" style="animation-delay: 0.05s;">
-                <span class="material-symbols-outlined text-4xl text-[#ff453a] mb-4">table_view</span>
-                <p class="text-white font-semibold text-sm mb-1">Manual Tracking</p>
-                <p class="text-[#86868b] text-xs leading-relaxed">You manage cases using Excel or paper.</p>
-            </div>
-            <div class="apple-glass-card fade-in-up" style="animation-delay: 0.1s;">
-                <span class="material-symbols-outlined text-4xl text-[#ff9f0a] mb-4">search_off</span>
-                <p class="text-white font-semibold text-sm mb-1">Poor Visibility</p>
-                <p class="text-[#86868b] text-xs leading-relaxed">You struggle with tracking case status.</p>
-            </div>
-            <div class="apple-glass-card fade-in-up" style="animation-delay: 0.15s;">
-                <span class="material-symbols-outlined text-4xl text-[#0a84ff] mb-4">account_tree</span>
-                <p class="text-white font-semibold text-sm mb-1">Need Simplicity</p>
-                <p class="text-[#86868b] text-xs leading-relaxed">You want to improve organization without complexity.</p>
-            </div>
-            <div class="apple-glass-card fade-in-up" style="animation-delay: 0.2s;">
-                <span class="material-symbols-outlined text-4xl text-[#30d158] mb-4">rocket_launch</span>
-                <p class="text-white font-semibold text-sm mb-1">Scaling Up</p>
-                <p class="text-[#86868b] text-xs leading-relaxed">You are growing but not ready for a full MES system yet.</p>
+    </section>
+
+    {{-- Item 2: Poor Visibility --}}
+    <section class="bg-[#f5f5f7] py-24 fade-in-up">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                <div class="order-2 md:order-1 relative group">
+                    <div class="absolute -inset-4 rounded-3xl blur-2xl transition-colors" style="background-color: rgba(255,159,10,0.1);"></div>
+                    <div class="relative rounded-2xl shadow-xl border border-gray-100 overflow-hidden">
+                        <img src="@asset('images/zigzag_poor_visibility.webp')" alt="Struggling to track case status" class="w-full h-auto object-cover" loading="lazy">
+                    </div>
+                </div>
+                <div class="order-1 md:order-2">
+                    <h3 class="apple-headline-sm">Poor Visibility</h3>
+                    <p class="text-lg text-[#1d1d1f] leading-relaxed mt-4">
+                        You struggle with tracking case status. Without real-time visibility, deadlines slip and clients lose trust.
+                    </p>
+                    <ul class="mt-8 space-y-4">
+                        <li class="flex items-center gap-3 text-[#1d1d1f]">
+                            <span class="material-symbols-outlined" style="color: #ff9f0a;" aria-hidden="true">done_all</span>
+                            <span>No idea where each case is in production</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-[#1d1d1f]">
+                            <span class="material-symbols-outlined" style="color: #ff9f0a;" aria-hidden="true">done_all</span>
+                            <span>Can't answer client status inquiries quickly</span>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+
+    {{-- Item 3: Need Simplicity --}}
+    <section class="max-w-7xl mx-auto px-8 my-32 fade-in-up">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            <div>
+                <h3 class="apple-headline-sm">Need Simplicity</h3>
+                <p class="text-lg text-[#1d1d1f] leading-relaxed mt-4">
+                    You want to improve organization without complexity. A simple, structured system that your team can adopt immediately.
+                </p>
+                <div class="mt-8 p-6 rounded-2xl bg-white border border-gray-100 shadow-sm">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-10 h-10 rounded-full flex items-center justify-center" style="background-color: rgba(10,132,255,0.1);">
+                            <span class="material-symbols-outlined text-xl" style="color: #0a84ff;" aria-hidden="true">touch_app</span>
+                        </div>
+                        <div>
+                            <div class="text-sm font-semibold text-[#1d1d1f]">Easy onboarding</div>
+                            <div class="text-xs text-[#86868b]">Get started in under 30 minutes</div>
+                        </div>
+                    </div>
+                    <div class="w-full bg-gray-100 h-2 rounded-full overflow-hidden">
+                        <div class="h-full w-[90%]" style="background-color: #0a84ff;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="relative group">
+                <div class="absolute -inset-4 rounded-3xl blur-2xl transition-colors" style="background-color: rgba(10,132,255,0.05);"></div>
+                <div class="relative rounded-2xl shadow-xl border border-gray-100 overflow-hidden">
+                    <img src="@asset('images/zigzag_need_simplicity.webp')" alt="Simple and easy-to-use interface" class="w-full h-auto object-cover" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {{-- Item 4: Scaling Up --}}
+    <section class="py-24 fade-in-up" style="background-color: rgba(48,209,88,0.04);">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                <div class="order-2 md:order-1 relative group">
+                    <div class="absolute -inset-4 rounded-3xl blur-2xl transition-colors" style="background-color: rgba(48,209,88,0.08);"></div>
+                    <div class="relative rounded-2xl shadow-xl border border-gray-100 overflow-hidden">
+                        <img src="@asset('images/zigzag_scaling_up.webp')" alt="Dental lab scaling up operations" class="w-full h-auto object-cover" loading="lazy">
+                    </div>
+                </div>
+                <div class="order-1 md:order-2">
+                    <h3 class="apple-headline-sm">Scaling Up</h3>
+                    <p class="text-lg text-[#1d1d1f] leading-relaxed mt-4">
+                        You are growing but not ready for a full MES system yet. DentalSO gives you room to scale without overcommitting.
+                    </p>
+                    <div class="mt-8 flex flex-col gap-4">
+                        <div class="flex items-start gap-4 p-4 rounded-xl bg-white/50 backdrop-blur-sm border border-gray-100">
+                            <span class="material-symbols-outlined" style="color: #30d158;" aria-hidden="true">trending_up</span>
+                            <div>
+                                <div class="font-semibold text-[#1d1d1f]">Start small</div>
+                                <p class="text-sm text-[#86868b]">Begin with core features, add modules as you grow.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4 p-4 rounded-xl bg-white/50 backdrop-blur-sm border border-gray-100">
+                            <span class="material-symbols-outlined" style="color: #30d158;" aria-hidden="true">upgrade</span>
+                            <div>
+                                <div class="font-semibold text-[#1d1d1f]">Upgrade when ready</div>
+                                <p class="text-sm text-[#86868b]">Seamlessly move to MES when you need it.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
 
 {{-- CTA --}}
 <section class="apple-section apple-section--cta">
