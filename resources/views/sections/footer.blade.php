@@ -22,7 +22,6 @@
                 <h4 class="apple-footer-heading">Company</h4>
                 <ul class="apple-footer-links">
                     <li><a href="{{ home_url('about/') }}">About</a></li>
-                    
                     <li><a href="{{ home_url('contact/') }}">Contact</a></li>
                 </ul>
             </div>
@@ -38,7 +37,6 @@
                 <h4 class="apple-footer-heading">Contact</h4>
                 <ul class="apple-footer-links">
                     <li>
-                        
                         <a href="mailto:<?php echo get_theme_mod('email1'); ?>">
                             <?php echo get_theme_mod('email1'); ?>
                         </a>
@@ -52,47 +50,67 @@
                         <a href="http://zalo.me/0947476000" target="_blank" rel="noopener noreferrer"><?php echo get_theme_mod('phone'); ?></a>
                     </li>
                 </ul>
-                <div class="flex gap-3 mt-4">
-                    <a href="https://apps.apple.com/vn/app/dentalso/id6447111443" target="_blank" rel="noopener noreferrer" class="opacity-60 hover:opacity-100 transition-opacity">
-                        <img alt="App Store" class="h-8" loading="lazy" src="<?php echo get_site_url(); ?>/wp-content/uploads/2025/02/app-store.png">
-                    </a>
-                    <a href="https://play.google.com/store/apps/details?id=com.dentalso" target="_blank" rel="noopener noreferrer" class="opacity-60 hover:opacity-100 transition-opacity">
-                        <img alt="Google Play" class="h-8" loading="lazy" src="<?php echo get_site_url(); ?>/wp-content/uploads/2025/02/google-play.png">
-                    </a>
-                </div>
             </div>
         </div>
 
-        {{-- Bottom --}}
-        <div class="border-t border-[#d2d2d7]/30 mt-8 pt-5 text-[11px] text-[#86868b]">
-            {{-- Row 1: Logo + addresses left, language switcher right --}}
-            <div class="flex flex-col md:flex-row items-center md:items-start justify-between gap-3 mb-3">
-                <div class="flex flex-col items-center md:items-start gap-2 text-center md:text-left">
-                    <img alt="DentalSO" class="h-4 object-contain opacity-70" src="<?php echo get_theme_mod('logo_full'); ?>">
-                    <div class="space-y-0.5">
-                        <?php if(get_theme_mod('address_us')): ?>
-                        <p><span class="material-symbols-outlined text-[11px] align-middle mr-0.5">location_on</span>US: <?php echo get_theme_mod('address_us'); ?></p>
-                        <?php endif; ?>
-                        <?php if(get_theme_mod('address')): ?>
-                        <p><span class="material-symbols-outlined text-[11px] align-middle mr-0.5">location_on</span>VN: <?php echo get_theme_mod('address'); ?></p>
-                        <?php endif; ?>
-                    </div>
-                </div>
+        {{-- Office Locations --}}
+        <div class="apple-footer-offices">
+            <?php if(get_theme_mod('address_us')): ?>
+            <div class="apple-footer-office">
+                <span class="apple-footer-office-label"><span class="material-symbols-outlined" style="font-size: 14px;">location_on</span> US Office:</span>
+                <div class="apple-footer-office-phone"><a href="https://api.whatsapp.com/send/?phone=12062019069&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer"><?php echo get_theme_mod('phoneus'); ?></a></div>
+                <p class="apple-footer-office-address"><?php echo get_theme_mod('address_us'); ?></p>
+            </div>
+            <?php endif; ?>
+            <?php if(get_theme_mod('address')): ?>
+            <div class="apple-footer-office">
+                <span class="apple-footer-office-label"><span class="material-symbols-outlined" style="font-size: 14px;">location_on</span> Vietnam HQ:</span>
+                <div class="apple-footer-office-phone"><a href="http://zalo.me/0947476000"><?php echo get_theme_mod('phone'); ?></a></div>
+                <p class="apple-footer-office-address"><?php echo get_theme_mod('address'); ?></p>
+            </div>
+            <?php endif; ?>
+        </div>
+
+        {{-- Bottom bar: Brand + Apps --}}
+        <div class="apple-footer-bottom">
+            <div class="apple-footer-brand">
+                <img alt="DentalSO" src="<?php echo get_theme_mod('logo_full'); ?>">
+                <span>VISION SOFTWARE COMPANY LIMITED</span>
+            </div>
+            <div class="flex items-center gap-4">
                 <div class="flex items-center gap-3">
-                    <a href="http://dentalso.com/vi/" class="hover:text-[#1d1d1f] transition-colors">Tiếng Việt</a>
+                    <a href="https://dentalso.com/vi/" class="text-[0.75rem] text-[#86868b] hover:text-[#1d1d1f] transition-colors">Tiếng Việt</a>
                     <span class="text-[#d2d2d7]">|</span>
-                    <a href="http://dentalso.com/en/" class="hover:text-[#1d1d1f] transition-colors font-medium text-[#6e6e73]">English</a>
+                    <a href="https://dentalso.com/en/" class="text-[0.75rem] font-medium text-[#1d1d1f] hover:text-[#0071e3] transition-colors">English</a>
                 </div>
             </div>
-            {{-- Row 2: Copyright + legal links, right-aligned --}}
-            <div class="flex flex-wrap items-center justify-center md:justify-end gap-x-1">
+            <div class="apple-footer-apps">
+                <span class="apple-footer-apps-label">Download App:</span>
+                <a href="https://apps.apple.com/vn/app/dentalso/id6447111443" target="_blank" rel="noopener noreferrer">
+                    <img alt="App Store" loading="lazy" src="<?php echo get_site_url(); ?>/wp-content/uploads/2025/02/app-store.png">
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.dentalso" target="_blank" rel="noopener noreferrer">
+                    <img alt="Google Play" loading="lazy" src="<?php echo get_site_url(); ?>/wp-content/uploads/2025/02/google-play.png">
+                </a>
+            </div>
+        </div>
+
+        {{-- Copyright --}}
+        <div class="apple-footer-copyright">
+            <div class="flex flex-wrap items-center gap-x-1">
                 <span>Copyright © {{ date('Y') }} DentalSO. All rights reserved.</span>
-                <span class="mx-1">|</span>
-                <a href="{{ home_url('privacy-policy/') }}" class="hover:text-[#1d1d1f] transition-colors">Privacy Policy</a>
-                <span class="mx-1">|</span>
-                <a href="{{ home_url('terms-of-use/') }}" class="hover:text-[#1d1d1f] transition-colors">Terms of Use</a>
-                <span class="mx-1">|</span>
-                <a href="{{ home_url('cookies-policy/') }}" class="hover:text-[#1d1d1f] transition-colors">Cookies</a>
+                <span class="mx-1">·</span>
+                <a href="{{ home_url('privacy-policy/') }}">Privacy Policy</a>
+                <span class="mx-1">·</span>
+                <a href="{{ home_url('terms-of-use/') }}">Terms of Use</a>
+                <span class="mx-1">·</span>
+                <a href="{{ home_url('cookies-policy/') }}">Cookies</a>
+            </div>
+            <div class="apple-footer-contact">
+                <a href="mailto:<?php echo get_theme_mod('email1'); ?>">
+                    <span class="material-symbols-outlined" style="font-size: 14px;">mail</span>
+                    <?php echo get_theme_mod('email1'); ?>
+                </a>
             </div>
         </div>
     </div>
