@@ -6,22 +6,41 @@
 {{-- Hero --}}
 <section class="apple-section apple-hero bg-white">
     <div class="apple-container text-center">
-        <div class="fade-in-up">
-            <span class="apple-eyebrow">Solutions for Labs</span>
-            <h1 class="apple-headline mb-6">Software Solution for<br>Small & Medium Dental Labs</h1>
-            <p class="text-[1.125rem] md:text-[1.375rem] font-medium text-[#1d1d1f] leading-snug max-w-3xl mx-auto mb-4">
-                Simplify Operations. Stay Organized. Deliver On Time.
+        <div>
+            <span class="apple-eyebrow hero-stagger-1">Cost-Effective & Efficient Solutions</span>
+            <h1 class="apple-headline mb-4 hero-stagger-2">Dental Lab Software for<br>Small Labs & Startups</h1>
+            <p class="text-[1.25rem] md:text-[1.5rem] font-bold text-[#0071e3] tracking-tight mb-6 hero-stagger-3">
+                Low Cost – Full Featured – FREE Trial
             </p>
-            <p class="apple-hero-copy hidden">
-                Replace error-prone spreadsheets and manual tracking with a simple, structured platform. Gain full control of your lab's growing case volume without the complexity.
+            <p class="text-lg md:text-xl text-[#1d1d1f] max-w-4xl mx-auto mb-10 leading-relaxed opacity-90 hero-stagger-4" style="text-wrap: balance;">
+                Manage production, forms, customers, and billing – all on a single&nbsp;platform. Replace messy spreadsheets, reduce data entry by 80%, and deliver on time without the high&nbsp;costs.
             </p>
-            <div class="apple-cta-group mt-10">
-                <a href="{{ home_url('request-demo/') }}" class="apple-cta-primary">Book a Demo</a>
-                <a href="{{ home_url('contact/') }}" class="apple-cta-secondary">Contact Sales <span class="apple-chevron material-symbols-outlined">chevron_right</span></a>
+            
+            <div class="apple-cta-group hero-stagger-5">
+                <a href="{{ home_url('request-demo/') }}" class="apple-cta-primary apple-cta-primary--blue cta-pulse">START FREE TRIAL NOW</a>
+                <a href="{{ home_url('pricing/') }}" class="apple-cta-secondary">View Pricing <span class="apple-chevron material-symbols-outlined">chevron_right</span></a>
+            </div>
+
+            {{-- Trust Signals --}}
+            <div class="apple-trust-bar">
+                <div class="trust-item trust-pop-1">
+                    <span class="material-symbols-outlined">check_circle</span>
+                    <span>Transparent, clear pricing</span>
+                </div>
+                <div class="trust-sep trust-pop-1"></div>
+                <div class="trust-item trust-pop-2">
+                    <span class="material-symbols-outlined">check_circle</span>
+                    <span>Deploy in 30 minutes</span>
+                </div>
+                <div class="trust-sep trust-pop-2"></div>
+                <div class="trust-item trust-pop-3">
+                    <span class="material-symbols-outlined">check_circle</span>
+                    <span>24/7 Support</span>
+                </div>
             </div>
         </div>
         {{-- Hero image --}}
-        <div class="apple-hero-img-wrapper fade-in-up" style="transition-delay: 200ms;">
+        <div class="apple-hero-img-wrapper hero-stagger-6">
             <img src="@asset('images/mes-dashboard-hero.webp')" alt="DentalSO MES Dashboard" class="apple-hero-img animate-float">
         </div>
     </div>
@@ -35,7 +54,7 @@
             <h2 class="apple-headline-sm">What You Get</h2>
         </div>
         <div class="grid sm:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            <div class="apple-card apple-card--white fade-in-up" style="animation-delay: 0.05s;">
+            <div class="apple-card apple-card--white apple-lift fade-in-up fade-delay-1">
                 <div class="apple-card-inner">
                     <div class="apple-card-icon bg-[#e3f0fc]">
                         <span class="material-symbols-outlined text-[#0071e3]">folder_open</span>
@@ -51,7 +70,7 @@
                 </div>
             </div>
             
-            <div class="apple-card apple-card--white fade-in-up" style="animation-delay: 0.1s;">
+            <div class="apple-card apple-card--white apple-lift fade-in-up fade-delay-2">
                 <div class="apple-card-inner">
                     <div class="apple-card-icon bg-[#fef3e2]">
                         <span class="material-symbols-outlined text-[#ff9f0a]">account_tree</span>
@@ -66,7 +85,7 @@
                 </div>
             </div>
 
-            <div class="apple-card apple-card--white fade-in-up" style="animation-delay: 0.15s;">
+            <div class="apple-card apple-card--white apple-lift fade-in-up fade-delay-3">
                 <div class="apple-card-inner">
                     <div class="apple-card-icon bg-[#e2f5e9]">
                         <span class="material-symbols-outlined text-[#30d158]">verified</span>
@@ -81,6 +100,55 @@
                 </div>
             </div>
         </div>
+        <div class="mt-12 text-center fade-in-up fade-delay-4">
+            <p class="text-[1.125rem] md:text-[1.25rem] text-[#1d1d1f] font-medium max-w-3xl mx-auto">
+                Simple design, ready to use for small labs – No lengthy training required.
+            </p>
+        </div>
+
+        {{-- Mini Comparison Table --}}
+        <div class="mt-14 max-w-4xl mx-auto scale-in">
+            <div class="bg-white rounded-[1.25rem] overflow-hidden shadow-sm border border-black/5">
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse min-w-[600px]">
+                        <thead>
+                            <tr class="border-b border-black/5 bg-[#fbfbfd]">
+                                <th class="p-5 md:p-6 font-medium text-[#86868b] w-1/3">Criteria</th>
+                                <th class="p-5 md:p-6 font-medium text-[#86868b] w-1/3">Excel & Manual</th>
+                                <th class="p-5 md:p-6 font-semibold text-[#0071e3] w-1/3">DentalSO for Small Labs</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-[0.9375rem] md:text-base">
+                            <tr class="border-b border-black/5 hover:bg-[#fbfbfd] transition-colors table-row-reveal">
+                                <td class="p-5 md:p-6 font-medium text-[#1d1d1f]">Cost</td>
+                                <td class="p-5 md:p-6 text-[#86868b]">Low initially, high long-term</td>
+                                <td class="p-5 md:p-6"><span class="flex items-center font-semibold text-[#1d1d1f]"><span class="material-symbols-outlined text-[#30d158] mr-2">check_circle</span> Affordable & fixed monthly</span></td>
+                            </tr>
+                            <tr class="border-b border-black/5 hover:bg-[#fbfbfd] transition-colors table-row-reveal">
+                                <td class="p-5 md:p-6 font-medium text-[#1d1d1f]">Data Entry Time</td>
+                                <td class="p-5 md:p-6 text-[#86868b]">Extensive</td>
+                                <td class="p-5 md:p-6"><span class="flex items-center font-semibold text-[#1d1d1f]"><span class="material-symbols-outlined text-[#30d158] mr-2">check_circle</span> Reduced by 70-80%</span></td>
+                            </tr>
+                            <tr class="border-b border-black/5 hover:bg-[#fbfbfd] transition-colors table-row-reveal">
+                                <td class="p-5 md:p-6 font-medium text-[#1d1d1f]">Errors & Mistakes</td>
+                                <td class="p-5 md:p-6 text-[#86868b]">High</td>
+                                <td class="p-5 md:p-6"><span class="flex items-center font-semibold text-[#1d1d1f]"><span class="material-symbols-outlined text-[#30d158] mr-2">check_circle</span> Significantly reduced</span></td>
+                            </tr>
+                            <tr class="border-b border-black/5 hover:bg-[#fbfbfd] transition-colors table-row-reveal">
+                                <td class="p-5 md:p-6 font-medium text-[#1d1d1f]">Billing Reports</td>
+                                <td class="p-5 md:p-6 text-[#86868b]">Manual</td>
+                                <td class="p-5 md:p-6"><span class="flex items-center font-semibold text-[#1d1d1f]"><span class="material-symbols-outlined text-[#30d158] mr-2">check_circle</span> Automated & Real-time</span></td>
+                            </tr>
+                            <tr class="hover:bg-[#fbfbfd] transition-colors table-row-reveal">
+                                <td class="p-5 md:p-6 font-medium text-[#1d1d1f]">Warranty Tracking</td>
+                                <td class="p-5 md:p-6 text-[#86868b]">Easily forgotten</td>
+                                <td class="p-5 md:p-6"><span class="flex items-center font-semibold text-[#1d1d1f]"><span class="material-symbols-outlined text-[#30d158] mr-2">check_circle</span> Clear & organized</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -88,7 +156,7 @@
 <section class="apple-section bg-white">
     <div class="apple-container">
         <div class="apple-split">
-            <div class="apple-split-text fade-in-up">
+            <div class="apple-split-text slide-in-left">
                 <span class="apple-eyebrow">The Platform</span>
                 <h2 class="apple-headline-sm mb-4">Designed for Growing Labs</h2>
                 <p class="apple-body mb-6">DentalSO helps you build a scalable foundation for growth without the operational chaos.</p>
@@ -111,9 +179,9 @@
                     </li>
                 </ul>
             </div>
-            <div class="apple-split-media fade-in-up" style="animation-delay: 0.15s;">
+            <div class="apple-split-media slide-in-right">
                 <div class="bg-[#f5f5f7] rounded-2xl shadow-lg overflow-hidden p-1">
-                    <img src="{{ get_site_url() }}/wp-content/uploads/2022/12/dental-online-lab-dashboard.png" alt="DentalSO Platform Dashboard" class="apple-split-img rounded-xl" loading="lazy">
+                    <img src="{{ get_site_url() }}/wp-content/uploads/2022/12/dental-online-lab-dashboard.png" alt="DentalSO Platform Dashboard" class="apple-split-img rounded-xl parallax-img" loading="lazy">
                 </div>
             </div>
         </div>
@@ -130,44 +198,44 @@
     </header>
 
     {{-- Item 1: Manual Tracking --}}
-    <section class="max-w-7xl mx-auto px-8 mb-32 fade-in-up">
+    <section class="max-w-7xl mx-auto px-8 mb-32">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-            <div>
+            <div class="slide-in-left">
                 <h3 class="apple-headline-sm">Manual Tracking</h3>
                 <p class="text-lg text-[#1d1d1f] leading-relaxed mt-4">
                     You manage cases using Excel or paper. As your lab grows, spreadsheets become error-prone and time-consuming.
                 </p>
                 <div class="mt-8 flex gap-4">
-                    <div class="p-4 rounded-xl bg-[#f5f5f7]">
+                    <div class="p-4 rounded-xl bg-[#f5f5f7] stat-animate">
                         <span class="block text-2xl font-semibold text-[#34a853]">80%</span>
                         <span class="text-sm text-[#86868b]">Time spent on manual entry</span>
                     </div>
-                    <div class="p-4 rounded-xl bg-[#f5f5f7]">
+                    <div class="p-4 rounded-xl bg-[#f5f5f7] stat-animate">
                         <span class="block text-2xl font-semibold text-[#34a853]">3x</span>
                         <span class="text-sm text-[#86868b]">More errors vs digital</span>
                     </div>
                 </div>
             </div>
-            <div class="relative group">
+            <div class="relative group slide-in-right">
                 <div class="absolute -inset-4 rounded-3xl blur-2xl transition-colors" style="background-color: rgba(52,168,83,0.05);"></div>
                 <div class="relative rounded-2xl shadow-xl border border-gray-100 overflow-hidden">
-                    <img src="@asset('images/zigzag_manual_tracking.webp')" alt="Managing cases with Excel spreadsheets and paper" class="w-full h-auto object-cover" loading="lazy">
+                    <img src="@asset('images/zigzag_manual_tracking.webp')" alt="Managing cases with Excel spreadsheets and paper" class="w-full h-auto object-cover parallax-img" loading="lazy">
                 </div>
             </div>
         </div>
     </section>
 
     {{-- Item 2: Poor Visibility --}}
-    <section class="bg-[#f5f5f7] py-24 fade-in-up">
+    <section class="bg-[#f5f5f7] py-24">
         <div class="max-w-7xl mx-auto px-8">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-                <div class="order-2 md:order-1 relative group">
+                <div class="order-2 md:order-1 relative group slide-in-left">
                     <div class="absolute -inset-4 rounded-3xl blur-2xl transition-colors" style="background-color: rgba(255,159,10,0.1);"></div>
                     <div class="relative rounded-2xl shadow-xl border border-gray-100 overflow-hidden">
-                        <img src="@asset('images/zigzag_poor_visibility.webp')" alt="Struggling to track case status" class="w-full h-auto object-cover" loading="lazy">
+                        <img src="@asset('images/zigzag_poor_visibility.webp')" alt="Struggling to track case status" class="w-full h-auto object-cover parallax-img" loading="lazy">
                     </div>
                 </div>
-                <div class="order-1 md:order-2">
+                <div class="order-1 md:order-2 slide-in-right">
                     <h3 class="apple-headline-sm">Poor Visibility</h3>
                     <p class="text-lg text-[#1d1d1f] leading-relaxed mt-4">
                         You struggle with tracking case status. Without real-time visibility, deadlines slip and clients lose trust.
@@ -188,9 +256,9 @@
     </section>
 
     {{-- Item 3: Need Simplicity --}}
-    <section class="max-w-7xl mx-auto px-8 my-32 fade-in-up">
+    <section class="max-w-7xl mx-auto px-8 my-32">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-            <div>
+            <div class="slide-in-left">
                 <h3 class="apple-headline-sm">Need Simplicity</h3>
                 <p class="text-lg text-[#1d1d1f] leading-relaxed mt-4">
                     You want to improve organization without complexity. A simple, structured system that your team can adopt immediately.
@@ -206,43 +274,43 @@
                         </div>
                     </div>
                     <div class="w-full bg-gray-100 h-2 rounded-full overflow-hidden">
-                        <div class="h-full w-[90%]" style="background-color: #0a84ff;"></div>
+                        <div class="h-full progress-fill-animate" style="--fill-width: 90%; background-color: #0a84ff;"></div>
                     </div>
                 </div>
             </div>
-            <div class="relative group">
+            <div class="relative group slide-in-right">
                 <div class="absolute -inset-4 rounded-3xl blur-2xl transition-colors" style="background-color: rgba(10,132,255,0.05);"></div>
                 <div class="relative rounded-2xl shadow-xl border border-gray-100 overflow-hidden">
-                    <img src="@asset('images/zigzag_need_simplicity.webp')" alt="Simple and easy-to-use interface" class="w-full h-auto object-cover" loading="lazy">
+                    <img src="@asset('images/zigzag_need_simplicity.webp')" alt="Simple and easy-to-use interface" class="w-full h-auto object-cover parallax-img" loading="lazy">
                 </div>
             </div>
         </div>
     </section>
 
     {{-- Item 4: Scaling Up --}}
-    <section class="py-24 fade-in-up" style="background-color: rgba(48,209,88,0.04);">
+    <section class="py-24" style="background-color: rgba(48,209,88,0.04);">
         <div class="max-w-7xl mx-auto px-8">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-                <div class="order-2 md:order-1 relative group">
+                <div class="order-2 md:order-1 relative group slide-in-left">
                     <div class="absolute -inset-4 rounded-3xl blur-2xl transition-colors" style="background-color: rgba(48,209,88,0.08);"></div>
                     <div class="relative rounded-2xl shadow-xl border border-gray-100 overflow-hidden">
-                        <img src="@asset('images/zigzag_scaling_up.webp')" alt="Dental lab scaling up operations" class="w-full h-auto object-cover" loading="lazy">
+                        <img src="@asset('images/zigzag_scaling_up.webp')" alt="Dental lab scaling up operations" class="w-full h-auto object-cover parallax-img" loading="lazy">
                     </div>
                 </div>
-                <div class="order-1 md:order-2">
+                <div class="order-1 md:order-2 slide-in-right">
                     <h3 class="apple-headline-sm">Scaling Up</h3>
                     <p class="text-lg text-[#1d1d1f] leading-relaxed mt-4">
                         You are growing but not ready for a full MES system yet. DentalSO gives you room to scale without overcommitting.
                     </p>
                     <div class="mt-8 flex flex-col gap-4">
-                        <div class="flex items-start gap-4 p-4 rounded-xl bg-white/50 backdrop-blur-sm border border-gray-100">
+                        <div class="flex items-start gap-4 p-4 rounded-xl bg-white/50 backdrop-blur-sm border border-gray-100 apple-lift">
                             <span class="material-symbols-outlined" style="color: #30d158;" aria-hidden="true">trending_up</span>
                             <div>
                                 <div class="font-semibold text-[#1d1d1f]">Start small</div>
                                 <p class="text-sm text-[#86868b]">Begin with core features, add modules as you grow.</p>
                             </div>
                         </div>
-                        <div class="flex items-start gap-4 p-4 rounded-xl bg-white/50 backdrop-blur-sm border border-gray-100">
+                        <div class="flex items-start gap-4 p-4 rounded-xl bg-white/50 backdrop-blur-sm border border-gray-100 apple-lift">
                             <span class="material-symbols-outlined" style="color: #30d158;" aria-hidden="true">upgrade</span>
                             <div>
                                 <div class="font-semibold text-[#1d1d1f]">Upgrade when ready</div>
@@ -263,7 +331,7 @@
         <div class="fade-in-up">
             <h2 class="apple-headline text-white mb-6">Start building structured<br>operations today.</h2>
             <div class="apple-cta-group">
-                <a href="{{ home_url('request-demo/') }}" class="apple-cta-primary apple-cta-primary--light">Book a Demo</a>
+                <a href="{{ home_url('request-demo/') }}" class="apple-cta-primary apple-cta-primary--light apple-press">Book a Demo</a>
                 <a href="{{ home_url('contact/') }}" class="apple-cta-secondary apple-cta-secondary--light">Contact Sales<span class="apple-chevron material-symbols-outlined">chevron_right</span></a>
             </div>
         </div>
@@ -272,10 +340,38 @@
 
 <script>
 document.addEventListener('DOMContentLoaded', () => {
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('is-visible'); observer.unobserve(entry.target); }});
+    // Main scroll observer for fade-in-up, slide-in, scale-in
+    const mainObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+                mainObserver.unobserve(entry.target);
+            }
+        });
     }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
-    document.querySelectorAll('.fade-in-up').forEach(el => observer.observe(el));
+
+    document.querySelectorAll('.fade-in-up, .slide-in-left, .slide-in-right, .scale-in, .stat-animate').forEach(el => {
+        mainObserver.observe(el);
+    });
+
+    // Table row stagger observer
+    const tableObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const rows = entry.target.querySelectorAll('.table-row-reveal');
+                rows.forEach((row, i) => {
+                    setTimeout(() => {
+                        row.classList.add('is-visible');
+                    }, i * 100);
+                });
+                tableObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.2 });
+
+    document.querySelectorAll('table').forEach(table => {
+        tableObserver.observe(table);
+    });
 });
 </script>
 

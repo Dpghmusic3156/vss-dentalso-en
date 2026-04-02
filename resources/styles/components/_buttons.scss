@@ -70,6 +70,19 @@
   }
 }
 
+.apple-cta-primary--blue {
+  background: var(--apple-blue);
+  border-color: var(--apple-blue);
+
+  &::before {
+    background: white;
+  }
+
+  &:hover {
+    color: var(--apple-blue) !important;
+  }
+}
+
 .apple-cta-secondary {
   display: inline-flex;
   align-items: center;

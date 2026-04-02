@@ -16,6 +16,93 @@
   transform: translateY(0);
 }
 
+/* =========================================
+   SLIDE-IN VARIANTS
+   ========================================= */
+
+.slide-in-left {
+  opacity: 0;
+  transform: translateX(-60px);
+  transition:
+    opacity 800ms cubic-bezier(0.16, 1, 0.3, 1),
+    transform 800ms cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.slide-in-right {
+  opacity: 0;
+  transform: translateX(60px);
+  transition:
+    opacity 800ms cubic-bezier(0.16, 1, 0.3, 1),
+    transform 800ms cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.slide-in-left.is-visible,
+.slide-in-right.is-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Scale-in for special elements */
+.scale-in {
+  opacity: 0;
+  transform: scale(0.92);
+  transition:
+    opacity 700ms cubic-bezier(0.16, 1, 0.3, 1),
+    transform 700ms cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.scale-in.is-visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* =========================================
+   HERO CHOREOGRAPHY
+   ========================================= */
+
+@keyframes heroFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-stagger-1 {
+  opacity: 0;
+  animation: heroFadeUp 700ms cubic-bezier(0.16, 1, 0.3, 1) 100ms forwards;
+}
+.hero-stagger-2 {
+  opacity: 0;
+  animation: heroFadeUp 700ms cubic-bezier(0.16, 1, 0.3, 1) 250ms forwards;
+}
+.hero-stagger-3 {
+  opacity: 0;
+  animation: heroFadeUp 700ms cubic-bezier(0.16, 1, 0.3, 1) 400ms forwards;
+}
+.hero-stagger-4 {
+  opacity: 0;
+  animation: heroFadeUp 700ms cubic-bezier(0.16, 1, 0.3, 1) 550ms forwards;
+}
+.hero-stagger-5 {
+  opacity: 0;
+  animation: heroFadeUp 700ms cubic-bezier(0.16, 1, 0.3, 1) 700ms forwards;
+}
+.hero-stagger-6 {
+  opacity: 0;
+  animation: heroFadeUp 900ms cubic-bezier(0.16, 1, 0.3, 1) 850ms forwards;
+}
+
+/* =========================================
+   FLOAT ANIMATION (hero image)
+   ========================================= */
+
 @keyframes float {
   0% { transform: translateY(0); }
   50% { transform: translateY(-15px); }
@@ -26,15 +113,23 @@
   animation: float 6s ease-in-out infinite;
 }
 
-/* Stagger Delays */
+/* =========================================
+   STAGGER DELAYS
+   ========================================= */
+
 .fade-delay-1 { transition-delay: 100ms; }
 .fade-delay-2 { transition-delay: 200ms; }
 .fade-delay-3 { transition-delay: 300ms; }
 .fade-delay-4 { transition-delay: 400ms; }
+.fade-delay-5 { transition-delay: 500ms; }
+.fade-delay-6 { transition-delay: 600ms; }
 
-/* Micro-interactions */
+/* =========================================
+   CARD HOVER EFFECTS
+   ========================================= */
+
 .apple-lift {
-  transition: transform var(--duration-normal) var(--ease-out-quart), box-shadow var(--duration-normal) var(--ease-out-quart);
+  transition: transform 400ms cubic-bezier(0.25, 1, 0.5, 1), box-shadow 400ms cubic-bezier(0.25, 1, 0.5, 1);
   &:hover {
     transform: translateY(-8px) scale(1.01);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
@@ -46,28 +141,190 @@
 }
 
 .apple-scale-up {
-  transition: transform var(--duration-normal) var(--ease-out-quart);
+  transition: transform 400ms cubic-bezier(0.25, 1, 0.5, 1);
   &:hover {
     transform: scale(1.02);
   }
 }
 
 .apple-press {
-  transition: transform var(--duration-fast) var(--ease-out-quart);
+  transition: transform 150ms cubic-bezier(0.25, 1, 0.5, 1);
   &:active {
     transform: scale(0.96);
   }
 }
 
-/* Respect prefers-reduced-motion */
+/* Card icon hover glow */
+.apple-card-icon {
+  transition: transform 400ms cubic-bezier(0.25, 1, 0.5, 1), box-shadow 400ms cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.apple-card:hover .apple-card-icon {
+  transform: scale(1.1);
+  box-shadow: 0 4px 16px rgba(0, 113, 227, 0.15);
+}
+
+/* =========================================
+   TABLE ROW STAGGER REVEAL
+   ========================================= */
+
+.table-row-reveal {
+  opacity: 0;
+  transform: translateY(12px);
+  transition:
+    opacity 500ms cubic-bezier(0.16, 1, 0.3, 1),
+    transform 500ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.table-row-reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* =========================================
+   PROGRESS BAR FILL
+   ========================================= */
+
+@keyframes progressFill {
+  from { width: 0%; }
+  to { width: var(--fill-width, 90%); }
+}
+
+.progress-fill-animate {
+  width: 0%;
+  animation: progressFill 1.2s cubic-bezier(0.25, 1, 0.5, 1) 600ms forwards;
+}
+
+/* =========================================
+   TRUST BAR POP-IN
+   ========================================= */
+
+@keyframes trustPopIn {
+  from {
+    opacity: 0;
+    transform: scale(0.85) translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.trust-pop-1 {
+  opacity: 0;
+  animation: trustPopIn 500ms cubic-bezier(0.16, 1, 0.3, 1) 800ms forwards;
+}
+.trust-pop-2 {
+  opacity: 0;
+  animation: trustPopIn 500ms cubic-bezier(0.16, 1, 0.3, 1) 950ms forwards;
+}
+.trust-pop-3 {
+  opacity: 0;
+  animation: trustPopIn 500ms cubic-bezier(0.16, 1, 0.3, 1) 1100ms forwards;
+}
+
+/* =========================================
+   CTA PULSE GLOW
+   ========================================= */
+
+@keyframes ctaPulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(0, 113, 227, 0.4); }
+  50% { box-shadow: 0 0 0 12px rgba(0, 113, 227, 0); }
+}
+
+.cta-pulse {
+  animation: ctaPulse 2.5s cubic-bezier(0.4, 0, 0.6, 1) 1.5s 3;
+}
+
+/* =========================================
+   STAT COUNTER ANIMATION
+   ========================================= */
+
+@keyframes statReveal {
+  from {
+    opacity: 0;
+    transform: translateY(10px) scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.stat-animate {
+  opacity: 0;
+  transition: none;
+}
+
+.stat-animate.is-visible {
+  animation: statReveal 600ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* =========================================
+   IMAGE PARALLAX-LITE
+   ========================================= */
+
+.parallax-img {
+  transition: transform 600ms cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.parallax-img:hover {
+  transform: scale(1.03);
+}
+
+/* =========================================
+   RESPECT PREFERS-REDUCED-MOTION
+   ========================================= */
+
 @media (prefers-reduced-motion: reduce) {
-  .fade-in-up {
+  .fade-in-up,
+  .slide-in-left,
+  .slide-in-right,
+  .scale-in {
     opacity: 1;
     transform: none;
     transition: none;
   }
+
+  .hero-stagger-1,
+  .hero-stagger-2,
+  .hero-stagger-3,
+  .hero-stagger-4,
+  .hero-stagger-5,
+  .hero-stagger-6,
+  .trust-pop-1,
+  .trust-pop-2,
+  .trust-pop-3 {
+    opacity: 1;
+    animation: none;
+  }
+
+  .table-row-reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .stat-animate {
+    opacity: 1;
+  }
+
+  .cta-pulse {
+    animation: none;
+  }
+
+  .progress-fill-animate {
+    width: var(--fill-width, 90%);
+    animation: none;
+  }
+
+  .animate-float {
+    animation: none;
+  }
+
   .apple-card,
   .apple-card-img,
+  .apple-card-icon,
   .apple-glass-card,
   .apple-glass-icon,
   .apple-glass-text,
@@ -78,7 +335,10 @@
   }
 }
 
-/* Focus-visible states for keyboard navigation */
+/* =========================================
+   FOCUS-VISIBLE (a11y)
+   ========================================= */
+
 a:focus-visible,
 button:focus-visible,
 .apple-cta-primary:focus-visible,
