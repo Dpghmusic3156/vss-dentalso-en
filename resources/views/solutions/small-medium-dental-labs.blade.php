@@ -10,19 +10,17 @@
             <span class="apple-eyebrow hero-stagger-1">Cost-Effective & Efficient Solutions</span>
             <h1 class="apple-headline mb-4 hero-stagger-2">Dental Lab Software for<br>Small Labs & Startups</h1>
             <p class="text-[1.25rem] md:text-[1.5rem] font-bold text-[#0071e3] tracking-tight mb-6 hero-stagger-3">
-                Low Cost – Full Featured – FREE Trial
+                Low Cost – Optimized for Small Labs – FREE Trial
             </p>
-            <p class="text-lg md:text-xl text-[#1d1d1f] max-w-4xl mx-auto mb-10 leading-relaxed opacity-90 hero-stagger-4" style="text-wrap: balance;">
-                Manage production, forms, customers, and billing – all on a single&nbsp;platform. Replace messy spreadsheets, reduce data entry by 80%, and deliver on time without the high&nbsp;costs.
-            </p>
+
             
             <div class="apple-cta-group hero-stagger-5">
-                <a href="{{ home_url('request-demo/') }}" class="apple-cta-primary apple-cta-primary--blue cta-pulse">START FREE TRIAL NOW</a>
-                <a href="{{ home_url('pricing/') }}" class="apple-cta-secondary">View Pricing <span class="apple-chevron material-symbols-outlined">chevron_right</span></a>
+                <a href="{{ home_url('request-demo/') }}" class="apple-cta-primary apple-cta-primary--blue cta-pulse">REQUEST DEMO NOW</a>
+                <a href="{{ home_url('contact/') }}" class="apple-cta-secondary">Contact Us <span class="apple-chevron material-symbols-outlined">chevron_right</span></a>
             </div>
 
             {{-- Trust Signals --}}
-            <div class="apple-trust-bar">
+            <!--<div class="apple-trust-bar">
                 <div class="trust-item trust-pop-1">
                     <span class="material-symbols-outlined">check_circle</span>
                     <span>Transparent, clear pricing</span>
@@ -37,7 +35,7 @@
                     <span class="material-symbols-outlined">check_circle</span>
                     <span>24/7 Support</span>
                 </div>
-            </div>
+            </div>-->
         </div>
         {{-- Hero image --}}
         <div class="apple-hero-img-wrapper hero-stagger-6">
@@ -162,19 +160,19 @@
                 <p class="apple-body mb-6">DentalSO helps you build a scalable foundation for growth without the operational chaos.</p>
                 <ul class="space-y-3">
                     <li class="flex items-start gap-3">
-                        <span class="material-symbols-outlined text-[#bf5af2] text-xl mt-0.5">check_circle</span>
+                        <span class="material-symbols-outlined text-[#bf5af2] text-xl flex-shrink-0 mt-[2px]">check_circle</span>
                         <span class="text-[#1d1d1f] text-[0.9375rem]">Reduce operational chaos</span>
                     </li>
                     <li class="flex items-start gap-3">
-                        <span class="material-symbols-outlined text-[#bf5af2] text-xl mt-0.5">check_circle</span>
+                        <span class="material-symbols-outlined text-[#bf5af2] text-xl flex-shrink-0 mt-[2px]">check_circle</span>
                         <span class="text-[#1d1d1f] text-[0.9375rem]">Improve case visibility</span>
                     </li>
                     <li class="flex items-start gap-3">
-                        <span class="material-symbols-outlined text-[#bf5af2] text-xl mt-0.5">check_circle</span>
+                        <span class="material-symbols-outlined text-[#bf5af2] text-xl flex-shrink-0 mt-[2px]">check_circle</span>
                         <span class="text-[#1d1d1f] text-[0.9375rem]">Deliver on time consistently</span>
                     </li>
                     <li class="flex items-start gap-3">
-                        <span class="material-symbols-outlined text-[#bf5af2] text-xl mt-0.5">check_circle</span>
+                        <span class="material-symbols-outlined text-[#bf5af2] text-xl flex-shrink-0 mt-[2px]">check_circle</span>
                         <span class="text-[#1d1d1f] text-[0.9375rem]">Build a scalable foundation for growth</span>
                     </li>
                 </ul>
@@ -236,18 +234,29 @@
                     </div>
                 </div>
                 <div class="order-1 md:order-2 slide-in-right">
-                    <h3 class="apple-headline-sm">Poor Visibility</h3>
-                    <p class="text-lg text-[#1d1d1f] leading-relaxed mt-4">
-                        You struggle with tracking case status. Without real-time visibility, deadlines slip and clients lose trust.
+                    <h3 class="apple-headline-sm">Lack of Visibility?</h3>
+                    <p class="text-[1.25rem] font-semibold text-[#1d1d1f] mt-4 mb-2">Struggling to track where your cases are?</p>
+                    <p class="text-lg text-[#424245] leading-relaxed">
+                        A case sent in the morning, yet by afternoon you're still asking staff "Where is it?". When customers call for updates, you give vague answers like "It's being worked on"... deadlines are missed, customers lose trust and switch to another lab.
                     </p>
-                    <ul class="mt-8 space-y-4">
-                        <li class="flex items-center gap-3 text-[#1d1d1f]">
-                            <span class="material-symbols-outlined" style="color: #ff9f0a;" aria-hidden="true">done_all</span>
-                            <span>No idea where each case is in production</span>
+                    
+                    <p class="font-bold text-[#1d1d1f] mt-8 mb-4">Common challenges for small labs:</p>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3 text-[#1d1d1f]">
+                            <span class="material-symbols-outlined flex-shrink-0 mt-[2px]" style="color: #ff9f0a;" aria-hidden="true">error</span>
+                            <span>Don't know which stage a case is at</span>
                         </li>
-                        <li class="flex items-center gap-3 text-[#1d1d1f]">
-                            <span class="material-symbols-outlined" style="color: #ff9f0a;" aria-hidden="true">done_all</span>
-                            <span>Can't answer client status inquiries quickly</span>
+                        <li class="flex items-start gap-3 text-[#1d1d1f]">
+                            <span class="material-symbols-outlined flex-shrink-0 mt-[2px]" style="color: #ff9f0a;" aria-hidden="true">error</span>
+                            <span>Cannot answer quickly when customers ask for progress</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-[#1d1d1f]">
+                            <span class="material-symbols-outlined flex-shrink-0 mt-[2px]" style="color: #ff9f0a;" aria-hidden="true">error</span>
+                            <span>Must constantly ask staff → easy to miss urgent or warranty cases</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-[#1d1d1f]">
+                            <span class="material-symbols-outlined flex-shrink-0 mt-[2px]" style="color: #ff9f0a;" aria-hidden="true">error</span>
+                            <span>Easy to forget remakes → unexpected complaints</span>
                         </li>
                     </ul>
                 </div>
@@ -310,13 +319,13 @@
                                 <p class="text-sm text-[#86868b]">Begin with core features, add modules as you grow.</p>
                             </div>
                         </div>
-                        <div class="flex items-start gap-4 p-4 rounded-xl bg-white/50 backdrop-blur-sm border border-gray-100 apple-lift">
+                        <a href="{{ home_url('products/dental-lab-mes/') }}" class="flex items-start gap-4 p-4 rounded-xl bg-white/50 backdrop-blur-sm border border-gray-100 apple-lift group decoration-none">
                             <span class="material-symbols-outlined" style="color: #30d158;" aria-hidden="true">upgrade</span>
                             <div>
-                                <div class="font-semibold text-[#1d1d1f]">Upgrade when ready</div>
+                                <div class="font-semibold text-[#1d1d1f] group-hover:text-[#0071e3] transition-colors">Upgrade when ready</div>
                                 <p class="text-sm text-[#86868b]">Seamlessly move to MES when you need it.</p>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
