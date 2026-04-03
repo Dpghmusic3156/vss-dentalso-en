@@ -39,7 +39,7 @@
         </div>
         {{-- Hero image --}}
         <div class="apple-hero-img-wrapper hero-stagger-6">
-            <img src="@asset('images/mes-dashboard-hero.webp')" alt="DentalSO MES Dashboard" class="apple-hero-img animate-float">
+            <img src="@asset('images/small-labo-hero.png')" alt="DentalSO Small Lab Management" class="apple-hero-img animate-float">
         </div>
     </div>
 </section>
@@ -47,61 +47,94 @@
 {{-- What You Get --}}
 <section class="apple-section bg-[#f5f5f7]">
     <div class="apple-container">
-        <div class="text-center max-w-3xl mx-auto mb-16 fade-in-up">
-            <span class="apple-eyebrow">Features</span>
-            <h2 class="apple-headline-sm">What You Get</h2>
+        <div class="text-center max-w-4xl mx-auto mb-16 fade-in-up">
+            <span class="apple-eyebrow">What You Get</span>
+            <h1 class="text-[1.75rem] md:text-[2.25rem] font-bold text-[#1d1d1f] tracking-tight mb-2">Key Benefits</h1>
+            <h2 class="apple-headline-sm">Build Professional Workflows –<br>A Fast-Growth Foundation for Small Labs</h2>
         </div>
-        <div class="grid sm:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            <div class="apple-card apple-card--white apple-lift fade-in-up fade-delay-1">
-                <div class="apple-card-inner">
-                    <div class="apple-card-icon bg-[#e3f0fc]">
-                        <span class="material-symbols-outlined text-[#0071e3]">folder_open</span>
-                    </div>
-                    <h3 class="apple-card-title">Centralized Case Management</h3>
-                    <ul class="apple-card-desc space-y-2 mt-4 text-[#86868b] text-[0.9375rem] mb-4">
-                        <li class="flex items-start leading-[1.4]"><span class="material-symbols-outlined text-base mr-2 text-[#0071e3] mt-0.5">check</span> Digital case intake</li>
-                        <li class="flex items-start leading-[1.4]"><span class="material-symbols-outlined text-base mr-2 text-[#0071e3] mt-0.5">check</span> Case tracking by status</li>
-                        <li class="flex items-start leading-[1.4]"><span class="material-symbols-outlined text-base mr-2 text-[#0071e3] mt-0.5">check</span> Technician assignment</li>
-                        <li class="flex items-start leading-[1.4]"><span class="material-symbols-outlined text-base mr-2 text-[#0071e3] mt-0.5">check</span> Case history & warranty tracking</li>
-                    </ul>
-                    <p class="apple-card-desc italic mt-auto">Everything is organized in one system.</p>
+
+        {{-- Row 1: 2 large cards with images --}}
+        <div class="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto mb-6">
+            {{-- Card 1: End-to-end Workflow --}}
+            <div class="apple-card apple-card--white apple-lift fade-in-up fade-delay-1 overflow-hidden">
+                <div class="w-full bg-[#e3f0fc] flex items-center justify-center overflow-hidden">
+                    <img src="@asset('images/quytrinh.png')" alt="DentalSO Workflow" class="w-full h-auto object-contain">
                 </div>
-            </div>
-            
-            <div class="apple-card apple-card--white apple-lift fade-in-up fade-delay-2">
-                <div class="apple-card-inner">
-                    <div class="apple-card-icon bg-[#fef3e2]">
-                        <span class="material-symbols-outlined text-[#ff9f0a]">account_tree</span>
+                <div class="apple-card-inner p-6">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-10 h-10 rounded-xl bg-[#e3f0fc] flex items-center justify-center flex-shrink-0">
+                            <span class="material-symbols-outlined text-[#0071e3]">account_tree</span>
+                        </div>
+                        <h3 class="apple-card-title !mb-0">End-to-End Standardized Workflow</h3>
                     </div>
-                    <h3 class="apple-card-title">Workflow Standardization</h3>
-                    <ul class="apple-card-desc space-y-2 mt-4 text-[#86868b] text-[0.9375rem] mb-4">
-                        <li class="flex items-start leading-[1.4]"><span class="material-symbols-outlined text-base mr-2 text-[#ff9f0a] mt-0.5">check</span> Clear production stages</li>
-                        <li class="flex items-start leading-[1.4]"><span class="material-symbols-outlined text-base mr-2 text-[#ff9f0a] mt-0.5">check</span> Reduced miscommunication</li>
-                        <li class="flex items-start leading-[1.4]"><span class="material-symbols-outlined text-base mr-2 text-[#ff9f0a] mt-0.5">check</span> Consistent turnaround time</li>
-                    </ul>
-                    <p class="apple-card-desc italic mt-auto">Replace manual coordination with structured workflows.</p>
+                    <p class="text-[#424245] text-[0.9375rem] leading-relaxed">
+                        From order intake → real-time progress tracking → technician assignment → invoice generation. Every step is seamless, transparent, eliminating errors and delays.
+                    </p>
                 </div>
             </div>
 
-            <div class="apple-card apple-card--white apple-lift fade-in-up fade-delay-3">
-                <div class="apple-card-inner">
-                    <div class="apple-card-icon bg-[#e2f5e9]">
-                        <span class="material-symbols-outlined text-[#30d158]">verified</span>
+            {{-- Card 2: Documents & Templates --}}
+            <div class="apple-card apple-card--white apple-lift fade-in-up fade-delay-2 overflow-hidden">
+                <div class="w-full bg-[#fef3e2] flex items-center justify-center overflow-hidden">
+                    <img src="@asset('images/MauTheBaoHanh.png')" alt="DentalSO Documents and Templates" class="w-full h-auto object-contain">
+                </div>
+                <div class="apple-card-inner p-6">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-10 h-10 rounded-xl bg-[#fef3e2] flex items-center justify-center flex-shrink-0">
+                            <span class="material-symbols-outlined text-[#ff9f0a]">description</span>
+                        </div>
+                        <h3 class="apple-card-title !mb-0">Professional Documents & Templates</h3>
                     </div>
-                    <h3 class="apple-card-title">Warranty & After-Service</h3>
-                    <ul class="apple-card-desc space-y-2 mt-4 text-[#86868b] text-[0.9375rem] mb-4">
-                        <li class="flex items-start leading-[1.4]"><span class="material-symbols-outlined text-base mr-2 text-[#30d158] mt-0.5">check</span> Track warranty per case</li>
-                        <li class="flex items-start leading-[1.4]"><span class="material-symbols-outlined text-base mr-2 text-[#30d158] mt-0.5">check</span> Manage remakes efficiently</li>
-                        <li class="flex items-start leading-[1.4]"><span class="material-symbols-outlined text-base mr-2 text-[#30d158] mt-0.5">check</span> Maintain customer trust</li>
-                    </ul>
-                    <p class="apple-card-desc italic mt-auto">No more lost or unclear warranty records.</p>
+                    <p class="text-[#424245] text-[0.9375rem] leading-relaxed">
+                        Dozens of beautifully designed, unified templates (orders, acceptance, warranty, invoices…). Look professional from your very first case and build trust with dentists and clinics.
+                    </p>
                 </div>
             </div>
         </div>
-        <div class="mt-12 text-center fade-in-up fade-delay-4">
-            <p class="text-[1.125rem] md:text-[1.25rem] text-[#1d1d1f] font-medium max-w-3xl mx-auto">
-                Simple design, ready to use for small labs – No lengthy training required.
-            </p>
+
+        {{-- Row 2: 3 smaller cards --}}
+        <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            {{-- Card 3: Automation --}}
+            <div class="apple-card apple-card--white apple-lift fade-in-up fade-delay-3">
+                <div class="apple-card-inner">
+                    <div class="apple-card-icon bg-[#e2f5e9]">
+                        <span class="material-symbols-outlined text-[#30d158]">bolt</span>
+                    </div>
+                    <h3 class="apple-card-title">High Automation</h3>
+                    <p class="text-[0.875rem] font-medium text-[#1d1d1f] mb-2">Minimize manual work</p>
+                    <p class="apple-card-desc">
+                        Auto reminders, real-time reports, debt and warranty tracking. Focus on product quality instead of messy paperwork.
+                    </p>
+                </div>
+            </div>
+
+            {{-- Card 4: Low Cost --}}
+            <div class="apple-card apple-card--white apple-lift fade-in-up fade-delay-4">
+                <div class="apple-card-inner">
+                    <div class="apple-card-icon bg-[#f5e6fe]">
+                        <span class="material-symbols-outlined text-[#bf5af2]">savings</span>
+                    </div>
+                    <h3 class="apple-card-title">Low Cost</h3>
+                    <p class="text-[0.875rem] font-medium text-[#1d1d1f] mb-2">Perfect for small labs & startups</p>
+                    <p class="apple-card-desc">
+                        Transparent pricing, start small, pay only for what you need. No waste, easily scale as your lab grows.
+                    </p>
+                </div>
+            </div>
+
+            {{-- Card 5: Solid Foundation --}}
+            <div class="apple-card apple-card--white apple-lift fade-in-up fade-delay-5">
+                <div class="apple-card-inner">
+                    <div class="apple-card-icon bg-[#fff3e0]">
+                        <span class="material-symbols-outlined text-[#ff6d00]">rocket_launch</span>
+                    </div>
+                    <h3 class="apple-card-title">Solid Foundation</h3>
+                    <p class="text-[0.875rem] font-medium text-[#1d1d1f] mb-2">Scale fast without chaos</p>
+                    <p class="apple-card-desc">
+                        Standardize today so your lab runs professionally, recruits easily, and scales up without disruption.
+                    </p>
+                </div>
+            </div>
         </div>
 
         {{-- Mini Comparison Table --}}
