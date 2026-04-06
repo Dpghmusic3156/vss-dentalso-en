@@ -213,12 +213,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 jQuery(".sent-message").hide();
             },
             success: function(res) {
-                jQuery(".loading").hide();
-                jQuery(".sent-message").show();
-                jQuery("#formContactUs").hide();
-                jQuery('#formContactUs').trigger("reset");
-                document.getElementById("formContactUs").reset();
-                jQuery("#formContactUs :input").prop("disabled", false);
+                window.location.href = '<?php echo home_url('/thank-you/'); ?>';
             },
             error: function() {
                 jQuery(".loading").hide();
