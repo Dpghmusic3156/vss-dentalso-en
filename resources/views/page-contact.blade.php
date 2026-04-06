@@ -96,6 +96,18 @@
                                 <option value="UTC+10">(UTC+10:00) Australia (East)</option>
                                 <option value="UTC+12">(UTC+12:00) New Zealand</option>
                             </select>
+                            <select class="apple-input" name="preferred_time" id="preferred_time">
+                                <option selected disabled>Preferred Call Time</option>
+                                <option value="08:00 - 09:00">08:00 – 09:00</option>
+                                <option value="09:00 - 10:00">09:00 – 10:00</option>
+                                <option value="10:00 - 11:00">10:00 – 11:00</option>
+                                <option value="11:00 - 12:00">11:00 – 12:00</option>
+                                <option value="13:00 - 14:00">13:00 – 14:00</option>
+                                <option value="14:00 - 15:00">14:00 – 15:00</option>
+                                <option value="15:00 - 16:00">15:00 – 16:00</option>
+                                <option value="16:00 - 17:00">16:00 – 17:00</option>
+                                <option value="17:00 - 18:00">17:00 – 18:00</option>
+                            </select>
                             <textarea class="apple-input" name="message" placeholder="Message" id="message" rows="4" required></textarea>
                             <div>
                                 <div class="loading hidden text-[#0071e3]">Sending...</div>
@@ -164,6 +176,7 @@ document.addEventListener('DOMContentLoaded', () => {
         var message = jQuery.trim(jQuery('#message').val());
         var email = jQuery.trim(jQuery('#email').val());
         var timezone = jQuery.trim(jQuery('#timezone').val());
+        var preferred_time = jQuery.trim(jQuery('#preferred_time').val());
         let data = new Object;
 
         if (name === '') { alert('Please enter your name'); return false; } else { data['name'] = name; }
@@ -181,6 +194,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (data.email) { note += "Email: " + data.email + space; data['el'] = data.email.trim().length; };
         if (data.product) { note += "Product: " + data.product + space; };
         if (timezone) { note += "Timezone: " + timezone + space; };
+        if (preferred_time) { note += "Preferred Call Time: " + preferred_time + space; };
         data['url'] = jQuery(location).attr('href');
         if (reason) { data['reason'] = reason; }
         if (data.message) { note += "Message:\n" + data.message; };
