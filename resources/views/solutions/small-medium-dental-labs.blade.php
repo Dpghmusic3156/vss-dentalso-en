@@ -69,8 +69,23 @@
                         </div>
                         <h3 class="apple-card-title !mb-0">End-to-End Standardized Workflow</h3>
                     </div>
-                    <p class="text-[#424245] text-[0.9375rem] leading-relaxed">
-                        From order intake → real-time progress tracking → technician assignment → invoice generation. Every step is seamless, transparent, eliminating errors and delays.
+                    <div class="flex flex-col items-center justify-center gap-1.5 sm:gap-2 w-full text-[0.875rem] font-medium text-[#1d1d1f] my-6">
+                        <div class="px-4 py-1.5 bg-white border border-black/10 rounded-full shadow-sm text-center w-fit">Order intake</div>
+                        
+                        <div class="text-gray-400 material-symbols-outlined text-base my-[-0.25rem]">arrow_downward</div>
+                        
+                        <div class="px-4 py-1.5 bg-white border border-black/10 rounded-full shadow-sm text-center w-fit">Real-time progress</div>
+                        
+                        <div class="text-gray-400 material-symbols-outlined text-base my-[-0.25rem]">arrow_downward</div>
+                        
+                        <div class="px-4 py-1.5 bg-white border border-black/10 rounded-full shadow-sm text-center w-fit">Assign technician</div>
+                        
+                        <div class="text-gray-400 material-symbols-outlined text-base my-[-0.25rem]">arrow_downward</div>
+                        
+                        <div class="px-4 py-1.5 bg-[#a1a1aa] text-white rounded-full shadow-sm text-center border border-[#a1a1aa] w-fit">Generate invoice</div>
+                    </div>
+                    <p class="text-[#424245] text-[0.9375rem] leading-relaxed mt-3">
+                        Every step is seamless and transparent, eliminating errors and delays.
                     </p>
                 </div>
             </div>
