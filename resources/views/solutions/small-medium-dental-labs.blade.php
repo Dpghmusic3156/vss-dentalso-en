@@ -57,8 +57,10 @@
         <div class="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto mb-6">
             {{-- Card 1: End-to-end Workflow --}}
             <div class="apple-card apple-card--white apple-lift fade-in-up fade-delay-1 overflow-hidden">
-                <div class="w-full bg-[#e3f0fc] flex items-center justify-center overflow-hidden border-b border-black/5 p-6 lg:p-8">
-                    <img src="@asset('images/quytrinh.png')" alt="DentalSO Workflow - Affordable dental lab management software, free trial" class="w-full h-auto object-contain">
+                <div class="w-full bg-[#e3f0fc] flex items-center justify-center border-b border-black/5 p-2">
+                    <div class="bg-[#f5f5f7] rounded-2xl shadow-lg overflow-hidden p-1 w-full group-hover:scale-[1.02] transition-transform duration-500">
+                        <img src="@asset('images/quytrinhsanxuat.png')" alt="DentalSO Workflow - Affordable dental lab management software, free trial" class="w-full h-auto object-contain rounded-xl parallax-img" loading="lazy">
+                    </div>
                 </div>
                 <div class="apple-card-inner p-6">
                     <div class="flex items-center gap-3 mb-3">
@@ -75,8 +77,29 @@
 
             {{-- Card 2: Documents & Templates --}}
             <div class="apple-card apple-card--white apple-lift fade-in-up fade-delay-2 overflow-hidden">
-                <div class="w-full bg-[#fef3e2] flex items-center justify-center overflow-hidden border-b border-black/5 p-6 lg:p-8">
-                    <img src="@asset('images/MauTheBaoHanh.png')" alt="DentalSO Documents and Templates - Affordable dental lab management software, free trial" class="w-full h-auto object-contain">
+                <div class="w-full bg-[#fef3e2] flex items-center justify-center border-b border-black/5 p-2">
+                    <div class="bg-[#f5f5f7] rounded-2xl shadow-lg overflow-hidden p-1 w-full group-hover:scale-[1.02] transition-transform duration-500 relative group/slider">
+                        <div class="slider-container flex w-full overflow-hidden rounded-xl relative" data-current="0">
+                            @php
+                                $sliderImages = ['phieubaoquyettoan.png','phieubaohanh.png', 'phieuchi.png', 'phieugiaohang.png', 'phieuthu.png', 'phieuyeucau.png'];
+                            @endphp
+                            @foreach($sliderImages as $img)
+                            <img src="@asset('images/mauthe/' . $img)" class="w-full h-auto object-contain flex-shrink-0 transition-transform duration-500 ease-in-out" alt="DentalSO Documents and Templates - Affordable dental lab management software, free trial" loading="lazy">
+                            @endforeach
+                            <div class="w-full flex-shrink-0 flex flex-col items-center justify-center transition-transform duration-500 ease-in-out bg-white p-6">
+                                <span class="material-symbols-outlined text-[3rem] text-[#ff9f0a] mb-3">folder_open</span>
+                                <div class="text-[#1d1d1f] font-[600] text-[1.125rem] text-center leading-snug">And dozens of other<br>documents and templates</div>
+                            </div>
+                        </div>
+                        
+                        <button onclick="event.preventDefault(); event.stopPropagation(); let c = this.parentElement.querySelector('.slider-container'); let curr = parseInt(c.getAttribute('data-current') || 0); let tot = c.children.length; curr = (curr === 0) ? tot - 1 : curr - 1; c.setAttribute('data-current', curr); Array.from(c.children).forEach(el => el.style.transform = `translateX(-${curr * 100}%)`);" class="absolute left-3 top-1/2 -translate-y-1/2 w-8 h-8 flex items-center justify-center bg-white/90 hover:bg-white text-black shadow-md rounded-full transition-all duration-300 z-10 opacity-0 group-hover/slider:opacity-100">
+                            <span class="material-symbols-outlined text-[1.25rem]">chevron_left</span>
+                        </button>
+                        
+                        <button onclick="event.preventDefault(); event.stopPropagation(); let c = this.parentElement.querySelector('.slider-container'); let curr = parseInt(c.getAttribute('data-current') || 0); let tot = c.children.length; curr = (curr === tot - 1) ? 0 : curr + 1; c.setAttribute('data-current', curr); Array.from(c.children).forEach(el => el.style.transform = `translateX(-${curr * 100}%)`);" class="absolute right-3 top-1/2 -translate-y-1/2 w-8 h-8 flex items-center justify-center bg-white/90 hover:bg-white text-black shadow-md rounded-full transition-all duration-300 z-10 opacity-0 group-hover/slider:opacity-100">
+                            <span class="material-symbols-outlined text-[1.25rem]">chevron_right</span>
+                        </button>
+                    </div>
                 </div>
                 <div class="apple-card-inner p-6">
                     <div class="flex items-center gap-3 mb-3">
@@ -93,46 +116,56 @@
         </div>
 
         {{-- Row 2: 3 smaller cards --}}
-        <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            {{-- Card 3: Automation --}}
-            <div class="apple-card apple-card--white apple-lift fade-in-up fade-delay-3">
-                <div class="apple-card-inner">
-                    <div class="apple-card-icon bg-[#e2f5e9]">
-                        <span class="material-symbols-outlined text-[#30d158]">bolt</span>
-                    </div>
-                    <h3 class="apple-card-title">High Automation</h3>
-                    <p class="text-[0.875rem] font-medium text-[#1d1d1f] mb-2">Minimize manual work</p>
-                    <p class="apple-card-desc">
-                        Auto reminders, real-time reports, debt and warranty tracking. Focus on product quality instead of messy paperwork.
-                    </p>
+        {{-- Section 3 distinct cards --}}
+        <div class="space-y-6 max-w-4xl mx-auto mt-6">
+            {{-- Card 3: High Automation --}}
+            <div class="apple-card apple-card--white apple-lift fade-in-up fade-delay-3 p-6 sm:p-8 flex flex-col sm:flex-row items-start gap-6">
+                <div class="w-16 h-16 rounded-2xl bg-[#e2f5e9] flex items-center justify-center flex-shrink-0">
+                    <span class="material-symbols-outlined text-[#30d158] text-3xl">bolt</span>
+                </div>
+                <div>
+                    <h3 class="apple-card-title !mb-1">High Automation</h3>
+                    <p class="text-[0.9375rem] font-medium text-[#1d1d1f] mb-4">Minimize manual work</p>
+                    <ul class="space-y-2 text-[#424245] text-[0.9375rem]">
+                        <li class="flex items-start gap-3"><span class="material-symbols-outlined text-[#30d158] flex-shrink-0 mt-0.5 text-[1.125rem]">check_circle</span> Automatically assign tasks to each technician</li>
+                        <li class="flex items-start gap-3"><span class="material-symbols-outlined text-[#30d158] flex-shrink-0 mt-0.5 text-[1.125rem]">check_circle</span> Auto-remind about delivery orders based on entered time</li>
+                        <li class="flex items-start gap-3"><span class="material-symbols-outlined text-[#30d158] flex-shrink-0 mt-0.5 text-[1.125rem]">check_circle</span> Connect warranty data between patient and product information</li>
+                        <li class="flex items-start gap-3"><span class="material-symbols-outlined text-[#30d158] flex-shrink-0 mt-0.5 text-[1.125rem]">check_circle</span> Centralize data management per order, reducing search time</li>
+                        <li class="flex items-start gap-3"><span class="material-symbols-outlined text-[#30d158] flex-shrink-0 mt-0.5 text-[1.125rem]">check_circle</span> Cut data entry time and operational costs via high automation</li>
+                    </ul>
                 </div>
             </div>
 
             {{-- Card 4: Low Cost --}}
-            <div class="apple-card apple-card--white apple-lift fade-in-up fade-delay-4">
-                <div class="apple-card-inner">
-                    <div class="apple-card-icon bg-[#f5e6fe]">
-                        <span class="material-symbols-outlined text-[#bf5af2]">savings</span>
-                    </div>
-                    <h3 class="apple-card-title">Low Cost</h3>
-                    <p class="text-[0.875rem] font-medium text-[#1d1d1f] mb-2">Perfect for small labs & startups</p>
-                    <p class="apple-card-desc">
-                        Transparent pricing, start small, pay only for what you need. No waste, easily scale as your lab grows.
-                    </p>
+            <div class="apple-card apple-card--white apple-lift fade-in-up fade-delay-4 p-6 sm:p-8 flex flex-col sm:flex-row items-start gap-6">
+                <div class="w-16 h-16 rounded-2xl bg-[#f5e6fe] flex items-center justify-center flex-shrink-0">
+                    <span class="material-symbols-outlined text-[#bf5af2] text-3xl">savings</span>
+                </div>
+                <div>
+                    <h3 class="apple-card-title !mb-1">Low Cost</h3>
+                    <p class="text-[0.9375rem] font-medium text-[#1d1d1f] mb-4">Perfect for small labs & startups</p>
+                    <ul class="space-y-2 text-[#424245] text-[0.9375rem]">
+                        <li class="flex items-start gap-3"><span class="material-symbols-outlined text-[#bf5af2] flex-shrink-0 mt-0.5 text-[1.125rem]">check_circle</span> Zero initial app development fees, only pay a monthly subscription</li>
+                        <li class="flex items-start gap-3"><span class="material-symbols-outlined text-[#bf5af2] flex-shrink-0 mt-0.5 text-[1.125rem]">check_circle</span> Extremely low cost of software usage</li>
+                        <li class="flex items-start gap-3"><span class="material-symbols-outlined text-[#bf5af2] flex-shrink-0 mt-0.5 text-[1.125rem]">check_circle</span> Flexible payment model: Pay as you go</li>
+                    </ul>
                 </div>
             </div>
 
             {{-- Card 5: Solid Foundation --}}
-            <div class="apple-card apple-card--white apple-lift fade-in-up fade-delay-5">
-                <div class="apple-card-inner">
-                    <div class="apple-card-icon bg-[#fff3e0]">
-                        <span class="material-symbols-outlined text-[#ff6d00]">rocket_launch</span>
-                    </div>
-                    <h3 class="apple-card-title">Solid Foundation</h3>
-                    <p class="text-[0.875rem] font-medium text-[#1d1d1f] mb-2">Scale fast without chaos</p>
-                    <p class="apple-card-desc">
-                        Standardize today so your lab runs professionally, recruits easily, and scales up without disruption.
-                    </p>
+            <div class="apple-card apple-card--white apple-lift fade-in-up fade-delay-5 p-6 sm:p-8 flex flex-col sm:flex-row items-start gap-6">
+                <div class="w-16 h-16 rounded-2xl bg-[#fff3e0] flex items-center justify-center flex-shrink-0">
+                    <span class="material-symbols-outlined text-[#ff6d00] text-3xl">rocket_launch</span>
+                </div>
+                <div>
+                    <h3 class="apple-card-title !mb-1">Solid Foundation</h3>
+                    <p class="text-[0.9375rem] font-medium text-[#1d1d1f] mb-4">Scale fast without chaos</p>
+                    <ul class="space-y-2 text-[#424245] text-[0.9375rem]">
+                        <li class="flex items-start gap-3"><span class="material-symbols-outlined text-[#ff6d00] flex-shrink-0 mt-0.5 text-[1.125rem]">check_circle</span> Scientific management process helps businesses scale fast</li>
+                        <li class="flex items-start gap-3"><span class="material-symbols-outlined text-[#ff6d00] flex-shrink-0 mt-0.5 text-[1.125rem]">check_circle</span> System operates stably with 99.9% uptime on a Cloud platform</li>
+                        <li class="flex items-start gap-3"><span class="material-symbols-outlined text-[#ff6d00] flex-shrink-0 mt-0.5 text-[1.125rem]">check_circle</span> Automatic data backups ensuring high-level security</li>
+                        <li class="flex items-start gap-3"><span class="material-symbols-outlined text-[#ff6d00] flex-shrink-0 mt-0.5 text-[1.125rem]">check_circle</span> Supports an unlimited number of user accounts</li>
+                    </ul>
                 </div>
             </div>
         </div>
