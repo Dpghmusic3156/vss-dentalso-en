@@ -75,7 +75,7 @@
         <div class="apple-footer-bottom">
             <div class="apple-footer-brand">
                 <img alt="DentalSO" src="<?php echo get_theme_mod('logo_full'); ?>">
-                <span>VISION SOFTWARE COMPANY LIMITED</span>
+                <span>Dental SO LLC</span>
             </div>
             <div class="flex items-center gap-4">
                 <div class="flex items-center gap-3">
@@ -98,7 +98,7 @@
         {{-- Copyright --}}
         <div class="apple-footer-copyright">
             <div class="flex flex-wrap items-center gap-x-1">
-                <span>Copyright © {{ date('Y') }} DentalSO. All rights reserved.</span>
+                <span>Copyright © {{ date('Y') }} Dental SO LLC. All rights reserved.</span>
                 <span class="mx-1">·</span>
                 <a href="{{ home_url('privacy-policy/') }}">Privacy Policy</a>
                 <span class="mx-1">·</span>
