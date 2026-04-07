@@ -18,8 +18,8 @@
 <section class="apple-section bg-white" id="demo">
     <div class="apple-container">
         <div class="grid lg:grid-cols-5 gap-10 lg:gap-16">
-            {{-- Left: Value Props --}}
-            <div class="lg:col-span-2 fade-in-up">
+            {{-- Left: Value Props (mobile: 2nd, desktop: 1st) --}}
+            <div class="lg:col-span-2 order-2 lg:order-1 fade-in-up">
                 <div class="space-y-6">
                     <div class="apple-mini-card">
                         <span class="material-symbols-outlined text-2xl text-[#0071e3] mb-3">play_circle</span>
@@ -41,8 +41,8 @@
 
             </div>
 
-            {{-- Right: Form --}}
-            <div class="lg:col-span-3 fade-in-up" style="animation-delay: 0.15s;">
+            {{-- Right: Form (mobile: 1st, desktop: 2nd) --}}
+            <div class="lg:col-span-3 order-1 lg:order-2 fade-in-up" style="animation-delay: 0.15s;">
                 <div class="bg-[#f5f5f7] rounded-3xl p-8 lg:p-10" id="form">
                     <div id="formContactUs">
                         <h2 class="apple-headline-sm mb-2">Book Your Demo</h2>
