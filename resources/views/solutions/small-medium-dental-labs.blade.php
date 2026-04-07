@@ -39,7 +39,7 @@
         </div>
         {{-- Hero image --}}
         <div class="apple-hero-img-wrapper hero-stagger-6">
-            <img src="@asset('images/small-labo-hero.png')" alt="DentalSO Small Lab Management - Affordable dental lab management software, free trial" class="apple-hero-img animate-float">
+            <img src="@asset('images/small-dental-lab-management-solution.png')" alt="DentalSO Small Lab Management - Affordable dental lab management software, free trial" class="apple-hero-img animate-float">
         </div>
     </div>
 </section>
@@ -59,7 +59,7 @@
             <div class="apple-card apple-card--white apple-lift fade-in-up fade-delay-1 overflow-hidden">
                 <div class="w-full bg-[#e3f0fc] flex items-center justify-center border-b border-black/5 p-2">
                     <div class="bg-[#f5f5f7] rounded-2xl shadow-lg overflow-hidden p-1 w-full group-hover:scale-[1.02] transition-transform duration-500">
-                        <img src="@asset('images/quytrinhsanxuat.png')" alt="DentalSO Workflow - Affordable dental lab management software, free trial" class="w-full h-auto object-contain rounded-xl parallax-img" loading="lazy">
+                        <img src="@asset('images/dental-lab-production-workflow.png')" alt="DentalSO Workflow - Affordable dental lab management software, free trial" class="w-full h-auto object-contain rounded-xl parallax-img" loading="lazy">
                     </div>
                 </div>
                 <div class="apple-card-inner p-6">
@@ -96,7 +96,7 @@
                     <div class="bg-[#f5f5f7] rounded-2xl shadow-lg overflow-hidden p-1 w-full group-hover:scale-[1.02] transition-transform duration-500 relative group/slider">
                         <div class="slider-container flex w-full overflow-hidden rounded-xl relative" data-current="0">
                             @php
-                                $sliderImages = ['phieubaoquyettoan.png','phieubaohanh.png', 'phieuchi.png', 'phieugiaohang.png', 'phieuthu.png', 'phieuyeucau.png'];
+                                $sliderImages = ['settlement-receipt-template.png','warranty-certificate-template.png', 'payment-voucher-template.png', 'delivery-slip-template.png', 'receipt-voucher-template.png', 'order-request-form-template.png'];
                             @endphp
                             @foreach($sliderImages as $img)
                             <img src="@asset('images/mauthe/' . $img)" class="w-full h-auto object-contain flex-shrink-0 transition-transform duration-500 ease-in-out" alt="DentalSO Documents and Templates - Affordable dental lab management software, free trial" loading="lazy">
@@ -130,18 +130,21 @@
             </div>
         </div>
 
-        {{-- Row 2: 3 smaller cards --}}
-        {{-- Section 3 distinct cards --}}
-        <div class="space-y-6 max-w-4xl mx-auto mt-6">
-            {{-- Card 3: High Automation --}}
-            <div class="apple-card apple-card--white apple-lift fade-in-up fade-delay-3 p-6 sm:p-8 flex flex-col sm:flex-row items-start gap-6">
-                <div class="w-16 h-16 rounded-2xl bg-[#e2f5e9] flex items-center justify-center flex-shrink-0">
-                    <span class="material-symbols-outlined text-[#30d158] text-3xl">bolt</span>
+        {{-- Section: High Automation — image LEFT, text RIGHT --}}
+        <div class="max-w-5xl mx-auto mt-16 fade-in-up">
+            <div class="grid md:grid-cols-2 gap-8 md:gap-14 items-center">
+                <div class="rounded-2xl overflow-hidden">
+                    <img src="<?php echo get_template_directory_uri(); ?>/resources/images/dental-lab-workflow-automation-software.png" alt="Lab workflow automation" class="w-full h-auto object-cover rounded-2xl" loading="lazy">
                 </div>
                 <div>
-                    <h3 class="apple-card-title !mb-1">High Automation</h3>
-                    <p class="text-[0.9375rem] font-medium text-[#1d1d1f] mb-4">Minimize manual work</p>
-                    <ul class="space-y-2 text-[#424245] text-[0.9375rem]">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 rounded-xl bg-[#e2f5e9] flex items-center justify-center flex-shrink-0">
+                            <span class="material-symbols-outlined text-[#30d158]">bolt</span>
+                        </div>
+                        <h3 class="text-[1.5rem] font-semibold text-[#1d1d1f] leading-tight">High Automation</h3>
+                    </div>
+                    <p class="text-[#86868b] text-[0.9375rem] mb-6">Minimize manual work so your team can focus on product quality.</p>
+                    <ul class="space-y-3 text-[#424245] text-[0.9375rem]">
                         <li class="flex items-start gap-3"><span class="material-symbols-outlined text-[#30d158] flex-shrink-0 mt-0.5 text-[1.125rem]">check_circle</span> Automatically assign tasks to each technician</li>
                         <li class="flex items-start gap-3"><span class="material-symbols-outlined text-[#30d158] flex-shrink-0 mt-0.5 text-[1.125rem]">check_circle</span> Auto-remind about delivery orders based on entered time</li>
                         <li class="flex items-start gap-3"><span class="material-symbols-outlined text-[#30d158] flex-shrink-0 mt-0.5 text-[1.125rem]">check_circle</span> Connect warranty data between patient and product information</li>
@@ -150,34 +153,48 @@
                     </ul>
                 </div>
             </div>
+        </div>
 
-            {{-- Card 4: Low Cost --}}
-            <div class="apple-card apple-card--white apple-lift fade-in-up fade-delay-4 p-6 sm:p-8 flex flex-col sm:flex-row items-start gap-6">
-                <div class="w-16 h-16 rounded-2xl bg-[#f5e6fe] flex items-center justify-center flex-shrink-0">
-                    <span class="material-symbols-outlined text-[#bf5af2] text-3xl">savings</span>
-                </div>
-                <div>
-                    <h3 class="apple-card-title !mb-1">Low Cost</h3>
-                    <p class="text-[0.9375rem] font-medium text-[#1d1d1f] mb-4">Perfect for small labs & startups</p>
-                    <ul class="space-y-2 text-[#424245] text-[0.9375rem]">
+        {{-- Section: Low Cost — text LEFT, image RIGHT (zigzag) --}}
+        <div class="max-w-5xl mx-auto mt-20 fade-in-up">
+            <div class="grid md:grid-cols-2 gap-8 md:gap-14 items-center">
+                <div class="order-2 md:order-1">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 rounded-xl bg-[#f5e6fe] flex items-center justify-center flex-shrink-0">
+                            <span class="material-symbols-outlined text-[#bf5af2]">savings</span>
+                        </div>
+                        <h3 class="text-[1.5rem] font-semibold text-[#1d1d1f] leading-tight">Low Cost</h3>
+                    </div>
+                    <p class="text-[#86868b] text-[0.9375rem] mb-6">Perfect for small labs & startups — no large upfront investment, start today.</p>
+                    <ul class="space-y-3 text-[#424245] text-[0.9375rem]">
                         <li class="flex items-start gap-3"><span class="material-symbols-outlined text-[#bf5af2] flex-shrink-0 mt-0.5 text-[1.125rem]">check_circle</span> Zero initial app development fees, only pay a monthly subscription</li>
                         <li class="flex items-start gap-3"><span class="material-symbols-outlined text-[#bf5af2] flex-shrink-0 mt-0.5 text-[1.125rem]">check_circle</span> Extremely low cost of software usage</li>
                         <li class="flex items-start gap-3"><span class="material-symbols-outlined text-[#bf5af2] flex-shrink-0 mt-0.5 text-[1.125rem]">check_circle</span> Flexible payment model: Pay as you go</li>
                     </ul>
                 </div>
+                <div class="order-1 md:order-2 rounded-2xl overflow-hidden">
+                    <img src="<?php echo get_template_directory_uri(); ?>/resources/images/low-cost-dental-lab-management-software.png" alt="Low cost for small labs" class="w-full h-auto object-cover rounded-2xl" loading="lazy">
+                </div>
             </div>
+        </div>
 
-            {{-- Card 5: Solid Foundation --}}
-            <div class="apple-card apple-card--white apple-lift fade-in-up fade-delay-5 p-6 sm:p-8 flex flex-col sm:flex-row items-start gap-6">
-                <div class="w-16 h-16 rounded-2xl bg-[#fff3e0] flex items-center justify-center flex-shrink-0">
-                    <span class="material-symbols-outlined text-[#ff6d00] text-3xl">rocket_launch</span>
+        {{-- Section: Solid Foundation — image LEFT, text RIGHT --}}
+        <div class="max-w-5xl mx-auto mt-20 fade-in-up">
+            <div class="grid md:grid-cols-2 gap-8 md:gap-14 items-center">
+                <div class="rounded-2xl overflow-hidden">
+                    <img src="<?php echo get_template_directory_uri(); ?>/resources/images/cloud-dental-lab-platform-dentalso.png" alt="Solid cloud foundation" class="w-full h-auto object-cover rounded-2xl" loading="lazy">
                 </div>
                 <div>
-                    <h3 class="apple-card-title !mb-1">Solid Foundation</h3>
-                    <p class="text-[0.9375rem] font-medium text-[#1d1d1f] mb-4">Scale fast without chaos</p>
-                    <ul class="space-y-2 text-[#424245] text-[0.9375rem]">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 rounded-xl bg-[#fff3e0] flex items-center justify-center flex-shrink-0">
+                            <span class="material-symbols-outlined text-[#ff6d00]">rocket_launch</span>
+                        </div>
+                        <h3 class="text-[1.5rem] font-semibold text-[#1d1d1f] leading-tight">Solid Foundation</h3>
+                    </div>
+                    <p class="text-[#86868b] text-[0.9375rem] mb-6">Scale fast without chaos — reliable infrastructure for any size.</p>
+                    <ul class="space-y-3 text-[#424245] text-[0.9375rem]">
                         <li class="flex items-start gap-3"><span class="material-symbols-outlined text-[#ff6d00] flex-shrink-0 mt-0.5 text-[1.125rem]">check_circle</span> Scientific management process helps businesses scale fast</li>
-                        <li class="flex items-start gap-3"><span class="material-symbols-outlined text-[#ff6d00] flex-shrink-0 mt-0.5 text-[1.125rem]">check_circle</span> System operates stably with 99.9% uptime on a Cloud platform</li>
+                        <li class="flex items-start gap-3"><span class="material-symbols-outlined text-[#ff6d00] flex-shrink-0 mt-0.5 text-[1.125rem]">check_circle</span> System operates stably with 99.9% uptime on Cloud</li>
                         <li class="flex items-start gap-3"><span class="material-symbols-outlined text-[#ff6d00] flex-shrink-0 mt-0.5 text-[1.125rem]">check_circle</span> Automatic data backups ensuring high-level security</li>
                         <li class="flex items-start gap-3"><span class="material-symbols-outlined text-[#ff6d00] flex-shrink-0 mt-0.5 text-[1.125rem]">check_circle</span> Supports an unlimited number of user accounts</li>
                     </ul>
@@ -298,7 +315,7 @@
             <div class="relative group slide-in-right">
                 <div class="absolute -inset-4 rounded-3xl blur-2xl transition-colors" style="background-color: rgba(52,168,83,0.05);"></div>
                 <div class="relative rounded-2xl shadow-xl border border-gray-100 overflow-hidden">
-                    <img src="@asset('images/zigzag_manual_tracking.webp')" alt="Managing cases with Excel spreadsheets and paper - Affordable dental lab management software, free trial" class="w-full h-auto object-cover parallax-img" loading="lazy">
+                    <img src="@asset('images/zigzag-manual-tracking.webp')" alt="Managing cases with Excel spreadsheets and paper - Affordable dental lab management software, free trial" class="w-full h-auto object-cover parallax-img" loading="lazy">
                 </div>
             </div>
         </div>
@@ -311,7 +328,7 @@
                 <div class="order-2 md:order-1 relative group slide-in-left">
                     <div class="absolute -inset-4 rounded-3xl blur-2xl transition-colors" style="background-color: rgba(255,159,10,0.1);"></div>
                     <div class="relative rounded-2xl shadow-xl border border-gray-100 overflow-hidden">
-                        <img src="@asset('images/zigzag_poor_visibility.webp')" alt="Struggling to track case status - Affordable dental lab management software, free trial" class="w-full h-auto object-cover parallax-img" loading="lazy">
+                        <img src="@asset('images/zigzag-poor-visibility.webp')" alt="Struggling to track case status - Affordable dental lab management software, free trial" class="w-full h-auto object-cover parallax-img" loading="lazy">
                     </div>
                 </div>
                 <div class="order-1 md:order-2 slide-in-right">
@@ -371,7 +388,7 @@
             <div class="relative group slide-in-right">
                 <div class="absolute -inset-4 rounded-3xl blur-2xl transition-colors" style="background-color: rgba(10,132,255,0.05);"></div>
                 <div class="relative rounded-2xl shadow-xl border border-gray-100 overflow-hidden">
-                    <img src="@asset('images/zigzag_need_simplicity.webp')" alt="Simple and easy-to-use interface - Affordable dental lab management software, free trial" class="w-full h-auto object-cover parallax-img" loading="lazy">
+                    <img src="@asset('images/zigzag-need-simplicity.webp')" alt="Simple and easy-to-use interface - Affordable dental lab management software, free trial" class="w-full h-auto object-cover parallax-img" loading="lazy">
                 </div>
             </div>
         </div>
@@ -384,7 +401,7 @@
                 <div class="order-2 md:order-1 relative group slide-in-left">
                     <div class="absolute -inset-4 rounded-3xl blur-2xl transition-colors" style="background-color: rgba(48,209,88,0.08);"></div>
                     <div class="relative rounded-2xl shadow-xl border border-gray-100 overflow-hidden">
-                        <img src="@asset('images/zigzag_scaling_up.webp')" alt="Dental lab scaling up operations - Affordable dental lab management software, free trial" class="w-full h-auto object-cover parallax-img" loading="lazy">
+                        <img src="@asset('images/zigzag-scaling-up.webp')" alt="Dental lab scaling up operations - Affordable dental lab management software, free trial" class="w-full h-auto object-cover parallax-img" loading="lazy">
                     </div>
                 </div>
                 <div class="order-1 md:order-2 slide-in-right">

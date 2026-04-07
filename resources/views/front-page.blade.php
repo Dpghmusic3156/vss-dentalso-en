@@ -158,7 +158,7 @@
                 <div class="order-2 md:order-1 relative group">
                     <div class="absolute -inset-4 rounded-3xl blur-2xl transition-colors" style="background-color: rgba(251,188,5,0.15);"></div>
                     <div class="relative rounded-2xl shadow-xl border border-gray-100 overflow-hidden">
-                        <img src="@asset('images/workflow.webp')" alt="Smart production scheduling workflow - Affordable dental lab management software, free trial" class="w-full h-auto object-cover" loading="lazy">
+                        <img src="@asset('images/dental-lab-workflow-process.webp')" alt="Smart production scheduling workflow - Affordable dental lab management software, free trial" class="w-full h-auto object-cover" loading="lazy">
                     </div>
                 </div>
                 <div class="order-1 md:order-2">
@@ -256,7 +256,7 @@
                 <div class="order-2 md:order-1 relative group">
                     <div class="absolute -inset-4 rounded-3xl blur-2xl transition-colors" style="background-color: rgba(66,133,244,0.1);"></div>
                     <div class="relative rounded-2xl shadow-2xl border border-gray-100 overflow-hidden">
-                        <img src="@asset('images/cloud.webp')" alt="DentalSO secure cloud platform - Affordable dental lab management software, free trial" class="w-full h-auto object-cover" loading="lazy">
+                        <img src="@asset('images/cloud-dental-lab-platform.webp')" alt="DentalSO secure cloud platform - Affordable dental lab management software, free trial" class="w-full h-auto object-cover" loading="lazy">
                     </div>
                 </div>
                 <div class="order-1 md:order-2">
