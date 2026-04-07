@@ -42,11 +42,11 @@
                         </a>
                     </li>
                     <li class="flex items-center gap-1.5">
-                        <img src="<?php echo get_template_directory_uri(); ?>/resources/images/us.webp" class="w-4 h-auto" loading="lazy" alt="US">
+                        <img src="<?php echo get_template_directory_uri(); ?>/resources/images/us.webp" class="w-4 h-auto" loading="lazy" alt="English Language">
                         <a href="https://api.whatsapp.com/send/?phone=12062019069&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer"><?php echo get_theme_mod('phoneus'); ?></a>
                     </li>
                     <li class="flex items-center gap-1.5">
-                        <img src="<?php echo get_template_directory_uri(); ?>/resources/images/vn.webp" class="w-4 h-auto" loading="lazy" alt="VN">
+                        <img src="<?php echo get_template_directory_uri(); ?>/resources/images/vn.webp" class="w-4 h-auto" loading="lazy" alt="Vietnamese Language">
                         <a href="http://zalo.me/0947476000" target="_blank" rel="noopener noreferrer"><?php echo get_theme_mod('phone'); ?></a>
                     </li>
                 </ul>
@@ -87,10 +87,10 @@
             <div class="apple-footer-apps">
                 <span class="apple-footer-apps-label">Download App:</span>
                 <a href="https://apps.apple.com/vn/app/dentalso/id6447111443" target="_blank" rel="noopener noreferrer">
-                    <img alt="App Store" loading="lazy" src="<?php echo get_site_url(); ?>/wp-content/uploads/2025/02/app-store.png">
+                    <img alt="Download DentalSO on App Store" loading="lazy" src="<?php echo get_site_url(); ?>/wp-content/uploads/2025/02/app-store.png">
                 </a>
                 <a href="https://play.google.com/store/apps/details?id=com.dentalso" target="_blank" rel="noopener noreferrer">
-                    <img alt="Google Play" loading="lazy" src="<?php echo get_site_url(); ?>/wp-content/uploads/2025/02/google-play.png">
+                    <img alt="Download DentalSO on Google Play" loading="lazy" src="<?php echo get_site_url(); ?>/wp-content/uploads/2025/02/google-play.png">
                 </a>
             </div>
         </div>

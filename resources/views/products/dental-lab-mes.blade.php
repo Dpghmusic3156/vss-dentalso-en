@@ -19,7 +19,7 @@
         </div>
         <div class="fade-in-up mt-10" style="animation-delay: 0.2s;">
             <div class="bg-white rounded-2xl overflow-hidden p-1 max-w-5xl mx-auto shadow-sm">
-                <img src="@asset('images/mes-dashboard-hero.webp')" alt="DentalSO MES Dashboard — Real-time production monitoring" class="rounded-xl w-full" loading="lazy">
+                <img src="@asset('images/mes-dashboard-hero.webp')" alt="DentalSO MES Dashboard — Real-time production monitoring - Affordable dental lab management software, free trial" class="rounded-xl w-full" loading="lazy">
             </div>
         </div>
     </div>
@@ -89,7 +89,7 @@
             </div>
             <div class="apple-split-media fade-in-up" style="animation-delay: 0.15s;">
                 <div class="bg-white rounded-2xl shadow-lg overflow-hidden p-1">
-                    <img src="{{ get_site_url() }}/wp-content/uploads/2022/12/dental-online-lab-dashboard.png" alt="DentalSO MES — Real-time production dashboard" class="apple-split-img rounded-xl" loading="lazy">
+                    <img src="{{ get_site_url() }}/wp-content/uploads/2022/12/dental-online-lab-dashboard.png" alt="DentalSO MES — Real-time production dashboard - Affordable dental lab management software, free trial" class="apple-split-img rounded-xl" loading="lazy">
                 </div>
             </div>
         </div>
@@ -190,7 +190,7 @@
             </div>
             <div class="apple-split-media fade-in-up" style="animation-delay: 0.15s;">
                 <div class="bg-white rounded-2xl shadow-lg overflow-hidden p-1">
-                    <img src="{{ get_site_url() }}/wp-content/uploads/2022/08/clinic-dashboard.png" alt="DentalSO MES — Priority scheduling dashboard" class="apple-split-img rounded-xl" loading="lazy">
+                    <img src="{{ get_site_url() }}/wp-content/uploads/2022/08/clinic-dashboard.png" alt="DentalSO MES — Priority scheduling dashboard - Affordable dental lab management software, free trial" class="apple-split-img rounded-xl" loading="lazy">
                 </div>
             </div>
         </div>

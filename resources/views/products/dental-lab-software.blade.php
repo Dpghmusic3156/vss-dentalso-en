@@ -24,7 +24,7 @@
             </div>
         </div>
         <div class="apple-hero-img-wrapper fade-in-up" style="animation-delay: 0.2s;">
-            <img src="{{ home_url('wp-content/uploads/2024/07/dental') }}.png" alt="DentalSO Platform" class="apple-hero-img w-full max-w-5xl mx-auto mt-12 rounded-2xl" loading="lazy">
+            <img src="{{ home_url('wp-content/uploads/2024/07/dental') }}.png" alt="DentalSO Platform - Affordable dental lab management software, free trial" class="apple-hero-img w-full max-w-5xl mx-auto mt-12 rounded-2xl" loading="lazy">
         </div>
     </div>
 </section>
@@ -48,7 +48,7 @@
                 </p>
             </div>
             <div class="apple-split-media fade-in-up md:fade-delay-1">
-                <img src="{{ home_url('wp-content/uploads/2022/08/clinic-dashboard') }}.png" alt="Dental Lab Software dashboard" class="apple-split-img rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.08)]" loading="lazy">
+                <img src="{{ home_url('wp-content/uploads/2022/08/clinic-dashboard') }}.png" alt="Dental Lab Software dashboard - Affordable dental lab management software, free trial" class="apple-split-img rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.08)]" loading="lazy">
             </div>
         </div>
     </div>

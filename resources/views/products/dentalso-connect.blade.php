@@ -19,7 +19,7 @@
         </div>
         <div class="fade-in-up mt-12" style="animation-delay: 0.2s;">
             <img loading="lazy" src="{{ home_url('wp-content/uploads/2022/07/clinic') }}.png"
-                 alt="DentalSO Connect"
+                 alt="DentalSO Connect - Affordable dental lab management software, free trial"
                  class="w-full max-w-5xl mx-auto rounded-2xl">
         </div>
     </div>
@@ -51,7 +51,7 @@
             {{-- Image Right --}}
             <div class="w-full lg:w-[62%] fade-in-up" style="animation-delay: 0.15s;">
                 <img loading="lazy" src="{{ home_url('wp-content/uploads/2022/08/clinic-dashboard') }}.png"
-                     alt="DentalSO Connect Dashboard"
+                     alt="DentalSO Connect Dashboard - Affordable dental lab management software, free trial"
                      class="w-full rounded-3xl shadow-[0_20px_80px_rgba(0,0,0,0.08)]">
             </div>
         </div>
@@ -67,7 +67,7 @@
             {{-- Image Left --}}
             <div class="w-full lg:w-[62%] fade-in-up">
                 <div class="bg-white rounded-3xl p-1 shadow-sm overflow-hidden border border-[#f5f5f7]">
-                    <img src="@asset('images/connect-clinic-partner.webp')" alt="Clinic Interface" class="rounded-2xl w-full h-full object-cover" loading="lazy">
+                    <img src="@asset('images/connect-clinic-partner.webp')" alt="Clinic Interface - Affordable dental lab management software, free trial" class="rounded-2xl w-full h-full object-cover" loading="lazy">
                 </div>
             </div>
             {{-- Text Right --}}
@@ -126,7 +126,7 @@
             {{-- Image Left --}}
             <div class="w-full lg:w-[62%] fade-in-up">
                 <div class="bg-white rounded-3xl p-1 shadow-sm overflow-hidden border border-[#f5f5f7]">
-                    <img src="@asset('images/connect-lab-partner.webp')" alt="Collaboration Between Labs" class="rounded-2xl w-full h-full object-cover" loading="lazy">
+                    <img src="@asset('images/connect-lab-partner.webp')" alt="Collaboration Between Labs - Affordable dental lab management software, free trial" class="rounded-2xl w-full h-full object-cover" loading="lazy">
                 </div>
             </div>
             {{-- Text Right --}}

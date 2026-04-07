@@ -171,7 +171,7 @@
             </div>
             <div class="apple-split-media fade-in-up" style="animation-delay: 0.15s;">
                 <div class="bg-white rounded-2xl shadow-lg overflow-hidden p-1">
-                    <img src="{{ get_site_url() }}/wp-content/uploads/2022/12/dental-online-lab-dashboard.png" alt="DentalSO Platform Dashboard" class="apple-split-img rounded-xl" loading="lazy">
+                    <img src="{{ get_site_url() }}/wp-content/uploads/2022/12/dental-online-lab-dashboard.png" alt="DentalSO Platform Dashboard - Affordable dental lab management software, free trial" class="apple-split-img rounded-xl" loading="lazy">
                 </div>
             </div>
         </div>

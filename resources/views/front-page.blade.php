@@ -31,7 +31,7 @@
         </div>
         {{-- Hero image --}}
         <div class="apple-hero-img-wrapper fade-in-up" style="transition-delay: 200ms;">
-            <img src="@asset('images/dental-platform-mockup.webp')" alt="DentalSO: The Complete Dental Lab Software Ecosystem for Streamlined Operations" class="apple-hero-img animate-float">
+            <img src="@asset('images/dental-platform-mockup.webp')" alt="DentalSO: The Complete Dental Lab Software Ecosystem for Streamlined Operations - Affordable dental lab management software, free trial" class="apple-hero-img animate-float">
         </div>
     </div>
 </section>
@@ -50,7 +50,7 @@
             <div class="fade-in-up" style="transition-delay: 0ms;">
                 <div class="apple-split solution-card solution-card--blue bg-white rounded-[2.5rem] p-8 md:p-12 lg:p-16 shadow-sm hover:shadow-[0_20px_40px_rgb(0,0,0,0.1)] hover:-translate-y-3 transition-all duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] group">
                     <div class="apple-split-media solution-card__media">
-                        <img src="@asset('images/dental-platform-mockup.webp')" alt="DentalSO Platform" class="apple-split-img rounded-2xl relative z-10 group-hover:scale-[1.03] transition-transform duration-500 ease-[cubic-bezier(0.25,1,0.5,1)]" loading="lazy">
+                        <img src="@asset('images/dental-platform-mockup.webp')" alt="DentalSO Platform - Affordable dental lab management software, free trial" class="apple-split-img rounded-2xl relative z-10 group-hover:scale-[1.03] transition-transform duration-500 ease-[cubic-bezier(0.25,1,0.5,1)]" loading="lazy">
                     </div>
                     <div class="apple-split-text">
                         <span class="solution-pill solution-pill--blue">Lab Management</span>
@@ -69,7 +69,7 @@
             <div class="fade-in-up" style="transition-delay: 100ms;">
                 <div class="apple-split apple-split--reverse solution-card solution-card--green bg-white rounded-[2.5rem] p-8 md:p-12 lg:p-16 shadow-sm hover:shadow-[0_20px_40px_rgb(0,0,0,0.1)] hover:-translate-y-3 transition-all duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] group">
                     <div class="apple-split-media solution-card__media">
-                        <img src="@asset('images/mes-dashboard-hero.webp')" alt="DentalSO MES" class="apple-split-img rounded-2xl relative z-10 group-hover:scale-[1.03] transition-transform duration-500 ease-[cubic-bezier(0.25,1,0.5,1)]" loading="lazy">
+                        <img src="@asset('images/mes-dashboard-hero.webp')" alt="DentalSO MES - Affordable dental lab management software, free trial" class="apple-split-img rounded-2xl relative z-10 group-hover:scale-[1.03] transition-transform duration-500 ease-[cubic-bezier(0.25,1,0.5,1)]" loading="lazy">
                     </div>
                     <div class="apple-split-text">
                         <span class="solution-pill solution-pill--green">Production Floor</span>
@@ -88,7 +88,7 @@
             <div class="fade-in-up" style="transition-delay: 200ms;">
                 <div class="apple-split solution-card solution-card--orange bg-white rounded-[2.5rem] p-8 md:p-12 lg:p-16 shadow-sm hover:shadow-[0_20px_40px_rgb(0,0,0,0.1)] hover:-translate-y-3 transition-all duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] group">
                     <div class="apple-split-media solution-card__media">
-                        <img src="@asset('images/dentalso-connect-illustration.webp')" alt="DentalSO Connect" class="apple-split-img rounded-2xl relative z-10 group-hover:scale-[1.03] transition-transform duration-500 ease-[cubic-bezier(0.25,1,0.5,1)]" loading="lazy">
+                        <img src="@asset('images/dentalso-connect-illustration.webp')" alt="DentalSO Connect - Affordable dental lab management software, free trial" class="apple-split-img rounded-2xl relative z-10 group-hover:scale-[1.03] transition-transform duration-500 ease-[cubic-bezier(0.25,1,0.5,1)]" loading="lazy">
                     </div>
                     <div class="apple-split-text">
                         <span class="solution-pill solution-pill--orange">Digital Collaboration</span>
@@ -145,7 +145,7 @@
             <div class="relative group">
                 <div class="absolute -inset-4 rounded-3xl blur-2xl transition-colors" style="background-color: rgba(66,133,244,0.05);"></div>
                 <div class="relative rounded-2xl shadow-2xl border border-gray-100 overflow-hidden">
-                    <img src="@asset('images/dental-lab-workspace.webp')" alt="Dental lab technician designing CAD on dual monitors" class="w-full h-auto object-cover" loading="lazy">
+                    <img src="@asset('images/dental-lab-workspace.webp')" alt="Dental lab technician designing CAD on dual monitors - Affordable dental lab management software, free trial" class="w-full h-auto object-cover" loading="lazy">
                 </div>
             </div>
         </div>
@@ -158,7 +158,7 @@
                 <div class="order-2 md:order-1 relative group">
                     <div class="absolute -inset-4 rounded-3xl blur-2xl transition-colors" style="background-color: rgba(251,188,5,0.15);"></div>
                     <div class="relative rounded-2xl shadow-xl border border-gray-100 overflow-hidden">
-                        <img src="@asset('images/workflow.webp')" alt="Smart production scheduling workflow" class="w-full h-auto object-cover" loading="lazy">
+                        <img src="@asset('images/workflow.webp')" alt="Smart production scheduling workflow - Affordable dental lab management software, free trial" class="w-full h-auto object-cover" loading="lazy">
                     </div>
                 </div>
                 <div class="order-1 md:order-2">
@@ -256,7 +256,7 @@
                 <div class="order-2 md:order-1 relative group">
                     <div class="absolute -inset-4 rounded-3xl blur-2xl transition-colors" style="background-color: rgba(66,133,244,0.1);"></div>
                     <div class="relative rounded-2xl shadow-2xl border border-gray-100 overflow-hidden">
-                        <img src="@asset('images/cloud.webp')" alt="DentalSO secure cloud platform" class="w-full h-auto object-cover" loading="lazy">
+                        <img src="@asset('images/cloud.webp')" alt="DentalSO secure cloud platform - Affordable dental lab management software, free trial" class="w-full h-auto object-cover" loading="lazy">
                     </div>
                 </div>
                 <div class="order-1 md:order-2">

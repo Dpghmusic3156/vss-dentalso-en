@@ -37,7 +37,7 @@
         </div>
         <div class="relative">
             <img loading="lazy" src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
-                 alt="Dental Technology" 
+                 alt="DentalSO modern dental technology platform" 
                  class="rounded-3xl shadow-xl w-full object-cover h-[500px]">
         </div>
     </section>
