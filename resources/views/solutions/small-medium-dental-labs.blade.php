@@ -26,7 +26,7 @@
                     <span>Transparent, clear pricing</span>
                 </div>
                 <div class="trust-sep trust-pop-1"></div>
-                <div class="trust-item trust-pop-2">
+                <div class="trust-item trust-pop-2">    
                     <span class="material-symbols-outlined">check_circle</span>
                     <span>Deploy in 30 minutes</span>
                 </div>
@@ -57,7 +57,7 @@
         <div class="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto mb-6">
             {{-- Card 1: End-to-end Workflow --}}
             <div class="apple-card apple-card--white apple-lift fade-in-up fade-delay-1 overflow-hidden">
-                <div class="w-full bg-[#e3f0fc] flex items-center justify-center overflow-hidden border-b border-black/5">
+                <div class="w-full bg-[#e3f0fc] flex items-center justify-center overflow-hidden border-b border-black/5 p-6 lg:p-8">
                     <img src="@asset('images/quytrinh.png')" alt="DentalSO Workflow - Affordable dental lab management software, free trial" class="w-full h-auto object-contain">
                 </div>
                 <div class="apple-card-inner p-6">
@@ -75,7 +75,7 @@
 
             {{-- Card 2: Documents & Templates --}}
             <div class="apple-card apple-card--white apple-lift fade-in-up fade-delay-2 overflow-hidden">
-                <div class="w-full bg-[#fef3e2] flex items-center justify-center overflow-hidden border-b border-black/5">
+                <div class="w-full bg-[#fef3e2] flex items-center justify-center overflow-hidden border-b border-black/5 p-6 lg:p-8">
                     <img src="@asset('images/MauTheBaoHanh.png')" alt="DentalSO Documents and Templates - Affordable dental lab management software, free trial" class="w-full h-auto object-contain">
                 </div>
                 <div class="apple-card-inner p-6">
