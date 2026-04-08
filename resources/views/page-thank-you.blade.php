@@ -11,6 +11,16 @@
   }
 }
 </style>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  console.log('Sending event to GTM...');
+  dataLayer.push({
+    'event': 'form_submission_success',
+    'form_type': 'contact_or_demo',
+    'page_title': document.title,
+    'page_language': 'en'
+  });
+</script>
 <section id="thank-you-page" class="py-20">
     <section class="container section-first-page pt-0" data-aos="fade-up">
         <div>
