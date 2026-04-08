@@ -200,6 +200,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 jQuery(".sent-message").hide();
             },
             success: function(res) {
+                window.dataLayer = window.dataLayer || [];
+                window.dataLayer.push({
+                    'event': 'form_submission_success',
+                    'form_type': 'demo_request',
+                    'page_language': 'en'
+                });
                 window.location.href = '<?php echo home_url('/thank-you/'); ?>';
             },
             error: function() {
