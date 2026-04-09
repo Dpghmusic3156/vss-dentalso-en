@@ -180,7 +180,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let data = new Object;
 
         if (name === '') { alert('Please enter your name'); return false; } else { data['name'] = name; }
-        if (phone === '' || phone.length < 10) { alert('Please enter a valid phone number'); return false; } else { data['phone'] = phone; }
+        if (phone === '') { alert('Please enter your phone number'); return false; } else { data['phone'] = phone; }
         var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (email === '' || !emailRegex.test(email)) { alert('Please enter a valid email'); return false; } else { data['email'] = email; }
         if (message === '') { alert('Please enter a message'); return false; } else { data['message'] = message; }
