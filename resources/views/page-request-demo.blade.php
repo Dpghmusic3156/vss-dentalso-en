@@ -53,7 +53,7 @@
                                 <input type="text" class="apple-input" name="company" id="company" placeholder="Company" required>
                             </div>
                             <div class="grid sm:grid-cols-2 gap-5">
-                                <input type="text" name="phone" class="apple-input" id="phone" placeholder="Phone" required>
+                                <input type="text" name="phone" class="apple-input" id="phone" placeholder="Phone" required oninput="this.value = this.value.replace(/[^0-9+]/g, '')">
                                 <input type="email" class="apple-input" name="email" id="email" placeholder="Email">
                             </div>
                             <select class="apple-input" name="product" id="product">
@@ -165,7 +165,9 @@ document.addEventListener('DOMContentLoaded', () => {
         let data = new Object;
 
         if (name === '') { alert('Please enter your name'); return false; } else { data['name'] = name; }
-        if (phone === '') { alert('Please enter your phone number'); return false; } else { data['phone'] = phone; }
+        if (phone === '' || phone.length < 10) { alert('Please enter a valid phone number'); return false; } else { data['phone'] = phone; }
+        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (email !== '' && !emailRegex.test(email)) { alert('Please enter a valid email'); return false; }
         data['email'] = email;
         if (message === '') { alert('Please enter your message'); return false; } else { data['message'] = message; }
 
