@@ -45,10 +45,7 @@
                         <img src="<?php echo get_template_directory_uri(); ?>/resources/images/us.webp" class="w-4 h-auto" loading="lazy" alt="English Language">
                         <a href="https://api.whatsapp.com/send/?phone=12062019069&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer"><?php echo get_theme_mod('phoneus'); ?></a>
                     </li>
-                    <li class="flex items-center gap-1.5">
-                        <img src="<?php echo get_template_directory_uri(); ?>/resources/images/vn.webp" class="w-4 h-auto" loading="lazy" alt="Vietnamese Language">
-                        <a href="http://zalo.me/0947476000" target="_blank" rel="noopener noreferrer"><?php echo get_theme_mod('phone'); ?></a>
-                    </li>
+
                 </ul>
             </div>
         </div>
@@ -62,13 +59,7 @@
                 <p class="apple-footer-office-address"><?php echo get_theme_mod('address_us'); ?></p>
             </div>
             <?php endif; ?>
-            <?php if(get_theme_mod('address')): ?>
-            <div class="apple-footer-office">
-                <span class="apple-footer-office-label"><span class="material-symbols-outlined" style="font-size: 14px;">location_on</span> Vietnam Office:</span>
-                <div class="apple-footer-office-phone"><a href="http://zalo.me/0947476000"><?php echo get_theme_mod('phone'); ?></a></div>
-                <p class="apple-footer-office-address"><?php echo get_theme_mod('address'); ?></p>
-            </div>
-            <?php endif; ?>
+
         </div>
 
         {{-- Bottom bar: Brand + Apps --}}
@@ -77,13 +68,7 @@
                 <img alt="DentalSO" src="<?php echo get_theme_mod('logo_full'); ?>">
                 <span>Dental SO LLC</span>
             </div>
-            <div class="flex items-center gap-4">
-                <div class="flex items-center gap-3">
-                    <a href="https://dentalso.com/vi/" class="text-[0.75rem] text-[#86868b] hover:text-[#1d1d1f] transition-colors">Tiếng Việt</a>
-                    <span class="text-[#d2d2d7]">|</span>
-                    <a href="https://dentalso.com/en/" class="text-[0.75rem] font-medium text-[#1d1d1f] hover:text-[#0071e3] transition-colors">English</a>
-                </div>
-            </div>
+
             <div class="apple-footer-apps">
                 <span class="apple-footer-apps-label">Download App:</span>
                 <a href="https://apps.apple.com/vn/app/dentalso/id6447111443" target="_blank" rel="noopener noreferrer">

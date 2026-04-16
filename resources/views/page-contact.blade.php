@@ -133,7 +133,7 @@
                             @if(get_theme_mod('address_us'))
                             <span><strong>US:</strong> {{ get_theme_mod('address_us') }}</span>
                             @endif
-                            <span><strong>VN:</strong> {{ get_theme_mod('address') }}</span>
+
                         </div>
                     </div>
                     <div class="flex items-center gap-3">
@@ -141,11 +141,7 @@
                         <img src="<?php echo get_template_directory_uri(); ?>/resources/images/us.webp" class="w-4 h-auto" loading="lazy" alt="English Language">
                         <a href="https://api.whatsapp.com/send/?phone=12062019069&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" class="hover:text-[#1d1d1f] transition-colors">{{ get_theme_mod('phoneus') }}</a>
                     </div>
-                    <div class="flex items-center gap-3">
-                        <span class="material-symbols-outlined text-base">phone</span>
-                        <img src="<?php echo get_template_directory_uri(); ?>/resources/images/vn.webp" class="w-4 h-auto" loading="lazy" alt="Vietnamese Language">
-                        <a href="http://zalo.me/0947476000" target="_blank" rel="noopener noreferrer" class="hover:text-[#1d1d1f] transition-colors">{{ get_theme_mod('phone') }}</a>
-                    </div>
+
                     <div class="flex items-center gap-3">
                         <span class="material-symbols-outlined text-base">mail</span>
                         <a href="mailto:contact@dentalso.com" class="hover:text-[#1d1d1f] transition-colors">contact@dentalso.com</a>
