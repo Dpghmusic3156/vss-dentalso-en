@@ -30,7 +30,6 @@
                 <ul class="apple-footer-links">
                     <li><a href="{{ home_url('blog/') }}">Blog</a></li>
                     <li><a href="{{ home_url('customer/') }}">Featured Customers</a></li>
-                    <li><a href="{{ home_url('guides/') }}">Guides</a></li>
                 </ul>
             </div>
             <div class="apple-footer-col">
