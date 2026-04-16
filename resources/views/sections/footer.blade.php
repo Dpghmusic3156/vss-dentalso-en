@@ -13,9 +13,9 @@
             <div class="apple-footer-col">
                 <h4 class="apple-footer-heading">Solutions</h4>
                 <ul class="apple-footer-links">
-                    <li><a href="{{ home_url('solutions/small-medium-dental-labs/') }}">Labo vừa và nhỏ</a></li>
-                    <li><a href="{{ home_url('solutions/outsource-dental-labs/') }}">Labo gia công và xuất khẩu</a></li>
-                    <li><a href="{{ home_url('solutions/large-dental-labs-mes/') }}">Labo lớn</a></li>
+                    <li><a href="{{ home_url('solutions/small-medium-dental-labs/') }}">Small & Medium Dental Labs</a></li>
+                    <li><a href="{{ home_url('solutions/outsource-dental-labs/') }}">Outsource Dental Labs</a></li>
+                    <li><a href="{{ home_url('solutions/large-dental-labs-mes/') }}">Large Dental Labs</a></li>
                 </ul>
             </div>
             <div class="apple-footer-col">
