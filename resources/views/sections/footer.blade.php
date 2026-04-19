@@ -46,19 +46,15 @@
                     </li>
 
                 </ul>
+                <?php if(get_theme_mod('address_us')): ?>
+                <div class="mt-3" style="font-size: 0.8125rem; color: #86868b;">
+                    <div class="flex items-start gap-1">
+                        <span class="material-symbols-outlined" style="font-size: 14px; margin-top: 2px;">location_on</span>
+                        <span><strong>US HQ:</strong> <?php echo get_theme_mod('address_us'); ?></span>
+                    </div>
+                </div>
+                <?php endif; ?>
             </div>
-        </div>
-
-        {{-- Office Locations --}}
-        <div class="apple-footer-offices">
-            <?php if(get_theme_mod('address_us')): ?>
-            <div class="apple-footer-office">
-                <span class="apple-footer-office-label"><span class="material-symbols-outlined" style="font-size: 14px;">location_on</span> US HQ:</span>
-                <div class="apple-footer-office-phone"><a href="https://api.whatsapp.com/send/?phone=12062019069&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer"><?php echo get_theme_mod('phoneus'); ?></a></div>
-                <p class="apple-footer-office-address"><?php echo get_theme_mod('address_us'); ?></p>
-            </div>
-            <?php endif; ?>
-
         </div>
 
         {{-- Bottom bar: Brand + Apps --}}
@@ -69,7 +65,6 @@
             </div>
 
             <div class="apple-footer-apps">
-                <span class="apple-footer-apps-label">Download App:</span>
                 <a href="https://apps.apple.com/vn/app/dentalso/id6447111443" target="_blank" rel="noopener noreferrer">
                     <img alt="Download DentalSO on App Store" loading="lazy" src="<?php echo get_site_url(); ?>/wp-content/uploads/2025/02/app-store.png">
                 </a>
