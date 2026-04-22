@@ -52,7 +52,7 @@
             </div>
             <div class="apple-split-media fade-in-up" style="animation-delay: 0.15s;">
                 <div class="bg-white rounded-2xl shadow-lg overflow-hidden p-1">
-                    <img src="{{ get_site_url() }}/wp-content/uploads/2022/12/dental-online-lab-dashboard.png" alt="DentalSO MES Dashboard - Affordable dental lab management software, free trial" class="apple-split-img rounded-xl" loading="lazy">
+                    <img src="@asset('images/mes-dashboard-live.webp')" alt="DentalSO MES Dashboard - Affordable dental lab management software, free trial" class="apple-split-img rounded-xl" loading="lazy">
                 </div>
             </div>
         </div>
@@ -88,7 +88,7 @@
             </div>
             <div class="apple-split-media fade-in-up" style="animation-delay: 0.15s;">
                 <div class="bg-[#f5f5f7] rounded-2xl shadow-lg overflow-hidden p-1">
-                    <img src="{{ get_site_url() }}/wp-content/uploads/2022/08/clinic-dashboard.png" alt="DentalSO Case Production Tracking - Affordable dental lab management software, free trial" class="apple-split-img rounded-xl" loading="lazy">
+                    <img src="@asset('images/clinic-dashboard-new.webp')" alt="DentalSO Case Production Tracking - Affordable dental lab management software, free trial" class="apple-split-img rounded-xl" loading="lazy">
                 </div>
             </div>
         </div>
@@ -120,7 +120,7 @@
             </div>
             <div class="apple-split-media fade-in-up" style="animation-delay: 0.15s;">
                 <div class="bg-white rounded-2xl shadow-lg overflow-hidden p-1">
-                    <img src="{{ get_site_url() }}/wp-content/uploads/2022/12/dental-online-lab-dashboard.png" alt="DentalSO Intelligent Scheduling - Affordable dental lab management software, free trial" class="apple-split-img rounded-xl" loading="lazy">
+                    <img src="@asset('images/mes-dashboard-live.webp')" alt="DentalSO Intelligent Scheduling - Affordable dental lab management software, free trial" class="apple-split-img rounded-xl" loading="lazy">
                 </div>
             </div>
         </div>
@@ -152,7 +152,7 @@
             </div>
             <div class="apple-split-media fade-in-up" style="animation-delay: 0.15s;">
                 <div class="bg-[#f5f5f7] rounded-2xl shadow-lg overflow-hidden p-1">
-                    <img src="{{ get_site_url() }}/wp-content/uploads/2022/08/clinic-dashboard.png" alt="DentalSO MES Reports - Affordable dental lab management software, free trial" class="apple-split-img rounded-xl" loading="lazy">
+                    <img src="@asset('images/clinic-dashboard-new.webp')" alt="DentalSO MES Reports - Affordable dental lab management software, free trial" class="apple-split-img rounded-xl" loading="lazy">
                 </div>
             </div>
         </div>

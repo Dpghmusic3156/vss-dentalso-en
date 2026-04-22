@@ -18,7 +18,7 @@
             </p>
         </div>
         <div class="fade-in-up mt-12" style="animation-delay: 0.2s;">
-            <img loading="lazy" src="{{ home_url('wp-content/uploads/2022/07/clinic') }}.png"
+            <img loading="lazy" src="@asset('images/clinic-hero-connect.webp')"
                  alt="DentalSO Connect - Affordable dental lab management software, free trial"
                  class="w-full max-w-5xl mx-auto rounded-2xl">
         </div>
@@ -50,7 +50,7 @@
             </div>
             {{-- Image Right --}}
             <div class="w-full lg:w-[62%] fade-in-up" style="animation-delay: 0.15s;">
-                <img loading="lazy" src="{{ home_url('wp-content/uploads/2022/08/clinic-dashboard') }}.png"
+                <img loading="lazy" src="@asset('images/clinic-dashboard-new.webp')"
                      alt="DentalSO Connect Dashboard - Affordable dental lab management software, free trial"
                      class="w-full rounded-3xl shadow-[0_20px_80px_rgba(0,0,0,0.08)]">
             </div>

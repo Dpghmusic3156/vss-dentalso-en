@@ -39,7 +39,7 @@
         </div>
         {{-- Hero image --}}
         <div class="apple-hero-img-wrapper hero-stagger-6">
-            <img src="@asset('images/small-dental-lab-management-solution.png')" alt="DentalSO Small Lab Management - Affordable dental lab management software, free trial" class="apple-hero-img animate-float">
+            <img src="@asset('images/small-dental-lab-management-solution-new.webp')" alt="DentalSO Small Lab Management - Affordable dental lab management software, free trial" class="apple-hero-img animate-float">
         </div>
     </div>
 </section>
@@ -277,7 +277,7 @@
             </div>
             <div class="apple-split-media slide-in-right">
                 <div class="bg-[#f5f5f7] rounded-2xl shadow-lg overflow-hidden p-1">
-                    <img src="{{ get_site_url() }}/wp-content/uploads/2022/12/dental-online-lab-dashboard.png" alt="DentalSO Platform Dashboard - Affordable dental lab management software, free trial" class="apple-split-img rounded-xl parallax-img" loading="lazy">
+                    <img src="@asset('images/mes-dashboard-live.webp')" alt="DentalSO Platform Dashboard - Affordable dental lab management software, free trial" class="apple-split-img rounded-xl parallax-img" loading="lazy">
                 </div>
             </div>
         </div>

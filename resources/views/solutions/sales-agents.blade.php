@@ -164,7 +164,7 @@
             </div>
             <div class="apple-split-media fade-in-up" style="animation-delay: 0.15s;">
                 <div class="bg-white rounded-2xl shadow-lg overflow-hidden p-1">
-                    <img src="{{ get_site_url() }}/wp-content/uploads/2022/08/clinic-dashboard.png" alt="DentalSO Sales Agent Dashboard - Affordable dental lab management software, free trial" class="apple-split-img rounded-xl" loading="lazy">
+                    <img src="@asset('images/clinic-dashboard-new.webp')" alt="DentalSO Sales Agent Dashboard - Affordable dental lab management software, free trial" class="apple-split-img rounded-xl" loading="lazy">
                 </div>
             </div>
         </div>
