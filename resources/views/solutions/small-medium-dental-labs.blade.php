@@ -59,7 +59,7 @@
             <div class="apple-card apple-card--white apple-lift fade-in-up fade-delay-1 overflow-hidden">
                 <div class="w-full bg-[#e3f0fc] flex items-center justify-center border-b border-black/5 p-2">
                     <div class="bg-[#f5f5f7] rounded-2xl shadow-lg overflow-hidden p-1 w-full group-hover:scale-[1.02] transition-transform duration-500">
-                        <img src="@asset('images/dental-lab-production-workflow.png')" alt="DentalSO Workflow - Affordable dental lab management software, free trial" class="w-full h-auto object-contain rounded-xl parallax-img" loading="lazy">
+                        <img src="@asset('images/dental-lab-production-workflow-new.webp')" alt="DentalSO Workflow - Affordable dental lab management software, free trial" class="w-full h-auto object-contain rounded-xl parallax-img" loading="lazy">
                     </div>
                 </div>
                 <div class="apple-card-inner p-6">
