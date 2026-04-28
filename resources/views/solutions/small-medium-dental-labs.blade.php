@@ -96,7 +96,7 @@
                     <div class="bg-[#f5f5f7] rounded-2xl shadow-lg overflow-hidden p-1 w-full group-hover:scale-[1.02] transition-transform duration-500 relative group/slider">
                         <div class="slider-container flex w-full overflow-hidden rounded-xl relative" data-current="0">
                             @php
-                                $sliderImages = ['settlement-receipt-template.png','warranty-certificate-template.png', 'payment-voucher-template.png', 'delivery-slip-template.png', 'receipt-voucher-template.png', 'order-request-form-template.png'];
+                                $sliderImages = ['prescription-template-en.webp','warranty-certificate-template.png', 'payment-voucher-template.png', 'delivery-slip-template.png', 'receipt-voucher-template.png', 'order-request-form-template.png'];
                             @endphp
                             @foreach($sliderImages as $img)
                             <img src="@asset('images/mauthe/' . $img)" class="w-full h-auto object-contain flex-shrink-0 transition-transform duration-500 ease-in-out" alt="DentalSO Documents and Templates - Affordable dental lab management software, free trial" loading="lazy">
