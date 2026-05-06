@@ -50,7 +50,7 @@
                 <div class="mt-3" style="font-size: 0.8125rem; color: #86868b;">
                     <div class="flex items-start gap-1">
                         <span class="material-symbols-outlined" style="font-size: 14px; margin-top: 2px;">location_on</span>
-                        <span><strong>US HQ:</strong> <?php echo get_theme_mod('address_us'); ?></span>
+                        <span><?php echo get_theme_mod('address_us'); ?></span>
                     </div>
                 </div>
                 <?php endif; ?>
