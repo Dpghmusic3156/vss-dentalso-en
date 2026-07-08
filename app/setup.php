@@ -6,6 +6,8 @@
 
 namespace App;
 
+require_once __DIR__ . '/admin-video-tutorials.php';
+
 use function Roots\bundle;
 
 /**

@@ -1,6 +1,38 @@
 @extends('layouts.app')
 
 @section('content')
+
+<style>
+/* Custom Blog Post Styles */
+.post-hero__content .post-title {
+    font-size: max(1.875rem, min(5vw, 3rem)) !important;
+    font-weight: 500 !important;
+}
+
+/* Justify text and reduce paragraph/list spacing */
+.post-prose p,
+.post-prose ul,
+.post-prose ol,
+.post-prose li {
+    text-align: justify;
+}
+.post-prose p,
+.post-prose ul,
+.post-prose ol {
+    margin-top: 0.75em !important;
+    margin-bottom: 0.75em !important;
+}
+.post-prose li {
+    margin-top: 0.25em !important;
+    margin-bottom: 0.25em !important;
+}
+
+/* Hide h2 in subnav on single post page but keep layout intact */
+.apple-subnav h2 {
+    visibility: hidden !important;
+}
+</style>
+
 @while(have_posts())
 @php the_post(); @endphp
 
