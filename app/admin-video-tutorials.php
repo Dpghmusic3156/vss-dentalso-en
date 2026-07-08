@@ -148,7 +148,7 @@ add_action('customize_register', function ($wp_customize) {
             'type' => 'text',
         )
     );
-
+});
 
 /**
  * Lấy danh sách video từ các playlist YouTube của DentalSO
@@ -307,7 +307,30 @@ function dentalso_get_fallback_videos()
 }
 
 /**
- * Tạo slug URL-friendly từ tiêu đề tiếng Việt
+ * Rewrite rules for Tutorial Videos page
+ * URL: /guides/{category}/{video-slug}/
+ */
+add_action('init', function () {
+    add_rewrite_rule(
+        'guide-videos/([^/]+)/([^/]+)/?$',
+        'index.php?pagename=guide-videos&vhd_category=$matches[1]&vhd_video=$matches[2]',
+        'top'
+    );
+    add_rewrite_rule(
+        'guide-videos/([^/]+)/?$',
+        'index.php?pagename=guide-videos&vhd_category=$matches[1]',
+        'top'
+    );
+});
+
+add_filter('query_vars', function ($vars) {
+    $vars[] = 'vhd_category';
+    $vars[] = 'vhd_video';
+    return $vars;
+});
+
+/**
+ * Create URL-friendly slug from Vietnamese title
  */
 function dentalso_vn_slug($str)
 {
@@ -323,8 +346,10 @@ function dentalso_vn_slug($str)
         'ỳ'=>'y','ý'=>'y','ỷ'=>'y','ỹ'=>'y','ỵ'=>'y',
     ];
     $str = strtr($str, $map);
-
-});
+    $str = preg_replace('/[^a-z0-9\s-]/', '', $str);
+    $str = preg_replace('/[\s-]+/', '-', $str);
+    return trim($str, '-');
+}
 
 // Admin page renderer
 function vhd_admin_page()
@@ -345,7 +370,7 @@ function vhd_admin_page()
 
         <div class="vhd-admin-actions" style="margin:16px 0;">
             <button class="button" onclick="vhdClearCache()">🔄 Refresh video cache</button>
-            <a href="<?= home_url('guides/') ?>" target="_blank" class="button">👁 View page</a>
+            <a href="<?= home_url('guide-videos/') ?>" target="_blank" class="button">👁 View page</a>
         </div>
 
         <h2 class="nav-tab-wrapper">

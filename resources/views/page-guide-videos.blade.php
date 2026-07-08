@@ -15,7 +15,7 @@ $active_category = get_query_var('vhd_category', '');
 $active_video_slug = get_query_var('vhd_video', '');
 
 // Trang gốc video-huong-dan
-$base_url = home_url('video-huong-dan');
+$base_url = home_url('guide-videos');
 
 // Lấy danh mục từ admin (chỉ hiện các danh mục visible)
 $all_categories = \App\vhd_get_categories();
@@ -51,8 +51,8 @@ if ($is_video_view) {
 <section class="vhd-hero">
     <div class="apple-container">
         <div class="fade-in-up">
-            <h1 class="vhd-hero__title">Video Hướng Dẫn</h1>
-            <p class="vhd-hero__subtitle">Tổng hợp các video hướng dẫn sử dụng DentalSO — từ cài đặt ban đầu đến vận hành nâng cao.</p>
+            <h1 class="vhd-hero__title">Tutorial Videos</h1>
+            <p class="vhd-hero__subtitle">A comprehensive collection of DentalSO tutorial videos — from initial setup to advanced operations.</p>
         </div>
     </div>
 </section>
@@ -91,7 +91,7 @@ if ($is_video_view) {
         <div class="vhd-videos__header fade-in-up">
             <a href="{{ $base_url }}/" class="vhd-back-btn">
                 <span class="material-symbols-outlined">arrow_back</span>
-                All danh mục
+                All Categories
             </a>
             <div class="vhd-videos__title-row">
                 <div class="vhd-videos__icon" style="background: {{ $cat_info['color'] }};">
@@ -119,7 +119,7 @@ if ($is_video_view) {
                     <p class="vhd-video-item__desc">{{ $video['desc'] }}</p>
                     <span class="vhd-video-item__link">
                         <span class="material-symbols-outlined">link</span>
-                        Sao chép link
+                        Copy link
                     </span>
                 </div>
             </a>
@@ -135,11 +135,11 @@ if ($is_video_view) {
 <section class="apple-section apple-section--cta">
     <div class="apple-container text-center">
         <div class="fade-in-up">
-            <h2 class="apple-headline text-white mb-4">Cần hỗ trợ thêm?</h2>
-            <p class="text-white/70 text-lg mb-8 max-w-lg mx-auto">Đội ngũ DentalSO luôn sẵn sàng hỗ trợ bạn. Đặt lịch demo hoặc liên hệ trực tiếp để được tư vấn.</p>
+            <h2 class="apple-headline text-white mb-4">Need more help?</h2>
+            <p class="text-white/70 text-lg mb-8 max-w-lg mx-auto">The DentalSO team is always ready to assist you. Schedule a demo or contact us directly for consultation.</p>
             <div class="apple-cta-group">
-                <a href="{{ home_url('yeu-cau-tu-van/') }}" class="apple-cta-primary apple-cta-primary--light">Đăng ký Demo</a>
-                <a href="{{ home_url('lien-he/') }}" class="apple-cta-secondary apple-cta-secondary--light">Liên hệ<span class="apple-chevron material-symbols-outlined">chevron_right</span></a>
+                <a href="{{ home_url('request-demo/') }}" class="apple-cta-primary apple-cta-primary--light">Request Demo</a>
+                <a href="{{ home_url('contact/') }}" class="apple-cta-secondary apple-cta-secondary--light">Contact<span class="apple-chevron material-symbols-outlined">chevron_right</span></a>
             </div>
         </div>
     </div>
@@ -159,7 +159,7 @@ if ($is_video_view) {
 </div>
 
 {{-- Copy toast --}}
-<div id="copy-toast" class="vhd-toast">Link đã được sao chép!</div>
+<div id="copy-toast" class="vhd-toast">Link copied!</div>
 
 <style>
 /* ===========================
