@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container py-16 grid lg:grid-cols-4 gap-10">
+<div class="container py-16 grid lg:grid-cols-3 gap-10">
     @while(have_posts()) @php(the_post())
 
     <div class="shadow-xl border border-primary-4/20 rounded-3xl p-6">
@@ -10,26 +10,14 @@
         </div>
 
         <p class="text-2xl text-center"><?php the_title(); ?></p>
-        <p>
-            <span class="material-symbols-outlined align-sub text-lg text-secondary">
-                language
-            </span>
-            <a href="<?php echo get_post_custom_values($key = 'link')[0]; ?>">
-                <?php echo get_post_custom_values($key = 'link')[0]; ?>
+        <?php $link = get_post_custom_values('link')[0] ?? ''; if ($link): ?>
+        <p class="text-center flex items-center justify-center gap-1 mt-2">
+            <span class="material-symbols-outlined text-lg text-secondary">language</span>
+            <a href="<?php echo esc_url($link); ?>" target="_blank" rel="noopener noreferrer" class="truncate max-w-[200px]">
+                <?php echo esc_html($link); ?>
             </a>
         </p>
-        <p>
-            <span class="material-symbols-outlined align-sub text-lg text-secondary">
-                call
-            </span>
-            <?php echo get_post_custom_values($key = 'phone')[0]; ?>
-        </p>
-        <p>
-            <span class="material-symbols-outlined align-sub text-lg text-secondary">
-                home
-            </span>
-            <?php echo get_post_custom_values($key = 'address')[0]; ?>
-        </p>
+        <?php endif; ?>
     </div>
 
     @endwhile
