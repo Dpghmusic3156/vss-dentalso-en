@@ -362,9 +362,9 @@ add_action('init', function () {
         ],
         'supports' => ['title', 'thumbnail', 'custom-fields', 'page-attributes'],
     ], [
-        'singular' => 'Customer',
-        'plural'   => 'Customers',
-        'slug'     => 'customer',
+'singular' => 'Our Notable Client',
+    'plural'   => 'Our Notable Clients',
+    'slug'     => 'our-notable-clients',
 
     ]);
     register_extended_taxonomy('genre', 'story', [

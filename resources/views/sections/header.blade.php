@@ -160,7 +160,7 @@
 @php
     $subnav_title = get_the_title();
     if (is_post_type_archive('customer') || is_singular('customer') || is_page('customer')) {
-        $subnav_title = 'Customers';
+        $subnav_title = 'Our Notable Clients';
     }
 @endphp
 <div class="apple-subnav" x-data="{}">
